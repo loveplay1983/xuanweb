@@ -39,6 +39,7 @@
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/dialog.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/timeSyncClient.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infraredScan/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/coding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -113,8 +114,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -146,11 +154,22 @@
       <workItem from="1658699820916" duration="84000" />
       <workItem from="1658699917707" duration="35000" />
       <workItem from="1658699963348" duration="166000" />
-      <workItem from="1658700140466" duration="589000" />
+      <workItem from="1658700140466" duration="832000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
