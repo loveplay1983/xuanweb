@@ -24,20 +24,20 @@ def clickTest():
     click.echo("This is click test!")
 
 # hello
-@app.route("/")
-@app.route("/hello")
-def hello():
-    # name = request.args.get("name", "Flask")  # get(key, default)
-    # return "<h1>Hello, {}!</h1>".format(name)
-    name = request.args.get("name")
-    if name is None:
-        name = request.cookies.get("name", "Xuan")
-        response = "<h1>Hello, {}!".format(name)
-        if "logged_in" in session:
-            response += "[Authenticated]"
-        else:
-            response += "[Not Authenticated]"
-        return response
+# @app.route("/")
+# @app.route("/hello")
+# def hello():
+#     # name = request.args.get("name", "Flask")  # get(key, default)
+#     # return "<h1>Hello, {}!</h1>".format(name)
+#     name = request.args.get("name")
+#     if name is None:
+#         name = request.cookies.get("name", "Xuan")
+#         response = "<h1>Hello, {}!".format(name)
+#         if "logged_in" in session:
+#             response += "[Authenticated]"
+#         else:
+#             response += "[Not Authenticated]"
+#         return response
 
 
 
@@ -144,10 +144,80 @@ def set_cookie(a):
 #     return "<h1>Hello, {}".format(name)
 
 # User loging simulation
+import os
+app.secret_key = os.getenv("SECRET_KEY", "secret string")
+
 @app.route("/login")
 def login():
     session["logged_in"] = True
     return redirect(url_for("hello"))
 
-import os
-app.secret_key = os.getenv("SECRET_KEY", "secret string")
+# different responses based on the corresponding authentication
+@app.route("/")
+@app.route("/hello")
+def hello():
+    name = request.args.get("name")
+    if name is None:
+        name = request.cookies.get("name", "Xuan")
+        response = "<h1>Hello, {}!".format(name)
+        if "logged_in" in session:
+            response += "[Authenticated]"
+        else:
+            response += "[Not Authenticated]"
+        return response
+
+@app.route("/admin")
+def admin():
+    if "logged_in" not in session:
+        abort(403)
+    return "Welcome to admin page."
+
+@app.route("/logout")
+def logout():
+    if "logged_in" in session:
+        session.pop("logged_in")
+    return redirect(url_for("hello"))
+
+
+# return previous page
+@app.route("/a")
+def a():
+    return "<h1>A page</h1><a href='{}'>Do something</a>".format(url_for(("do_sth")))
+
+@app.route("/b")
+def b():
+    return "<h1>B page</h1><a href='{}'>Do something</a>".format(url_for(("do_sth")))
+
+@app.route("do_sth")
+def do_sth():
+    return redirect(url_for("something"))
+
+# downloading with asyc
+from jinja2.utils import generate_lorem_ipsum
+
+@app.route("/post")
+def show_post():
+    post_body = generate_lorem_ipsum(n=2)   # generate 2 paragraphs
+    return '''
+    <h1>A very long post</h1>
+    <div class="body">%s</div>
+    <button id="load">load more</button>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"</script>
+    <script type="text/javascript">
+    $(function() {
+        $("#load").click(function({
+            $.ajax({
+                url: "/more",
+                type: "get",
+                success: function(data){
+                    $(".body").append(data);
+                }
+            })
+        })
+    })
+    </script>
+    ''' % post_body
+
+
+
+
