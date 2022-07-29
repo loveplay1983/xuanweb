@@ -6,15 +6,16 @@ from flask import Flask\
     , abort\
     , make_response\
     , json\
-    , jsonify
+    , jsonify\
+    , session\
 
 
 app = Flask(__name__)
 
 # index
-@app.route("/")
-def index():
-    return "<h1>This is Flask!</h1>"
+# @app.route("/")
+# def index():
+#     return "<h1>This is Flask!</h1>"
 
 # click test
 @app.cli.command()
@@ -23,10 +24,22 @@ def clickTest():
     click.echo("This is click test!")
 
 # hello
+@app.route("/")
 @app.route("/hello")
 def hello():
-    name = request.args.get("name", "Flask")  # get(key, default)
-    return "<h1>Hello, {}!</h1>".format(name)
+    # name = request.args.get("name", "Flask")  # get(key, default)
+    # return "<h1>Hello, {}!</h1>".format(name)
+    name = request.args.get("name")
+    if name is None:
+        name = request.cookies.get("name", "Xuan")
+        response = "<h1>Hello, {}!".format(name)
+        if "logged_in" in session:
+            response += "[Authenticated]"
+        else:
+            response += "[Not Authenticated]"
+        return response
+
+
 
 # HTTP
 @app.route("/httpTest", methods=["GET", "POST"])
@@ -97,3 +110,44 @@ def note(content_type):
         abort(400)
     return response
 
+# json-dumps(), load(), and json-jsonify
+@app.route("/foo")
+def foo():
+    data = {
+        "Name": "Xuan",
+        "Gender": "Male"
+    }
+
+    response = make_response(json.dumps(data))
+    response.mimetype = "application/json"
+    return response
+
+@app.route("/fooJsonify")
+def fooJsonify():
+    return jsonify(Name="Xuan", Age="39")
+    # return jsonify({"Name": "Xuan", "Age": "39"})
+
+# cookie
+@app.route("/set/<a>")
+def set_cookie(a):
+    response = make_response(redirect(url_for("hello")))
+    response.set_cookie("cookieTest", a)
+    return response
+
+# read cookie request object
+# @app.route("/")
+# @app.route("/hello")
+# def hello():
+#     name = request.args.get("name")
+#     if name is None:
+#         name = request.cookies.get("name", "Human")
+#     return "<h1>Hello, {}".format(name)
+
+# User loging simulation
+@app.route("/login")
+def login():
+    session["logged_in"] = True
+    return redirect(url_for("hello"))
+
+import os
+app.secret_key = os.getenv("SECRET_KEY", "secret string")
