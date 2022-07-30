@@ -40,4 +40,5 @@ def watchlist():
 
 @app.route("/")
 def index():
-    return "jinja2 test"
+    # return "jinja2 test"
+    return render_template("index.html")
