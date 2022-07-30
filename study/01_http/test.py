@@ -188,7 +188,7 @@ def a():
 def b():
     return "<h1>B page</h1><a href='{}'>Do something</a>".format(url_for(("do_sth")))
 
-@app.route("do_sth")
+@app.route("/do_sth")
 def do_sth():
     return redirect(url_for("something"))
 
@@ -199,25 +199,25 @@ from jinja2.utils import generate_lorem_ipsum
 def show_post():
     post_body = generate_lorem_ipsum(n=2)   # generate 2 paragraphs
     return '''
-    <h1>A very long post</h1>
-    <div class="body">%s</div>
-    <button id="load">load more</button>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"</script>
-    <script type="text/javascript">
-    $(function() {
-        $("#load").click(function({
+<h1>A very long post</h1>
+<div class="body">%s</div>
+<button id="load">load more</button>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#load').click(function(){
             $.ajax({
-                url: "/more",
-                type: "get",
+                url: '/more',
+                type: 'get',
                 success: function(data){
-                    $(".body").append(data);
+                    $('.body').append(data);
                 }
             })
         })
-    })
-    </script>
-    ''' % post_body
+    })</script>''' % post_body
 
-
+@app.route("/more")
+def load_post():
+    return generate_lorem_ipsum(n=2)
 
 
