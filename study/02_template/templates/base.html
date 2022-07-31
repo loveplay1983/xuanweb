@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block head%}
+    {% block head %}
         <meta charset="UTF-8">
         <title>
             {% block title %} Template - Title {% endblock %}
         </title>
-        {% block style %}{% endblock %}
+        {% block styles %}{% endblock %}
     {% endblock %}
 </head>
 <body>
@@ -16,7 +16,10 @@
     </ul>
 </nav>
 <main>
-    {% block content %}
+    {% block content %} {% endblock %}
 </main>
+<footer>
+    {% block scripts %} {% endblock %}
+</footer>
 </body>
 </html>
