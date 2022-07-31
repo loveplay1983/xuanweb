@@ -108,7 +108,8 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infraredScan/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/infraredScan/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/02_template/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/02_template/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/02_template/templates/watchlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/study/02_template/templates/watchlist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,6 +215,7 @@
       <workItem from="1658915822177" duration="12255000" />
       <workItem from="1658975530548" duration="10195000" />
       <workItem from="1659093586018" duration="8986000" />
+      <workItem from="1659243834844" duration="1286000" />
     </task>
     <servers />
   </component>
