@@ -9,7 +9,7 @@ from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileRequired\
     , FileAllowed
 from wtforms import StringField, PasswordField, BooleanField\
-    , IntegerField, TextAreaField,SubmitField, MultipleFileField\
+    , IntegerField, TextAreaField,SubmitField, MultipleFileField
 from wtforms.validators import DataRequired, Length\
     , ValidationError, Email
 
@@ -81,7 +81,12 @@ class RegisterForm2(FlaskForm):
         , Length(8, 128)])
     submit=SubmitField()
 
-class
+# CKEditor Form
+class RichTextForm(FlaskForm):
+    title=StringField("Title", validators=[DataRequired()\
+        , Length(1, 50)])
+    body=CKEditorField("Body", validators=[DataRequired()])
+    submit=SubmitField("Publish")
 
 
 
