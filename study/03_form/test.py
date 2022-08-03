@@ -58,3 +58,34 @@ dropzone = Dropzone(app)
 @app.route("/", methods=["GET", "POST"])
 def index():
     return render_template("index.html")
+
+
+@app.route("/html", methods=["GET", "POST"])
+def html():
+    form = LoginForm()
+    if request.method == "POST":
+        username = request.form.get("username")
+        flash("Welcome home, {}".format(username))
+        return redirect(url_for("index"))
+    return render_template("pure_html.html")
+
+
+@app.route("/basic", methods=["GET", "POST"])
+def basic():
+    form = LoginForm()
+    if form.validate_on_submit():
+        username = form.username.data
+        flash("Welcome home, {}".form(username))
+        return redirect(url_for("index"))
+    return render_template("basic.html", form=form)
+
+@app.route("/bootstrap", methods=["GET", "POST"])
+def bootstrap():
+    form=LoginForm()
+    if form.validate_on_submit():
+        username=form.username.data
+        flash("Welcome home, {}".form(username))
+        return redirect(url_for("index"))
+    return render_template("bootstrap.html", form=form)
+
+@app.route()
