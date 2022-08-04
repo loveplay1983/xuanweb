@@ -216,11 +216,13 @@ def multi_form():
 
     return render_template("2form.html", signin_form=signin_form, register_form=register_form)
 
+
 @app.route("/multi-form-multi-view")
 def multi_form_multi_view():
-    signin_form=SigninForm2()
-    register_form=RegisterForm2()
+    signin_form = SigninForm2()
+    register_form = RegisterForm2()
     return render_template("2form2view.html", signin_form=signin_form, register_form=register_form)
+
 
 @app.route("/handle-sigin", methods=["POST"])
 def handle_sign():
@@ -232,6 +234,7 @@ def handle_sign():
         flash("{}, Signin form is submitted.".format(username))
         return redirect(url_for("index"))
     return render_template("2form2view.html", signin_form=signin_form, register_form=register_form)
+
 
 @app.route("/ckeditor", methods=["GET", "POST"])
 def integrate_ckeditor():
@@ -245,6 +248,7 @@ def integrate_ckeditor():
     # refresh the ckeditor page if the data is not validated
     return render_template("ckeditor.html", form=form)
 
+
 # handle image upload for ckeditor
 @app.route("/upload-ck", methods=["POST"])
 def upload_for_ckeditor():
@@ -254,6 +258,3 @@ def upload_for_ckeditor():
     f.save(os.path.join(app.config["UPLOAD_PATH"], f.filename))
     url = url_for("get_file", filename=f.filename)
     return upload_success(url, f.filename)
-
-
-
