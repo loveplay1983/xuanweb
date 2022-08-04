@@ -79,13 +79,180 @@ def basic():
         return redirect(url_for("index"))
     return render_template("basic.html", form=form)
 
+
 @app.route("/bootstrap", methods=["GET", "POST"])
 def bootstrap():
-    form=LoginForm()
+    form = LoginForm()
     if form.validate_on_submit():
-        username=form.username.data
+        username = form.username.data
         flash("Welcome home, {}".form(username))
         return redirect(url_for("index"))
     return render_template("bootstrap.html", form=form)
 
-@app.route()
+
+@app.route("/custom-validator", methods=["GET", "POST"])
+def custom_validator():
+    form = FortyTwoForm()
+    if form.validate_on_submit():
+        flash("Bingo!")
+        return redirect(url_for("index"))
+    return render_template("custom_validator.html", form=form)
+
+
+@app.route("/uploads/<path:filename>")
+def get_file(filename):
+    return send_from_directory(app.config["UPLOAD_PATH"], filename)
+
+
+@app.route("uploaded-images")
+def show_images():
+    return render_template("uploaded.html")
+
+
+#############################################################################
+def allowed_file(filename):
+    return "." in filename and \
+           filename.rsplit(".", 1)[1].lower() in app.config["ALLOWED_EXTENSIONS"]
+
+
+def random_filename(filename):
+    ext = os.path.splitext(filename)[1]
+    new_filename = uuid.uuid3().hex + ext
+    return new_filename
+
+
+##############################################################################
+
+@app.route("/upload", methods=["GET", "POST"])
+def upload():
+    form = UploadForm()
+    if form.validate_on_submit():
+        f = form.photo.data
+        filename = random_filename((f.filename))
+        f.save(os.path.join(app.config["UPLOAD_PATH"], filename))
+        flash("Upload success!")
+        session["filenames"] = [filename]
+        return redirect(url_for("show_images"))
+    return render_template("upload.html", form=form)
+
+
+@app.route("/multi-upload", methods=["GET", "POST"])
+def multi_upload():
+    form = MultiUploadForm()
+    if request.method == "POST":
+        filenames = []
+
+        # check csrf token
+        try:
+            validate_csrf(form.csrf_token.data)
+        except ValidationError:
+            flash("CSRF token error!")
+            return redirect(url_for("multi_upload"))
+
+        photos = request.files.getlist("photo")
+
+        # check if user has selected files, the browser will submit an empty
+        # file part without filename otherwise
+        if not photos[0].filename:
+            flash("No selected file.")
+            return redirect(url_for("multi_upload"))
+        for f in photos:
+            # check the file extension
+            if f and allowed_file(f.filename):
+                filename = random_filename(f.filename)
+                f.save(os.path.join(app.config["UPLOAD_PATH"], filename))
+                filenames.append(filename)
+            else:
+                flash("Invalid file type.")
+                return redirect(url_for("multi_upload"))
+        flash("Upload success!")
+        session['filenames'] = filenames
+        return redirect(url_for("show_images"))
+    return render_template("upload.html", form=form)
+
+
+@app.route("/dropzone-upload", methods=["GET", "POST"])
+def dropzone_upload():
+    if request.method == "POST":
+        # check the existence of file for the current post request
+        if "file" not in request.files:
+            return "This field is required.", 400
+        f = request.files.get("file")
+
+        if f and allowed_file(f.fileame):
+            filename = random_filename(f.filename)
+            f.save(os.path.join(app.config["UPLOAD_PATH"], filename))
+        else:
+            return "Invalid file type.", 400
+    return render_template("dropzone.html")
+
+
+@app.route("/two-submits", methods=["GET", "POST"])
+def two_submits():
+    form = NewPostForm()
+    if form.validate_on_submit():
+        if form.save.data:
+            flash("Save button is clicked.")  # save the content
+        elif form.publish.data:
+            flash("Publish button is clicked.")  # publish the content
+        return redirect(url_for("index"))
+    return render_template("2submit.html", form=form)
+
+
+@app.route("/multi-form", methods=["GET", "POST"])
+def multi_form():
+    signin_form = SigninForm()
+    register_form = RegisterForm()
+
+    if signin_form.submit1.data and signin_form.validate():
+        username = signin_form.username.data
+        flash("Dear {}, you just submitted the SIGNIN form".format(username))
+        return redirect(url_for("index"))
+
+    if register_form.submit2.data and register_form.validate():
+        username = register_form.username.data
+        flash("Dear {}, you just submitted the REGISTER form".format(username))
+        return redirect(url_for("index"))
+
+    return render_template("2form.html", signin_form=signin_form, register_form=register_form)
+
+@app.route("/multi-form-multi-view")
+def multi_form_multi_view():
+    signin_form=SigninForm2()
+    register_form=RegisterForm2()
+    return render_template("2form2view.html", signin_form=signin_form, register_form=register_form)
+
+@app.route("/handle-sigin", methods=["POST"])
+def handle_sign():
+    signin_form = SigninForm2()
+    register_form = RegisterForm2()
+
+    if signin_form.validate_on_submit():
+        username = signin_form.username.data
+        flash("{}, Signin form is submitted.".format(username))
+        return redirect(url_for("index"))
+    return render_template("2form2view.html", signin_form=signin_form, register_form=register_form)
+
+@app.route("/ckeditor", methods=["GET", "POST"])
+def integrate_ckeditor():
+    form = RichTextForm()
+    if form.validate_on_submit():
+        title = form.title.data
+        body = form.body.data  # The data of ckeditor editing field
+        flash("Your post is published!")
+        # render and show the page of the post-list after submit
+        return render_template("post.html", title=title, body=body)
+    # refresh the ckeditor page if the data is not validated
+    return render_template("ckeditor.html", form=form)
+
+# handle image upload for ckeditor
+@app.route("/upload-ck", methods=["POST"])
+def upload_for_ckeditor():
+    f = request.files.get("upload")
+    if not allowed_file(f.filename):
+        return upload_fail("Image only!")
+    f.save(os.path.join(app.config["UPLOAD_PATH"], f.filename))
+    url = url_for("get_file", )
+
+
+
