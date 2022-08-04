@@ -252,7 +252,8 @@ def upload_for_ckeditor():
     if not allowed_file(f.filename):
         return upload_fail("Image only!")
     f.save(os.path.join(app.config["UPLOAD_PATH"], f.filename))
-    url = url_for("get_file", )
+    url = url_for("get_file", filename=f.filename)
+    return upload_success(url, f.filename)
 
 
 
