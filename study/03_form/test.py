@@ -104,7 +104,7 @@ def get_file(filename):
     return send_from_directory(app.config["UPLOAD_PATH"], filename)
 
 
-@app.route("uploaded-images")
+@app.route("/uploaded-images")
 def show_images():
     return render_template("uploaded.html")
 

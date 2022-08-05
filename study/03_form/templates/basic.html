@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Basic Form</h2>
+
+<form methods="post">
+    {{ form.csrf_token }}
+    {{ form.username.label }}<br>
+    {{ form.username }}<br>
+    {% if form.username.errors %}
+        {% for message in form.username.erros %}
+        <small class="error">{{ message }}</small><br>
+        {% endfor %}
+    {% endif %}
+    {{ form.password.label }}<br>
+    {{ form.password }}<br>
+    {% if form.password.errors %}}
+        {% for message in form.password.erros %}
+        {}
+
+    {% endif %}
+
+
+
+</form>
+
+
+
+{% endblock%}
