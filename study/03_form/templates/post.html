@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    {{ ckeditor.load_code_theme() }}
+{% endblock %}
+
+{% %}
