@@ -4,5 +4,6 @@
     {% if field.erros -%}
         {% for error in field.errors -%}
             <small class="error">{{ error }}</small><br>
-        {%- endfor% }
+        {%- endfor %}
+    {% endif %}
 {% endmacro %}

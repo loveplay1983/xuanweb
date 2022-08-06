@@ -22,7 +22,7 @@ from flask_ckeditor import CKEditor, upload_success \
 from flask_dropzone import Dropzone
 from flask_wtf.csrf import validate_csrf
 from wtforms import ValidationError
-from forms import LoginForm, FortyTwoForm, NewPostForm, UploadForm, MultiUploadForm, SigninForm \
+from .forms import LoginForm, FortyTwoForm, NewPostForm, UploadForm, MultiUploadForm, SigninForm \
     , RegisterForm, SigninForm2, RegisterForm2, RichTextForm
 
 app = Flask(__name__)
@@ -38,7 +38,7 @@ app.config["ALLOWED_EXTENSIONS"] = ["png", "jpg", "jpeg", "gif"]
 
 # Flask config
 # set request body's max length - 3MB
-# app.config["MAX_CONTENT_LENGTH"]=3*1024*1024
+app.config["MAX_CONTENT_LENGTH"]=3*1024*1024
 
 # Flask-CKEditor config
 app.config["CKEDITOR_SERVE_LOCAL"] = True
