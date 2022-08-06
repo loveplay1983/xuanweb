@@ -4,7 +4,7 @@
 
 <h2>Basic Form</h2>
 
-<form methods="post">
+<form method="post">
     {{ form.csrf_token }}
     {{ form.username.label }}<br>
     {{ form.username }}<br>
@@ -24,3 +24,6 @@
     {{ form.submit }}<br>
 </form>
 {% endblock%}
+
+{% block footer %}{% endblock %}
+

@@ -67,7 +67,7 @@ def html():
         username = request.form.get("username")
         flash("Welcome home, {}".format(username))
         return redirect(url_for("index"))
-    return render_template("pure_html.html")
+    return render_template("pure_html.html", form=form)
 
 
 @app.route("/basic", methods=["GET", "POST"])
@@ -75,7 +75,7 @@ def basic():
     form = LoginForm()
     if form.validate_on_submit():
         username = form.username.data
-        flash("Welcome home, {}".form(username))
+        flash("Welcome home, {}".format(username))
         return redirect(url_for("index"))
     return render_template("basic.html", form=form)
 
@@ -117,7 +117,7 @@ def allowed_file(filename):
 
 def random_filename(filename):
     ext = os.path.splitext(filename)[1]
-    new_filename = uuid.uuid3().hex + ext
+    new_filename = uuid.uuid4().hex + ext
     return new_filename
 
 
