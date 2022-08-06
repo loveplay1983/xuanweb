@@ -22,7 +22,7 @@ from flask_ckeditor import CKEditor, upload_success \
 from flask_dropzone import Dropzone
 from flask_wtf.csrf import validate_csrf
 from wtforms import ValidationError
-from .forms import LoginForm, FortyTwoForm, NewPostForm, UploadForm, MultiUploadForm, SigninForm \
+from forms import LoginForm, FortyTwoForm, NewPostForm, UploadForm, MultiUploadForm, SigninForm \
     , RegisterForm, SigninForm2, RegisterForm2, RichTextForm
 
 app = Flask(__name__)
@@ -85,7 +85,7 @@ def bootstrap():
     form = LoginForm()
     if form.validate_on_submit():
         username = form.username.data
-        flash("Welcome home, {}".form(username))
+        flash("Welcome home, {}".format(username))
         return redirect(url_for("index"))
     return render_template("bootstrap.html", form=form)
 
