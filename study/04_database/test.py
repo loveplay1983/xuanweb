@@ -121,4 +121,6 @@ def edit_note(note_id):
         db.session.commit()
         flash("Your note is updated.")
         return redirect(url_for("index"))
-    form.body.data = note.body
+    form.body.data = note.body # Preset or display the current note
+    return render_template("edit_note.html", form=form)
+
