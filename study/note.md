@@ -15,3 +15,16 @@
   > command line or SQLite API on other 
   > programming languages to use SQLite database. 
   > SQLite has a graphical front end SQLite Browser for working with SQLite databases graphically.
+  
+* [shell_context_processor](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database/page/0)
+
+* [%r vs %s in python](https://stackoverflow.com/questions/6005159/when-to-use-r-instead-of-s-in-python)
+  > The %s specifier converts the object using str(), and %r converts it using repr().
+  
+* [format r(repr) of print in python3](https://stackoverflow.com/questions/33337564/format-rrepr-of-print-in-python3)
+  ```
+  print('you say:{0!r}'.format("i love you"))
+  you say:'i love you'
+  ```
+  
+* 
