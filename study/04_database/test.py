@@ -136,14 +136,17 @@ def edit_note(note_id):
     return render_template("edit_note.html", form=form)
 
 
-@app.route('/delete/<int:note_id>', methods=['POST'])
+@app.route("/delete/<int:note_id>", methods=["POST"])
 def delete_note(note_id):
     form = DeleteNoteForm()
     if form.validate_on_submit():
         note = Note.query.get(note_id)
         db.session.delete(note)
         db.session.commit()
-        flash('Your note is deleted.')
+        flash("Your note is deleted.")
     else:
         abort(400)
-    return redirect(url_for('index'))
+    return redirect(url_for("index"))
+
+
+@app.route("")
