@@ -74,7 +74,7 @@ class DeleteNoteForm(Flask):
     submit = SubmitField("Delete")
 
 
-# Models - Tables
+# Models - database table
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.Text)
@@ -92,7 +92,33 @@ def index():
     return render_template("index.html", notes=notes \
                            , form=form)
 
+
 @app.route("/new", methods=["GET", "POST"])
 def new_note():
     form = NewNoteForm()
     if form.validate_on_submit():
+        """
+        Write content into to the database 
+        if there exists valid input data, 
+        then return back to index page
+        """
+        body = form.body.data  # Generate text body from form input
+        note = Note(body=body)  # Pass the text data to model
+        db.session.add(note)  # Write the data into database
+        db.session.commit()
+        flash("Your note is saved.")
+        return redirect(url_for("index"))
+    # Display the new_note page
+    return render_template("new_note.html", form=form)
+
+
+@app.route("/edit/<int:note_id>", methods=["GET", "POST"])
+def edit_note(note_id):
+    form = EditNoteForm()
+    note = Note.query.get(note_id)
+    if form.validate_on_submit():
+        note.body = form.body.data
+        db.session.commit()
+        flash("Your note is updated.")
+        return redirect(url_for("index"))
+    form.body.data = note.body
