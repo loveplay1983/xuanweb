@@ -220,6 +220,20 @@ class Song(db.Model):
         return '<Song {0!r}>'.format(self.name)
 
 
+# Cascade
+class Post(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(50))
+    body = db.Column(db.Text)
+    comments = db.relationship("Comment", back_populates="post" \
+                               , cascade="all, delete-orphan")
+
+
+class Comment(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    body = db.Column(db.Text)
+    post_id = db.Column(db.Integer, db.ForeignKey("post.id"))
+    post = db.relationship("Post", back_populates="comments")
 
 
 # routes and view functions
@@ -274,3 +288,21 @@ def delete_note(note_id):
     else:
         abort(400)
     return redirect(url_for("index"))
+
+
+# Event listening
+class Draft(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    body = db.Column(db.Text)
+    edit_time = db.Column(db.Integer, default=0)
+
+@db.event.listens_for(Draft.body, "set")
+def increment_edit_time(target, value, oldvalue, initiator):
+    if target.edit_time is not None:
+        target.edit_time += 1
+
+# same with:
+# @db.event.listens_for(Draft.body, 'set', named=True)
+# def increment_edit_time(**kwargs):
+#     if kwargs['target'].edit_time is not None:
+#         kwargs['target'].edit_time += 1
