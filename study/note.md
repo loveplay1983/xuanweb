@@ -1,3 +1,5 @@
+# Will add categorization later 
+
 * [jinja2 super()](https://jinja.palletsprojects.com/en/3.1.x/templates/?highlight=super)
     > It’s possible to render the contents of the parent 
     > block by calling super(). This gives back the results 
@@ -27,4 +29,5 @@
   you say:'i love you'
   ```
   
-* 
+* [index vs primary key](https://sqlwithmanoj.com/2015/08/10/difference-between-index-and-primary-key-msdn-tsql-forum/#:~:text=The%20primary%20key%20are%20the,define%20rules%20for%20the%20table.)
+  > An index is a physical concept and serves as a means to locate rows faster, but is not intended to define rules for the table.
