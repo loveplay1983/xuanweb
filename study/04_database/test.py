@@ -38,10 +38,10 @@ db = SQLAlchemy(app)
 
 
 # Handlers
-@app.shell_context_processors
+@app.shell_context_processor
 def make_shell_context():
     return dict(db=db, Note=Note, Author=Author, Article=Article, \
-                Writer=Writer, Book=Book, Singer=Singer, SOng=Song, \
+                Writer=Writer, Book=Book, Singer=Singer, Song=Song, \
                 Citizen=Citizen, City=City, Capital=Capital, \
                 Country=Country, Teacher=Teacher, Student=Student, \
                 Post=Post, Comment=Comment, Draft=Draft)
@@ -158,7 +158,7 @@ association_table = db.Table("association" \
 
 
 class Student(db.Model):
-    id = db.Column(db.Integer, primeary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(70), unique=True)
     grade = db.Column(db.String(20))
     teachers = db.relationship("Teacher" \
@@ -170,7 +170,7 @@ class Student(db.Model):
 
 
 class Teacher(db.Model):
-    id = db.Column(db.Integer, primeary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(70), unique=True)
     office = db.Column(db.String(20))
     student = db.relationship("Student" \
@@ -295,6 +295,7 @@ class Draft(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.Text)
     edit_time = db.Column(db.Integer, default=0)
+
 
 @db.event.listens_for(Draft.body, "set")
 def increment_edit_time(target, value, oldvalue, initiator):
