@@ -144,6 +144,7 @@ class Capital(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30), unique=True)
     country_id = db.Column(db.Integer, db.ForeignKey("country.id"))
+    country = db.relationship('Country', back_populates='capital')
 
     def __repr__(self):
         return "<Capital {0!r}>".format(self.name)
@@ -180,6 +181,43 @@ class Teacher(db.Model):
         return "<Teacher {0!r}>".format(self.name)
 
 
+# one to many, bidirectional relationship
+class Writer(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), unique=True)
+    books = db.relationship("Book", back_populates="writer")
+
+    def __repr__(self):
+        return "<Writer {0!r}>".format(self.name)
+
+
+class Book(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), index=True)
+    writer_id = db.Column(db.Integer, db.ForeignKey("writer.id"))
+    writer = db.relationship("Writer", back_populates="books")
+
+    def __repr__(self):
+        return "<Book {0!r}>".format(self.name)
+
+
+# one to many, bidirectional relationship - backref instead of collection
+class Singer(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(70), unique=True)
+    songs = db.relationship("Song", backref="singer")
+
+    def __repr__(self):
+        return '<Singer {0!r}>'.format(self.name)
+
+
+class Song(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), unique=True)
+    singer_id = db.Column(db.Integer, db.ForeignKey("singer.id"))
+
+    def __repr__(self):
+        return '<Song {0!r}>'.format(self.name)
 
 
 
