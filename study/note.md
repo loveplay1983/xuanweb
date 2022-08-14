@@ -1,5 +1,7 @@
 # Will add categorization later 
 
+* # [flask tutorial](https://www.youtube.com/watch?v=KrRzZGcHjK8&list=PLXmMXHVSvS-BlLA5beNJojJLlpE0PJgCW&index=9)
+
 * [jinja2 super()](https://jinja.palletsprojects.com/en/3.1.x/templates/?highlight=super)
     > It’s possible to render the contents of the parent 
     > block by calling super(). This gives back the results 
@@ -46,5 +48,12 @@
   SQLALCHEMY_BINDS = {
   'db1':        'mysqldb://localhost/users',
   'db2':      'sqlite:////path/to/appmeta.db'
-}
+  }
   ```
+  
+
+* [different sql join](https://www.w3schools.com/sql/sql_join.asp#:~:text=LEFT%20(OUTER)%20JOIN%20%3A%20Returns,either%20left%20or%20right%20table)
+  * (INNER) JOIN: Returns records that have matching values in both tables
+  * LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+  * RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+  * FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table

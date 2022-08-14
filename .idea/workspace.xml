@@ -107,7 +107,8 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/04_database/test_.db" beforeDir="false" afterPath="$PROJECT_DIR$/study/04_database/test_.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/study/note.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +243,7 @@
       <workItem from="1660043053239" duration="4327000" />
       <workItem from="1660048197846" duration="1947000" />
       <workItem from="1660394698684" duration="7355000" />
-      <workItem from="1660456294686" duration="768000" />
+      <workItem from="1660456294686" duration="4203000" />
     </task>
     <servers />
   </component>
