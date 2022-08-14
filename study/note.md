@@ -31,3 +31,20 @@
   
 * [index vs primary key](https://sqlwithmanoj.com/2015/08/10/difference-between-index-and-primary-key-msdn-tsql-forum/#:~:text=The%20primary%20key%20are%20the,define%20rules%20for%20the%20table.)
   > An index is a physical concept and serves as a means to locate rows faster, but is not intended to define rules for the table.
+  
+* # [multiple db connection with raw sql](https://stackoverflow.com/questions/41290675/run-sql-in-several-different-databases-with-flask-sqlalchemy) 
+  ```
+  engine_db1 = db.get_engine(app, 'db1')
+  engine_db2 = db.get_engine(app, 'db2')
+  sql = text("SHOW TABLES")
+  results_db1 = engine_db1.execute(sql)
+  results_db2 = engine_db2.execute(sql)
+  ```
+  # [multi-db with bind - sqlalchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/binds/#binds)
+  ```
+  SQLALCHEMY_DATABASE_URI = 'postgres://localhost/main'
+  SQLALCHEMY_BINDS = {
+  'db1':        'mysqldb://localhost/users',
+  'db2':      'sqlite:////path/to/appmeta.db'
+}
+  ```
