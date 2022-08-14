@@ -2,12 +2,16 @@
 <html>
 <head>
     {% block head %}
-    <meta charset="utf-8">
-    <title>{% block title %}Database - Test{% endblock %}</title>
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='xuan.png') }}">
-    {% block styles %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css' ) }}">
-    {% endblock %}
+        <meta charset="utf-8">
+        <title>
+            {% block title %}
+                Database - Test
+            {% endblock %}
+        </title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='xuan.png') }}">
+        {% block styles %}
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css' ) }}">
+        {% endblock %}
     {% endblock %}
 </head>
 <body>
