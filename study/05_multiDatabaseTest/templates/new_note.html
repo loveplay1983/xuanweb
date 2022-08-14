@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% from "macro.html" import form_field %}
+
+{% block content %}
+<h2>New Note</h2>
+<form method="post">
+    {{ form.csrf_token }}
+    {{ form_field(form.body, rows=20, cols=90) }}
+    {{ form.submit }}<br>
+</form>
+{% endblock %}
