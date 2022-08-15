@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
 app = Flask(__name__)
+app.config["SQLALCHEMY_DATABASE_URI"]="sqlite:////blog.db"
 
 
 @app.route("/")
@@ -21,6 +24,7 @@ def post():
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
+
 
 @app.route('/add')
 def add():
