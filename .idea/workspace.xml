@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="762a4038-c6fa-41b5-8ee7-89a2763f05cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/static/aboutBg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/static/postBg.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/.flaskenv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/commands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/erros.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/blog.db" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/blog.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleBlog/templates/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +142,7 @@
       <workItem from="1659693072297" duration="19829000" />
       <workItem from="1660043053239" duration="4327000" />
       <workItem from="1660048197846" duration="1947000" />
-      <workItem from="1660531018889" duration="12002000" />
+      <workItem from="1660531018889" duration="12317000" />
     </task>
     <servers />
   </component>
