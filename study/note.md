@@ -59,3 +59,5 @@
   * FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
 
 * [HTTP](https://www.tutorialspoint.com/http/http_quick_guide.htm)
+
+* [HTML entities](https://www.w3schools.com/charsets/ref_html_entities_4.asp)

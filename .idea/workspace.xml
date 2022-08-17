@@ -39,10 +39,6 @@
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/dialog.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/timeSyncClient.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/tempaltes/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/tempaltes/errors/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/tempaltes/errors/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/tempaltes/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/coding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -111,9 +107,9 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/study/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/study/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/tempaltes/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard/tempaltes/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +250,7 @@
       <workItem from="1660048197846" duration="1947000" />
       <workItem from="1660531018889" duration="12317000" />
       <workItem from="1660733363045" duration="5170000" />
-      <workItem from="1660770477458" duration="1361000" />
+      <workItem from="1660770477458" duration="2945000" />
     </task>
     <servers />
   </component>
