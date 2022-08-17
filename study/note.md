@@ -57,3 +57,5 @@
   * LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
   * RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
   * FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+
+* [HTTP](https://www.tutorialspoint.com/http/http_quick_guide.htm)
