@@ -7,7 +7,7 @@
         Simple Message Board
         {% endblock %}
     </title>
-    <link rel="icon" href="{{ url_for('static'), filename='xuan.png'}}">
+    <link rel="icon" href="{{ url_for('static', filename='xuan.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 </head>
@@ -31,7 +31,7 @@
         <small> &copy; 2022 <a href="https://github.com/loveplay1983" title="Fork me on GitHub">Xuans' Git</a> /
             <a href="https://github.com/loveplay1983/xuanweb" title="Flask test project">Flask Study</a>
         </small>
-        <p><a id="bottom" href="#" title="Go Top"></a></p>
+        <p><a id="bottom" href="#" title="Go Top">&uarr;</a></p>
         {% endblock %}
     </footer>
 </main>
