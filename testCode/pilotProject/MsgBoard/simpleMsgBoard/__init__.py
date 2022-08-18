@@ -20,4 +20,4 @@ db = SQLAlchemy(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
 
-from simpleMsgBoard import views, erros, commands, forms
+from simpleMsgBoard import commands, errors, forms, views

@@ -1,0 +1,2 @@
+FLASK_APP=simpleMsgBoard
+FLASK_ENV=development
