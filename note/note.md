@@ -61,3 +61,7 @@
 * [HTTP](https://www.tutorialspoint.com/http/http_quick_guide.htm)
 
 * [HTML entities](https://www.w3schools.com/charsets/ref_html_entities_4.asp)
+
+* [flask-bootstrap vs bootstrap-flask](https://www.reddit.com/r/flask/comments/mrjnnu/flaskbootstrap_or_bootstrapflask/)
+  * [flask0bootstrap](https://pythonhosted.org/Flask-Bootstrap/basic-usage.html#)
+  * [bootstrap-flask](https://bootstrap-flask.readthedocs.io/en/stable/basic/#starter-template)
