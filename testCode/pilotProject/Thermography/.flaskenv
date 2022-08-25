@@ -1,1 +1,3 @@
-# to-do
+FLASK_APP=MedicalInfraredImaging
+#FLASK_ENV=development
+FLASK_DEBUG=1
