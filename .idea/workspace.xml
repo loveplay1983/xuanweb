@@ -39,9 +39,6 @@
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/dialog.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/timeSyncClient.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/.flaskenv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/test.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/coding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -110,8 +107,15 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/.env" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/.flaskenv" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/.flaskenv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +264,7 @@
       <workItem from="1661251514319" duration="5867000" />
       <workItem from="1661342135054" duration="6756000" />
       <workItem from="1661414594345" duration="4665000" />
-      <workItem from="1661425033258" duration="3543000" />
+      <workItem from="1661425033258" duration="3981000" />
     </task>
     <servers />
   </component>
