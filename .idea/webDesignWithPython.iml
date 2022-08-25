@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/testCode/pilotProject/MsgBoard/simpleMsgBoard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/testCode/pilotProject/MsgBoard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/testCode/demos/bluelog-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/testCode/pilotProject/Thermography" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
