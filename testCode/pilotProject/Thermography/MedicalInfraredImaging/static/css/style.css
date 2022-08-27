@@ -1,11 +1,53 @@
-.program_title{
+.program_title {
     text-align: justify;
     font-size: 2.4em;
     color: #e1e9ff;
     font-weight: bold;
 }
 
-#datetime{
+#datetime {
     color: #e1e9ff;
-    font-weight:bold;
+    font-weight: bold;
+}
+
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Home {
+    background-color: red;
+}
+
+#News {
+    background-color: green;
+}
+
+#Contact {
+    background-color: blue;
+}
+
+#About {
+    background-color: orange;
 }
