@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% block head %}
     <meta charset="UTF-8">
     <title>
       {% block title %}
@@ -8,16 +9,29 @@
       {% endblock %}
     </title>
     <link rel="icon" href="{{ url_for('static', filename='xuan.png') }}">
+     <link rel="stylesheet"
+              href="{{ url_for('static', filename='css/%s.min.css' % request.cookies.get('theme', 'perfect_blue')) }}"
+              type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    {% endblock head %}
 </head>
 <body>
-<main class="container">
-    <header>
-        <h1 class="text-center display-4">
-            <strong>Test</strong>
-        </h1>
-    </header>
-</main>
+{% block nav %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="nav navbar-nav ml-auto" id="datetime"></div>
+    </nav>
+
+
+{% endblock nav %}
+
+
+<!--<main class="container">-->
+<!--    <header>-->
+<!--        <h1 class="text-center display-4">-->
+<!--            <strong>Test</strong>-->
+<!--        </h1>-->
+<!--    </header>-->
+<!--</main>-->
 
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
