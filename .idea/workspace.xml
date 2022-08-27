@@ -39,7 +39,8 @@
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/dialog.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/timeSyncClient.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/css/perfect_blue.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/coding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -109,10 +110,8 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/main.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/test/web/html/DateTime.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/test/web/html/DateTime.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/test/web/js/datatime.js" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/test/web/js/datatime.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +124,7 @@
         <option value="Python Script" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -157,19 +157,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/css" />
       <recent name="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates" />
       <recent name="$PROJECT_DIR$/note" />
       <recent name="$PROJECT_DIR$/testCode/pilotProject/simpleMsgBoard" />

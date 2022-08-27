@@ -1,0 +1,11 @@
+.program_title{
+    text-align: justify;
+    font-size: 2.4em;
+    color: #e1e9ff;
+    font-weight: bold;
+}
+
+#datetime{
+    color: #e1e9ff;
+    font-weight:bold;
+}

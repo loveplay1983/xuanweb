@@ -13,11 +13,17 @@
               href="{{ url_for('static', filename='css/%s.min.css' % request.cookies.get('theme', 'perfect_blue')) }}"
               type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css">
     {% endblock head %}
 </head>
 <body>
 {% block nav %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="nav navbar-nav">
+            <img src="{{ url_for('static', filename='icon.png')}}"
+                 alt="Main Icon" width="100" height="60">
+        </div>
+        <p class="program_title">红外热成像数据收集与分析V1.0</p>
         <div class="nav navbar-nav ml-auto" id="datetime"></div>
     </nav>
 
