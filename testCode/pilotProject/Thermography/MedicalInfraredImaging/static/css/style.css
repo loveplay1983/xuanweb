@@ -1,12 +1,12 @@
 .program_title {
     text-align: justify;
     font-size: 2.4em;
-    color: #e1e9ff;
+    color: #3B5180;
     font-weight: bold;
 }
 
 #datetime {
-    color: #e1e9ff;
+    color: #3B5180;
     font-weight: bold;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .tablink:hover {
-    background-color: #777;
+    background-color: #DDCA8A;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -36,20 +36,12 @@
     height: 100%;
 }
 
-#Home {
-    background-color: red;
+#collect {
+    background-color: #337C4A;
 }
 
-#News {
-    background-color: green;
-}
-
-#Contact {
-    background-color: blue;
-}
-
-#About {
-    background-color: orange;
+#clinic {
+    background-color: #3B5180;
 }
 
 .navbar{
