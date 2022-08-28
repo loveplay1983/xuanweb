@@ -34,13 +34,13 @@
     <button class="tablink" onclick="openPage('clinic', this, '#3B5180')">诊断分析</button>
 
     <div id="collect" class="tabcontent">
-        <h3>Home</h3>
-        <p class="test">test</p>
+        <h1>Test</h1>
+        {%  block collect %}{% endblock %}
     </div>
 
     <div id="clinic" class="tabcontent">
-        <h3>News</h3>
-        <p>Some news this fine day!</p>
+        <h1>Test</h1>
+        {% block clinic %}{% endblock %}
     </div>
 </div>
 {% endblock main %}
