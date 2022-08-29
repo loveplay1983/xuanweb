@@ -127,3 +127,6 @@
   <!--    </fieldset>-->
   <!--</form>-->
   ```
+  
+* [js, html code examples](https://codepen.io/)
+* [js, html code playground](https://jsfiddle.net/)
