@@ -83,3 +83,47 @@
 * [center anything in html](https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/)
 
 * [multiple forms in the same line](https://stackoverflow.com/questions/69601722/does-wtforms-integer-field-force-a-new-line-when-displayed-on-webpage)
+  ```
+  <!--<form method="get">-->
+  <!--    <fieldset class="field-set-collect">-->
+  <!--        <legend>病员信息</legend>-->
+  <!--        {{ form.csrf_token }}-->
+  <!--        <div class="container">-->
+  <!--            <div class="row">-->
+  <!--                <div class="col">-->
+  <!--                    {{ form.patientNum.label }}-->
+  <!--                    {{ form.patientNum }}-->
+  <!--                </div>-->
+  <!--                <div class="col">-->
+  <!--                    {{ form.patientName.label }}-->
+  <!--                    {{ form.patientName }}-->
+  <!--                </div>-->
+  <!--                <div class="col">-->
+  <!--                    {{ form.patientSex.label }}-->
+  <!--                    {{ form.patientSex }}-->
+  <!--                </div>-->
+  <!--                <div class="col">-->
+  <!--                    {{ form.patientBorn.label }}-->
+  <!--                    {{ form.patientBorn }}-->
+  <!--                </div>-->
+  <!--                <div class="w-100"></div>-->
+  <!--                <div class="col">-->
+  <!--                    {{ form.patientID.label }}-->
+  <!--                    {{ form.patientID }}-->
+  <!--                </div>-->
+  <!--                <div class="col">-->
+  <!--                    {{ form.patientPhone.label }}-->
+  <!--                    {{ form.patientPhone }}-->
+  <!--                </div>-->
+  <!--                <div class="col">-->
+  <!--                    {{ form.patientAddr.label }}-->
+  <!--                    {{ form.patientAddr }}-->
+  <!--                </div>-->
+  <!--                <div id="submit-collect">-->
+  <!--                    {{ form.patientSearch }}-->
+  <!--                </div>-->
+  <!--            </div>-->
+  <!--        </div>-->
+  <!--    </fieldset>-->
+  <!--</form>-->
+  ```

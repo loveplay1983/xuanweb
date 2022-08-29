@@ -47,13 +47,13 @@
 
 .navbar {
     margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .main {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 form fieldset legend {
@@ -61,11 +61,14 @@ form fieldset legend {
     font-size: 30px;
     width: auto;
     margin: 0 auto;
+    /*padding: 50px;*/
 }
 
 .field-set-collect {
     border: solid thin;
     color: black;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 /* submit collect*/
@@ -75,6 +78,21 @@ form fieldset legend {
     /* Center horizontally*/
     margin: 0 auto;
 }
+
+/* display table*/
+/*.display-table{*/
+/*    display: table;*/
+/*    margin-left: 100px;*/
+/*}*/
+
+/*.display-row{*/
+/*    display: table-row;*/
+/*}*/
+
+/*.display-cell{*/
+/*    display: table-cell;*/
+/*}*/
+
 
 /* footer*/
 footer {
@@ -86,3 +104,4 @@ footer {
     padding: 10px;
 
 }
+

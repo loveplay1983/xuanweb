@@ -1,23 +1,74 @@
 {% extends "base.html" %}
 
 {% block collect %}
+<!--<form method="get">-->
+<!--    <fieldset class="field-set-collect">-->
+<!--        <legend>病员信息</legend>-->
+<!--        {{ form.csrf_token }}-->
+<!--        <div class="display-table">-->
+<!--            <div class="display-row">-->
+<!--                <div class="display-cell">-->
+<!--                    {{ form.patientNum.label }}-->
+<!--                    {{ form.patientNum }}-->
+<!--                    {{ form.patientName.label }}-->
+<!--                    {{ form.patientName }}-->
+<!--                    {{ form.patientSex.label }}-->
+<!--                    {{ form.patientSex }}-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="display-row">-->
+<!--                <div class="display-cell">-->
+<!--                    {{ form.patientID.label }}-->
+<!--                    {{ form.patientID }}-->
+<!--                    {{ form.patientPhone.label }}-->
+<!--                    {{ form.patientPhone }}-->
+<!--                    {{ form.patientAddr.label }}-->
+<!--                    {{ form.patientAddr }}-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div id="submit-collect">-->
+<!--            {{ form.patientSearch }}-->
+<!--        </div>-->
+<!--    </fieldset>-->
+<!--</form>-->
 
 <form method="get">
     <fieldset class="field-set-collect">
         <legend>病员信息</legend>
-        <div class="collect">
-            {{ form.csrf_token }}
-            {{ form.patientNum.label }}
-            {{ form.patientNum }} <br>
-            {{ form.patientName.label }}
-            {{ form.patientName }} <br>
-            {{ form.patientSex.label }}
-            {{ form.patientSex }} <br>
+        {{ form.csrf_token }}
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {{ form.patientNum.label }}
+                    {{ form.patientNum }}
+                </div>
+                <div class="col">
+                    {{ form.patientName.label }}
+                    {{ form.patientName }}
+                </div>
+                <div class="col">
+                    {{ form.patientSex.label }}
+                    {{ form.patientSex }}
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    {{ form.patientID.label }}
+                    {{ form.patientID }}
+                </div>
+                <div class="col">
+                    {{ form.patientPhone.label }}
+                    {{ form.patientPhone }}
+                </div>
+                <div class="col">
+                    {{ form.patientAddr.label }}
+                    {{ form.patientAddr }}
+                </div>
+            </div>
             <div id="submit-collect">
                 {{ form.patientSearch }}
             </div>
         </div>
     </fieldset>
 </form>
-
 {% endblock %}
