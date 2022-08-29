@@ -37,7 +37,6 @@
 }
 
 #collect {
-    /*background-color: #337C4A;*/
     background-color: #41A290;
 }
 
@@ -67,7 +66,7 @@ form fieldset legend {
 .field-set-collect {
     border: solid thin;
     color: black;
-    width: 1200px;
+    width: auto;
     margin: 0 auto;
 }
 

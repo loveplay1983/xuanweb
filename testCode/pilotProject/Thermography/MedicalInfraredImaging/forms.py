@@ -23,6 +23,14 @@ class PatientForm(FlaskForm):
     patientSearch = SubmitField("检索")
 
 
+class CollectForm(FlaskForm):
+    pass
+
+
+class FirstClinic(FlaskForm):
+    pass
+
+
 class ClinicForm(FlaskForm):
     clinicNum = IntegerField("就诊号", validators=[DataRequired()])
     clinicName = StringField("姓名")
@@ -31,3 +39,5 @@ class ClinicForm(FlaskForm):
     clinicPhone = IntegerField("电话")
     clinicAddr = StringField("地址")
     clinicSearch = SubmitField("检索")
+
+
