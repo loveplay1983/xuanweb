@@ -14,9 +14,22 @@ from wtforms.validators import DataRequired, Length, ValidationError, Email
 
 
 class PatientForm(FlaskForm):
-    clinicNum = IntegerField("门诊号", validators=[DataRequired()])
+    patientNum = StringField("门诊号", validators=[DataRequired()])
     patientName = StringField("姓名")
     patientSex = StringField("性别", validators=[Length(1)])
-    patientPhone = IntegerField("电话")
+    patientBorn = StringField("出生日期")
+    patientID = StringField("身份证")
+    patientPhone = StringField("电话")
     patientAddr = StringField("地址")
-    patientID = IntegerField("身份证")
+    patientSearch = SubmitField("检索")
+
+
+class ClinicForm(FlaskForm):
+    clinicNum = IntegerField("就诊号", validators=[DataRequired()])
+    clinicName = StringField("姓名")
+    clinicSex = StringField("性别", validators=[Length(1)])
+    clinicBorn = StringField("出生日期")
+    clinicID = IntegerField("身份证")
+    clinicPhone = IntegerField("电话")
+    clinicAddr = StringField("地址")
+    clinicSearch = SubmitField("检索")

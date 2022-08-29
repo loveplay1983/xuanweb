@@ -65,3 +65,20 @@
 * [flask-bootstrap vs bootstrap-flask](https://www.reddit.com/r/flask/comments/mrjnnu/flaskbootstrap_or_bootstrapflask/)
   * [flask0bootstrap](https://pythonhosted.org/Flask-Bootstrap/basic-usage.html#)
   * [bootstrap-flask](https://bootstrap-flask.readthedocs.io/en/stable/basic/#starter-template)
+
+
+# HTML
+* [center legend of fieldset](https://stackoverflow.com/questions/4006824/how-to-center-the-legend-element-what-to-use-instead-of-aligncenter-attribu)
+  ```
+  legend {
+    margin:0 auto;
+  }
+  ```
+  
+* [fieldset's top border not showing up](https://stackoverflow.com/questions/42413681/fieldsets-top-border-not-showing-up)
+  ```
+  width:auto;
+  ```
+
+*[center anything in html](https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/)
+

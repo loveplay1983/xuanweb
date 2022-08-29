@@ -24,7 +24,7 @@ nav li {
     float: left;
 }
 
-nav li a {
+nav li a {]
     display: block;
     color: white;
     text-align: center;
@@ -41,7 +41,7 @@ main {
 }
 
 footer {
-    font-size: 13px;
+    font-size: 13px;7
     color: #888;
     border-top: 1px solid #eee;
     margin-top: 25px;

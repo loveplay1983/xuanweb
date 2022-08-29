@@ -37,24 +37,52 @@
 }
 
 #collect {
-    background-color: #337C4A;
+    /*background-color: #337C4A;*/
+    background-color: #41A290;
 }
 
 #clinic {
     background-color: #3B5180;
 }
 
-.navbar{
+.navbar {
     margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
 }
 
-.main{
+.main {
     margin-left: 30px;
     margin-right: 30px;
 }
 
-.test{
-    display:block;
+form fieldset legend {
+    color: #180638;
+    font-size: 30px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.field-set-collect {
+    border: solid thin;
+    color: black;
+}
+
+/* submit collect*/
+#submit-collect {
+    width: 50px;
+    height: 40px;
+    /* Center horizontally*/
+    margin: 0 auto;
+}
+
+/* footer*/
+footer {
+    font-size: 13px;
+    color: #888;
+    border-top: 1px solid #eee;
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px;
+
 }

@@ -1,3 +1,23 @@
 {% extends "base.html" %}
 
+{% block collect %}
 
+<form method="get">
+    <fieldset class="field-set-collect">
+        <legend>病员信息</legend>
+        <div class="collect">
+            {{ form.csrf_token }}
+            {{ form.patientNum.label }}
+            {{ form.patientNum }} <br>
+            {{ form.patientName.label }}
+            {{ form.patientName }} <br>
+            {{ form.patientSex.label }}
+            {{ form.patientSex }} <br>
+            <div id="submit-collect">
+                {{ form.patientSearch }}
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+{% endblock %}
