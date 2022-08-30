@@ -8,11 +8,6 @@
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/widget.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/widget.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/widget.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/componentCheck.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/mainwindow.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/mainwindow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/mainwindow.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/datetimeEdit.pro" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/note" afterDir="false" />
@@ -112,8 +107,7 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/note/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/03_form/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/study/03_form/static/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +138,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AI/anaconda/anaconda3/envs/web/lib/python3.9/site-packages/flask/templating.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -293,7 +290,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/webDesignWithPython$test.coverage" NAME="test Coverage Results" MODIFIED="1658926674836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/infraredScan" />
     <SUITE FILE_PATH="coverage/webDesignWithPython$exam.coverage" NAME="exam Coverage Results" MODIFIED="1658926724784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCode" />
+    <SUITE FILE_PATH="coverage/webDesignWithPython$test.coverage" NAME="test Coverage Results" MODIFIED="1658926674836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/infraredScan" />
   </component>
 </project>
