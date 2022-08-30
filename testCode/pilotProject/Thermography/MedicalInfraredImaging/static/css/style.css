@@ -63,7 +63,7 @@ form fieldset legend {
     /*padding: 50px;*/
 }
 
-.field-set-collect {
+.fieldset_collect {
     border: solid thin;
     color: black;
     width: auto;
@@ -71,7 +71,7 @@ form fieldset legend {
 }
 
 /* submit collect*/
-#submit-collect {
+#submit_collect {
     width: 50px;
     height: 40px;
     /* Center horizontally*/

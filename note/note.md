@@ -130,3 +130,22 @@
   
 * [js, html code examples](https://codepen.io/)
 * [js, html code playground](https://jsfiddle.net/)
+
+* [flex tutorial](https://www.quackit.com/css/flexbox/tutorial/)
+* [grid tutorial](https://www.quackit.com/css/grid/)
+
+* ### Different unit
+  > PX: Pixels (px) are considered absolute units, although they 1
+  > are relative to the DPI and resolution of the viewing device. 
+  > But on the device itself, the PX unit is fixed and does not change 
+  > based on any other element. Using PX can be problematic for responsive 
+  > sites, but they are useful for maintaining consistent sizing for some 
+  > elements. If you have elements that should not be resized, then using 
+  > PX is a good choice.
+  
+  **Relative Units**
+  * EM: Relative to the parent element
+  * REM: Relative to the root element (HTML tag)
+  * %: Relative to the parent element
+  * VW: Relative to the viewport’s width
+  * VH: Relative to the viewport’s height
