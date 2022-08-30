@@ -80,8 +80,6 @@
   width:auto;
   ```
 
-* [center anything in html](https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/)
-
 * [multiple forms in the same line](https://stackoverflow.com/questions/69601722/does-wtforms-integer-field-force-a-new-line-when-displayed-on-webpage)
   ```
   <!--<form method="get">-->
@@ -149,3 +147,9 @@
   * %: Relative to the parent element
   * VW: Relative to the viewport’s width
   * VH: Relative to the viewport’s height
+
+* [what is viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
+
+* [center anything in html](https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/)
+
+* [what is flex: 1](https://stackoverflow.com/questions/37386244/what-does-flex-1-mean)
