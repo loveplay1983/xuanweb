@@ -108,7 +108,6 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/css/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/css/test.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -268,7 +267,7 @@
       <workItem from="1661602288916" duration="1168000" />
       <workItem from="1661645761880" duration="1809000" />
       <workItem from="1661656014254" duration="16631000" />
-      <workItem from="1661945069795" duration="11353000" />
+      <workItem from="1661945069795" duration="11472000" />
     </task>
     <servers />
   </component>
