@@ -156,3 +156,4 @@
 
 * [change image with range slider](https://codepen.io/salt/pen/vmBaNK)
 * [change image with range slider2](https://stackoverflow.com/questions/59499604/how-to-change-the-images-based-on-the-range-slider)
+* [img placeholer](https://stackoverflow.com/questions/32909488/how-do-i-make-a-placeholder-image-in-html-if-the-original-image-hasnt-been-foun)
