@@ -28,7 +28,7 @@ class CollectForm(FlaskForm):
 
 
 class FirstClinic(FlaskForm):
-    pass
+    patientFirstClinic = TextAreaField()
 
 
 class ClinicForm(FlaskForm):
