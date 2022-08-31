@@ -57,7 +57,7 @@
 
 form fieldset legend {
     color: #180638;
-    font-size: 30px;
+    font-size: 20px;
     width: auto;
     margin: 0 auto;
     /*padding: 50px;*/
@@ -78,24 +78,8 @@ form fieldset legend {
     margin: 0 auto;
 }
 
-/* display table*/
-/*.display-table{*/
-/*    display: table;*/
-/*    margin-left: 100px;*/
-/*}*/
-
-/*.display-row{*/
-/*    display: table-row;*/
-/*}*/
-
-/*.display-cell{*/
-/*    display: table-cell;*/
-/*}*/
-
 
 /* section for data collect and initial clinic record */
-
-
 
 
 /* footer*/
@@ -109,39 +93,39 @@ footer {
 }
 
 
+section {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+}
 
+div#left {
+    width: 50%;
+    height: 200px;
+    float: left;
+}
 
+div#right {
+    height: 200px;
+}
 
-/* test */
-/*.labels {*/
-/*    font-size:9pt;*/
-/*    font-weight:bold;*/
-/*    font-family:Calibri;*/
-/*}*/
+.fieldset_frame {
+    border: solid thin;
+    color: black;
+    width: auto;
+    margin: 0 auto;
+}
 
-/*section {*/
-/*    width: 100%;*/
-/*    height: 200px;*/
-/*    margin: auto;*/
-/*    padding: 10px;*/
-/*}*/
-/*div#one {*/
-/*    width: 50%;*/
-/*    height: 200px;*/
-/*    float: left;*/
-/*}*/
-/*div#two {*/
-/*    height: 200px;*/
-/*}*/
-/*fieldset legend {*/
-/*    display: block;*/
-/*    margin-left: 20px;*/
-/*}*/
+fieldset legend {
+    display: block;
+    margin-left: 20px;
+}
 
-/*#Legend10{*/
-/*    width: auto;*/
-/*}*/
+#left_title {
+    width: auto;
+}
 
-#Legend5{
+#right_title {
     width: auto;
 }

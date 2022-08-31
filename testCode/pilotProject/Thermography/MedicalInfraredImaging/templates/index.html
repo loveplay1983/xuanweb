@@ -1,37 +1,6 @@
 {% extends "base.html" %}
 
 {% block collect %}
-<!--<form method="get">-->
-<!--    <fieldset class="field-set-collect">-->
-<!--        <legend>病员信息</legend>-->
-<!--        {{ form.csrf_token }}-->
-<!--        <div class="display-table">-->
-<!--            <div class="display-row">-->
-<!--                <div class="display-cell">-->
-<!--                    {{ form.patientNum.label }}-->
-<!--                    {{ form.patientNum }}-->
-<!--                    {{ form.patientName.label }}-->
-<!--                    {{ form.patientName }}-->
-<!--                    {{ form.patientSex.label }}-->
-<!--                    {{ form.patientSex }}-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="display-row">-->
-<!--                <div class="display-cell">-->
-<!--                    {{ form.patientID.label }}-->
-<!--                    {{ form.patientID }}-->
-<!--                    {{ form.patientPhone.label }}-->
-<!--                    {{ form.patientPhone }}-->
-<!--                    {{ form.patientAddr.label }}-->
-<!--                    {{ form.patientAddr }}-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div id="submit-collect">-->
-<!--            {{ form.patientSearch }}-->
-<!--        </div>-->
-<!--    </fieldset>-->
-<!--</form>-->
 
 <form method="get">
     <fieldset class="fieldset_collect">
@@ -73,67 +42,30 @@
 </form>
 
 
-<!--<section style="width: 100%;">-->
-<!--   <div id="one">-->
-<!--      <fieldset style="border: solid; border-width: thin; height: 200px; border-color: #a8a8a8;">-->
-<!--         <legend id="Legend10" runat="server" visible="true" style="margin-bottom: 0px; font-size: 12px;-->
-<!--         font-weight: bold; color: #1f497d;">&nbsp;&nbsp; Project Summary &nbsp;&nbsp;</legend>-->
-<!--         <div style="margin-bottom: 10px; margin-left: 10px;">-->
-<!--         <asp:Table ID="table10" runat="server" CssClass="labels">-->
-<!--            <asp:TableRow>-->
-<!--               <asp:TableCell Style="width: 10%;">-->
-<!--                  Project ID:-->
-<!--                  <asp:TextBox runat="server" Width="25px" Height="23px"></asp:TextBox>-->
-<!--               </asp:TableCell>-->
-<!--               <asp:TableCell Style="width: 40%;">-->
-<!--                  Project Name:<sup style="color:red; font-size:10pt;">*q</sup>-->
-<!--                  <asp:TextBox runat="server" Width="90px" Height="23px"></asp:TextBox>-->
-<!--               </asp:TableCell>-->
-<!--            </asp:TableRow>-->
-<!--            <asp:TableRow>-->
-<!--               <asp:TableCell Style="width: 10%;">-->
-<!--                  Project ID:-->
-<!--                  <asp:TextBox runat="server" Width="25px" Height="23px"></asp:TextBox>-->
-<!--               </asp:TableCell>-->
-<!--               <asp:TableCell Style="width: 40%;">-->
-<!--                  Project Name:<sup style="color:red; font-size:10pt;">*q</sup>-->
-<!--                  <asp:TextBox runat="server" Width="90px" Height="23px"></asp:TextBox>-->
-<!--               </asp:TableCell>-->
-<!--            </asp:TableRow>-->
-<!--         </asp:Table>-->
-<!--         </div>-->
-<!--      </fieldset>-->
-<!--   </div>-->
-<!--   <div id="two">-->
-<!--      <fieldset style="border: solid; border-width: thin; height: 200px; border-color: #a8a8a8;">-->
-<!--         <legend id="Legend5" runat="server" visible="true" style="margin-bottom: 0px; font-size: 12px; font-weight: bold; color: #1f497d;">a</legend>-->
-<!--         <div style="margin-bottom: 10px; margin-left: 10px;">-->
-<!--            <asp:Table ID="table11" runat="server" CssClass="labels">-->
-<!--               <asp:TableRow>-->
-<!--                  <asp:TableCell Style="width: 10%;">-->
-<!--                     Project ID:-->
-<!--                     <asp:TextBox runat="server" Width="25px" Height="23px"></asp:TextBox>-->
-<!--                  </asp:TableCell>-->
-<!--                  <asp:TableCell Style="width: 40%;">-->
-<!--                     Project Name:<sup style="color:red; font-size:10pt;">*q</sup>-->
-<!--                     <asp:TextBox runat="server" Width="90px" Height="23px"></asp:TextBox>-->
-<!--                  </asp:TableCell>-->
-<!--               </asp:TableRow>-->
-<!--               <asp:TableRow>-->
-<!--                  <asp:TableCell Style="width: 10%;">-->
-<!--                     Project ID:-->
-<!--                     <asp:TextBox runat="server" Width="25px" Height="23px"></asp:TextBox>-->
-<!--                  </asp:TableCell>-->
-<!--                  <asp:TableCell Style="width: 40%;">-->
-<!--                     Project Name:<sup style="color:red; font-size:10pt;">*q</sup>-->
-<!--                     <asp:TextBox runat="server" Width="90px" Height="23px"></asp:TextBox>-->
-<!--                  </asp:TableCell>-->
-<!--               </asp:TableRow>-->
-<!--            </asp:Table>-->
-<!--         </div>-->
-<!--      </fieldset>-->
-<!--   </div>-->
-<!--</section>-->
+<section>
+    <div id="left">
+        <form method="post">
+            <fieldset class="fieldset_frame">
+                <legend id="left_title">数据收集</legend>
+                The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.
+                The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.
+                The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.
+            </fieldset>
+        </form>
+    </div>
+    <div id="right">
+        <form method="post">
+            <fieldset class="fieldset_frame">
+                <legend id="right_title">初次诊断</legend>
+                                The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.
+                The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.
+                The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.
+
+            </fieldset>
+        </form>
+    </div>
+</section>
+
 
 
 
