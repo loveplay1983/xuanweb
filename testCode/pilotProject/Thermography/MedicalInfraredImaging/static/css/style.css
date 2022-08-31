@@ -93,6 +93,11 @@ form fieldset legend {
 /*}*/
 
 
+/* section for data collect and initial clinic record */
+
+
+
+
 /* footer*/
 footer {
     font-size: 13px;
@@ -101,6 +106,42 @@ footer {
     margin-top: 25px;
     text-align: center;
     padding: 10px;
-
 }
 
+
+
+
+
+/* test */
+/*.labels {*/
+/*    font-size:9pt;*/
+/*    font-weight:bold;*/
+/*    font-family:Calibri;*/
+/*}*/
+
+/*section {*/
+/*    width: 100%;*/
+/*    height: 200px;*/
+/*    margin: auto;*/
+/*    padding: 10px;*/
+/*}*/
+/*div#one {*/
+/*    width: 50%;*/
+/*    height: 200px;*/
+/*    float: left;*/
+/*}*/
+/*div#two {*/
+/*    height: 200px;*/
+/*}*/
+/*fieldset legend {*/
+/*    display: block;*/
+/*    margin-left: 20px;*/
+/*}*/
+
+/*#Legend10{*/
+/*    width: auto;*/
+/*}*/
+
+#Legend5{
+    width: auto;
+}
