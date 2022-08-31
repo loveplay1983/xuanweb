@@ -138,3 +138,7 @@ fieldset legend {
 #first_clinic{
     width: auto;
 }
+
+textarea{
+    resize: none;
+}

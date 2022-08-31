@@ -153,3 +153,6 @@
 * [center anything in html](https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/)
 
 * [what is flex: 1](https://stackoverflow.com/questions/37386244/what-does-flex-1-mean)
+
+* [change image with range slider](https://codepen.io/salt/pen/vmBaNK)
+* [change image with range slider2](https://stackoverflow.com/questions/59499604/how-to-change-the-images-based-on-the-range-slider)
