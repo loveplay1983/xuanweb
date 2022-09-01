@@ -159,3 +159,13 @@
 * [change image with range slider2](https://stackoverflow.com/questions/59499604/how-to-change-the-images-based-on-the-range-slider)
 * [change image with range slider3](https://stackoverflow.com/questions/25936001/html-javascript-change-image-with-slider-bar)
 * [img placeholer](https://stackoverflow.com/questions/32909488/how-do-i-make-a-placeholder-image-in-html-if-the-original-image-hasnt-been-foun)
+
+
+# flask wtforms
+* [adding id or class name to wtforms](https://stackoverflow.com/questions/53896335/add-id-field-in-stringfield-object-in-wtforms)
+
+# Forms
+* [submit form with return key](https://www.techiedelight.com/submit-form-with-enter-key-javascript/)
+* [submit form with return key2](https://www.geeksforgeeks.org/how-to-submit-a-form-on-enter-button-using-jquery/)
+* [submit form with return key3](https://thewebdev.info/2022/02/02/how-to-submit-form-on-enter-key-press-with-javascript/)
+* [submit form with return key4](https://stackoverflow.com/questions/29943/how-to-submit-a-form-when-the-return-key-is-pressed)
