@@ -128,6 +128,7 @@
   
 * [js, html code examples](https://codepen.io/)
 * [js, html code playground](https://jsfiddle.net/)
+* [js, html code demo](https://www.codeply.com/)
 
 * [flex tutorial](https://www.quackit.com/css/flexbox/tutorial/)
 * [grid tutorial](https://www.quackit.com/css/grid/)
