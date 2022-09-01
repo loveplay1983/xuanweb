@@ -38,7 +38,7 @@ app.config["ALLOWED_EXTENSIONS"] = ["png", "jpg", "jpeg", "gif"]
 
 # Flask config
 # set request body's max length - 3MB
-app.config["MAX_CONTENT_LENGTH"]=3*1024*1024
+app.config["MAX_CONTENT_LENGTH"] = 3 * 1024 * 1024
 
 # Flask-CKEditor config
 app.config["CKEDITOR_SERVE_LOCAL"] = True
@@ -234,6 +234,18 @@ def handle_signin():
         flash("{}, Signin form is submitted.".format(username))
         return redirect(url_for("index"))
     return render_template("2form2view.html", signin_form=signin_form, register_form=register_form)
+
+
+@app.route('/handle-register', methods=['POST'])
+def handle_register():
+    signin_form = SigninForm2()
+    register_form = RegisterForm2()
+
+    if register_form.validate_on_submit():
+        username = register_form.username.data
+        flash('%s, you just submit the Register Form.' % username)
+        return redirect(url_for('index'))
+    return render_template('2form2view.html', signin_form=signin_form, register_form=register_form)
 
 
 @app.route("/ckeditor", methods=["GET", "POST"])

@@ -108,10 +108,8 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/03_form/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/03_form/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/04_database/test_.db" beforeDir="false" afterPath="$PROJECT_DIR$/study/04_database/test_.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +268,7 @@
       <workItem from="1661602288916" duration="1168000" />
       <workItem from="1661645761880" duration="1809000" />
       <workItem from="1661656014254" duration="16631000" />
-      <workItem from="1661945069795" duration="18998000" />
+      <workItem from="1661945069795" duration="23899000" />
     </task>
     <servers />
   </component>
