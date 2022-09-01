@@ -224,8 +224,8 @@ def multi_form_multi_view():
     return render_template("2form2view.html", signin_form=signin_form, register_form=register_form)
 
 
-@app.route("/handle-sigin", methods=["POST"])
-def handle_sign():
+@app.route("/handle_signin", methods=["POST"])
+def handle_signin():
     signin_form = SigninForm2()
     register_form = RegisterForm2()
 

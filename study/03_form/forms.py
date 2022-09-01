@@ -91,7 +91,7 @@ class RichTextForm(FlaskForm):
 class SigninForm2(FlaskForm):
     username = StringField("Username", validators=[DataRequired() \
         , Length(1, 24)])
-    pasword = PasswordField("Password", validators=[DataRequired() \
+    password = PasswordField("Password", validators=[DataRequired() \
         , Length(8, 128)])
     submit = SubmitField()
 
