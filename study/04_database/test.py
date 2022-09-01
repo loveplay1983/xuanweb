@@ -27,8 +27,7 @@ def make_shell_context():
 def index():
     form = DeleteNoteForm()
     notes = Note.query.all()
-    return render_template("index.html", notes=notes \
-                           , form=form)
+    return render_template("index.html", notes=notes, form=form)
 
 
 @app.route("/new", methods=["GET", "POST"])

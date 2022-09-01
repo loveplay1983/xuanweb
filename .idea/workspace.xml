@@ -113,7 +113,7 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/note/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/04_database/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/study/04_database/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +273,7 @@
       <workItem from="1661645761880" duration="1809000" />
       <workItem from="1661656014254" duration="16631000" />
       <workItem from="1661945069795" duration="23899000" />
-      <workItem from="1662035885043" duration="3186000" />
+      <workItem from="1662035885043" duration="5738000" />
     </task>
     <servers />
   </component>
