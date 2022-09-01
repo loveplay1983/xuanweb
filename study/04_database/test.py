@@ -54,11 +54,11 @@ def edit_note(note_id):
     form = EditNoteForm()
     note = Note.query.get(note_id)
     if form.validate_on_submit():
-        note.body = form.body.data
+        note.body = form.body.data   # update
         db.session.commit()
         flash("Your note is updated.")
         return redirect(url_for("index"))
-    form.body.data = note.body  # Preset or display the current note
+    form.body.data = note.body  # edit
     return render_template("edit_note.html", form=form)
 
 
