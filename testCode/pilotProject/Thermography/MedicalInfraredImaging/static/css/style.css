@@ -1,3 +1,10 @@
+/* title */
+.navbar {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .program_title {
     text-align: justify;
     font-size: 2.4em;
@@ -10,8 +17,7 @@
     font-weight: bold;
 }
 
-
-/* test */
+/* nav nav-menu */
 .nav_menu {
     background-color: #3F74BA;
     margin-left: 100px;
@@ -20,12 +26,12 @@
     overflow: hidden;
 }
 
-.nav_menu a.active{
+.nav_menu a.active {
     background-color: #47BA7C;
 }
 
-.nav_menu a{
-    text-decoration:none;
+.nav_menu a {
+    text-decoration: none;
     color: white;
     font-size: 1.2em;
     font-weight: bold;
@@ -35,22 +41,11 @@
     padding: 14px 100px 14px 100px;
 }
 
-.nav_menu a:hover{
+.nav_menu a:hover {
     background-color: #DCDCCA;
 }
 
-/* Style tab links */
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-}
+
 
 .tablink:hover {
     background-color: #DDCA8A;
@@ -76,11 +71,7 @@
     background-color: #3B5180;
 }
 
-.navbar {
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
+
 
 .main {
     margin-left: 100px;

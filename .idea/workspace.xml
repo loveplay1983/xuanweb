@@ -8,6 +8,11 @@
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/widget.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/widget.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/widget.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/componentCheck.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/mainwindow.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/datetimeEdit.pro" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/note" afterDir="false" />
@@ -110,6 +115,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/collect.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/collect.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCode/pilotProject/Thermography/MedicalInfraredImaging/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,6 +277,7 @@
       <workItem from="1661656014254" duration="16631000" />
       <workItem from="1661945069795" duration="23899000" />
       <workItem from="1662035885043" duration="6482000" />
+      <workItem from="1662125585800" duration="927000" />
     </task>
     <servers />
   </component>
@@ -289,6 +297,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/testCode/demos/bluelog-master/bluelog/__init__.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/webDesignWithPython$test.coverage" NAME="test Coverage Results" MODIFIED="1658926674836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/infraredScan" />
