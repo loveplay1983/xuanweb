@@ -6,3 +6,14 @@ function showVal(newVal) {
     document.getElementById("range").innerHTML = newVal;
     document.getElementById("img").src = '../static/testImage/' + newVal + ".png";
 }
+
+
+// Retrieve Patient info
+document.getElementById("patientNum")
+    .addEventListener('keyup', function(event) {
+        if (event.code === 'Enter')
+        {
+            event.preventDefault();
+            document.getElementById("patientNum").submit();
+        }
+    });
