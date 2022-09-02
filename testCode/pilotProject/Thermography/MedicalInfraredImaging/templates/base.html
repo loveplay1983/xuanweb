@@ -30,8 +30,13 @@
 
 <main>
     <div class="main">
-        <button class="tablink" onclick="openPage('collect', this, '#41A290')" id="defaultOpen">数据收集</button>
+        <button class="tablink" onclick="openPage('mainPage', this, 'purple')" id="defaultOpen">首页</button>
+        <button class="tablink" onclick="openPage('collect', this, '#41A290')" >数据收集</button>
         <button class="tablink" onclick="openPage('clinic', this, '#3B5180')">诊断分析</button>
+
+        <div id="mainPage" class="tabcontent">
+            {%  block mainPage %}test{% endblock %}
+        </div>
 
         <div id="collect" class="tabcontent">
             {%  block collect %}{% endblock %}

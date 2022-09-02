@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block collect %}
+
+<form method="get">
+    <fieldset class="fieldset_collect">
+        <legend>病员信息</legend>
+        {{ form.csrf_token }}
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {{ form.patientNum.label }}
+                    {{ form.patientNum }}
+                </div>
+                <div class="col">
+                    {{ form.patientName.label }}
+                    {{ form.patientName }}
+                </div>
+                <div class="col">
+                    {{ form.patientSex.label }}
+                    {{ form.patientSex }}
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    {{ form.patientID.label }}
+                    {{ form.patientID }}
+                </div>
+                <div class="col">
+                    {{ form.patientPhone.label }}
+                    {{ form.patientPhone }}
+                </div>
+                <div class="col">
+                    {{ form.patientAddr.label }}
+                    {{ form.patientAddr }}
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<br>
+
+<form method="post" id="collect_form">
+    <fieldset class="fieldset_frame">
+        <legend id="left_title">数据收集</legend>
+
+        <textarea name="" id="testText" cols="120"></textarea><br>
+        <button type="submit">上传</button>
+    </fieldset>
+</form>
+
+
+
+
+{% endblock %}
