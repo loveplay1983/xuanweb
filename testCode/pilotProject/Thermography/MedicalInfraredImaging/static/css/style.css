@@ -12,7 +12,7 @@
 
 
 /* test */
-.test {
+.nav_menu {
     background-color: #3F74BA;
     margin-left: 100px;
     margin-right: 100px;
@@ -20,11 +20,12 @@
     overflow: hidden;
 }
 
-.test a.active{
+.nav_menu a.active{
     background-color: #47BA7C;
 }
 
-.navLink {
+.nav_menu a{
+    text-decoration:none;
     color: white;
     font-size: 1.2em;
     font-weight: bold;
@@ -32,12 +33,10 @@
     display: block;
     text-align: center;
     padding: 14px 100px 14px 100px;
-
 }
 
-.navLink:hover {
+.nav_menu a:hover{
     background-color: #DCDCCA;
-
 }
 
 /* Style tab links */
