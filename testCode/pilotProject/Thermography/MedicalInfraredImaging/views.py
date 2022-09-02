@@ -13,7 +13,8 @@ from MedicalInfraredImaging.forms import PatientInfo
 def index():
     patientInfo = PatientInfo()
     if patientInfo.validate_on_submit() and request.method == "GET":
+        patientInfo.patientNum.data = "000000"
+        patientInfo.patientID.data = "330681198305201537"
         return redirect(url_for("index"))
-    patientInfo.patientNum.data = "000000"
-    patientInfo.patientID.data = "330681198305201537"
+
     return render_template("index.html", form=patientInfo)
