@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<form method="get">
-    <fieldset class="fieldset_collect">
-        <legend>病员信息</legend>
+<form method="get" id="collect_patient_form">
+    <fieldset class="collect_fieldset">
+        <legend class="collect_fieldset_legend">病员信息</legend>
         {{ form.csrf_token }}
         <div class="container">
             <div class="row">
@@ -40,10 +40,9 @@
 
 <br>
 
-<form method="post" id="collect_form">
-    <fieldset class="fieldset_frame">
-        <legend id="left_title">数据收集</legend>
-
+<form method="post" id="collect_first_clinic">
+    <fieldset class="collect_fieldset">
+        <legend class="collect_fieldset_legend">数据收集</legend>
         <textarea name="" id="testText" cols="120"></textarea><br>
         <button type="submit">上传</button>
     </fieldset>

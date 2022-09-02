@@ -46,51 +46,25 @@
 }
 
 
-
-.tablink:hover {
-    background-color: #DDCA8A;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-}
-
-#mainPage {
-    background-color: purple;
-}
-
-#collect {
-    background-color: #41A290;
-}
-
-#clinic {
-    background-color: #3B5180;
-}
-
-
-
-.main {
+/* main content */
+.container {
     margin-left: 100px;
     margin-right: 100px;
 }
 
-form fieldset legend {
-    color: #180638;
-    font-size: 20px;
-    width: auto;
-    margin: 0 auto;
-    /*padding: 50px;*/
-}
-
-.fieldset_collect {
+.collect_fieldset {
     border: solid thin;
     color: black;
     width: auto;
     margin: 0 auto;
+}
+
+.collect_fieldset_legend {
+    color: #180638;
+    font-size: 20px;
+    width: auto;
+    margin: 0 auto;
+    padding: 5px 50px 5px 50px;
 }
 
 /* search and store patient data */
@@ -112,10 +86,6 @@ form fieldset legend {
     margin: 0 auto;
 }
 
-fieldset legend {
-    display: block;
-    margin-left: 20px;
-}
 
 #testText {
     width: auto;
