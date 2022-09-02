@@ -11,6 +11,35 @@
 }
 
 
+/* test */
+.test {
+    background-color: #3F74BA;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #180638;
+    overflow: hidden;
+}
+
+.test a.active{
+    background-color: #47BA7C;
+}
+
+.navLink {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 50px 14px 50px;
+
+}
+
+.navLink:hover {
+    background-color: #DCDCCA;
+
+}
+
 /* Style tab links */
 .tablink {
     background-color: #555;
@@ -34,6 +63,10 @@
     display: none;
     padding: 100px 20px;
     height: 100%;
+}
+
+#mainPage {
+    background-color: purple;
 }
 
 #collect {
@@ -94,13 +127,10 @@ fieldset legend {
     margin-left: 20px;
 }
 
-#testText{
-    width:auto;
+#testText {
+    width: auto;
 
 }
-
-
-
 
 
 /* footer*/

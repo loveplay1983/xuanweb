@@ -26,20 +26,34 @@
     <p class="program_title">红外热成像数据收集与分析V1.0</p>
     <div class="nav navbar-nav ml-auto" id="datetime"></div>
 </nav>
+
+<div class="test">
+  <a href="{{ url_for('index') }}" class="active navLink" style="text-decoration:none">首页</a>
+  <a href="{{ url_for('collectData') }}" class="navLink" style="text-decoration:none">数据收集</a>
+  <a href="{{ url_for('collectData') }}" class="navLink" style="text-decoration:none">诊断分析</a>
+</div>
+
 {% endblock nav %}
+
+
+
+
+
+
 
 <main>
     <div class="main">
+
         <button class="tablink" onclick="openPage('mainPage', this, 'purple')" id="defaultOpen">首页</button>
-        <button class="tablink" onclick="openPage('collect', this, '#41A290')" >数据收集</button>
+        <button class="tablink" onclick="openPage('collect', this, '#41A290')">数据收集</button>
         <button class="tablink" onclick="openPage('clinic', this, '#3B5180')">诊断分析</button>
 
         <div id="mainPage" class="tabcontent">
-            {%  block mainPage %}test{% endblock %}
+            {% block mainPage %}test{% endblock %}
         </div>
 
         <div id="collect" class="tabcontent">
-            {%  block collect %}{% endblock %}
+            {% block collect %}{% endblock %}
         </div>
 
         <div id="clinic" class="tabcontent">
@@ -52,9 +66,9 @@
 
 <footer>
     {% block footer %}
-        <small> &copy; 2022 <a href="https://github.com/loveplay1983" title="Fork me on GitHub">Xuans' Git</a> /
-            <a href="https://github.com/loveplay1983/xuanweb" title="Flask test project">Flask Study</a>
-        </small>
+    <small> &copy; 2022 <a href="https://github.com/loveplay1983" title="Fork me on GitHub">Xuans' Git</a> /
+        <a href="https://github.com/loveplay1983/xuanweb" title="Flask test project">Flask Study</a>
+    </small>
     {% endblock %}
 </footer>
 
