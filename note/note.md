@@ -181,3 +181,4 @@
 * [change input value](https://stackoverflow.com/questions/54203535/changing-input-value-inside-a-form-tags-when-enter-key-is-pressed)
 * [manipulate database](https://stackoverflow.com/questions/857670/how-to-connect-to-sql-server-database-from-javascript-in-the-browser)
 * [clear input](https://stackoverflow.com/questions/17237772/html-how-to-clear-input-using-javascript)
+* [jinja and js](https://www.learn-codes.net/javascript/how-to-set-a-value-inside-jinja-template-and-pass-it-to-javascript-variable/)
