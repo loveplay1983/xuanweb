@@ -42,7 +42,7 @@
   results_db1 = engine_db1.execute(sql)
   results_db2 = engine_db2.execute(sql)
   ```
-  # [multi-db with bind - sqlalchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/binds/#binds)
+* # [multi-db with bind - sqlalchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/binds/#binds)
   ```
   SQLALCHEMY_DATABASE_URI = 'postgres://localhost/main'
   SQLALCHEMY_BINDS = {
@@ -51,6 +51,12 @@
   }
   ```
   
+* # [raw sql via sqlalchemy](https://www.youtube.com/watch?v=FEtJgtmogSY)
+  ```
+  test = db.engine.execute("xxx")
+  for each in test:
+    print(each)  # each is a list that consist of  a set of tuples with which each tuple represents a record
+  ```
 
 * [different sql join](https://www.w3schools.com/sql/sql_join.asp#:~:text=LEFT%20(OUTER)%20JOIN%20%3A%20Returns,either%20left%20or%20right%20table)
   * (INNER) JOIN: Returns records that have matching values in both tables
@@ -66,6 +72,7 @@
   * [flask0bootstrap](https://pythonhosted.org/Flask-Bootstrap/basic-usage.html#)
   * [bootstrap-flask](https://bootstrap-flask.readthedocs.io/en/stable/basic/#starter-template)
 
+* [flask app routing](https://www.geeksforgeeks.org/flask-app-routing/)
 
 # HTML
 * [center legend of fieldset](https://stackoverflow.com/questions/4006824/how-to-center-the-legend-element-what-to-use-instead-of-aligncenter-attribu)
@@ -169,3 +176,8 @@
 * [submit form with return key2](https://www.geeksforgeeks.org/how-to-submit-a-form-on-enter-button-using-jquery/)
 * [submit form with return key3](https://thewebdev.info/2022/02/02/how-to-submit-form-on-enter-key-press-with-javascript/)
 * [submit form with return key4](https://stackoverflow.com/questions/29943/how-to-submit-a-form-when-the-return-key-is-pressed)
+
+# Javascript
+* [change input value](https://stackoverflow.com/questions/54203535/changing-input-value-inside-a-form-tags-when-enter-key-is-pressed)
+* [manipulate database](https://stackoverflow.com/questions/857670/how-to-connect-to-sql-server-database-from-javascript-in-the-browser)
+* [clear input](https://stackoverflow.com/questions/17237772/html-how-to-clear-input-using-javascript)

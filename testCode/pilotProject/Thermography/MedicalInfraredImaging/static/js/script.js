@@ -49,3 +49,10 @@ document.getElementById("patientNum")
         }
     });
 
+
+// test for retrieving patient data
+function test(e){
+    e.preventDefault();
+    document.getElementById("collect_patient_form").reset();
+}
+

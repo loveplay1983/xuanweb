@@ -17,9 +17,7 @@ def index():
 @app.route("/collect", methods=["GET", "POST"])
 def collectData():
     patientInfo = PatientInfo()
-    if patientInfo.validate_on_submit() and request.method == "GET":
-        patientInfo.patientNum.data = "000000"
-        patientInfo.patientID.data = "330681198305201537"
+    test = patientInfo.patientNum.data
+    if patientInfo.validate_on_submit():
         return redirect(url_for("collectData"))
-
-    return render_template("collect.html", form=patientInfo)
+    return render_template("collect.html", form=patientInfo, test=test)
