@@ -18,9 +18,14 @@ def index():
 def collectData():
     patientInfo = PatientInfo()
 
-    if patientInfo.validate_on_submit():
-        test = patientInfo.patientNum.data
-        flash("hello world".format(test))
+    # if patientInfo.validate_on_submit():
+    #     test = patientInfo.patientName.data
+    #     flash("Welcome, {}!!!".format(test))
     uname = request.form.get("patientNum")
+
+    # To-Do
+    """
+    
+    """
 
     return render_template("collect.html", form=patientInfo, uname=uname)

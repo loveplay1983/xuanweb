@@ -22,7 +22,7 @@ class PatientInfo(FlaskForm):
     patientID = StringField("身份证")
     patientPhone = StringField("电话")
     patientAddr = StringField("地址")
-    patientSearch = SubmitField("检索")
+    patientSearch = SubmitField("检索", render_kw={"hidden": True})
 
 
 class DataCollect(FlaskForm):
