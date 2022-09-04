@@ -23,4 +23,4 @@ def collectData():
         flash("hello world".format(test))
     uname = request.form.get("patientNum")
 
-    return render_template("collect.html", form=patientInfo)
+    return render_template("collect.html", form=patientInfo, uname=uname)
