@@ -2,7 +2,8 @@
 
 {% block content %}
 
-<form method="get" id="collect_patient_form">
+
+<form method="post" id="collect_patient_form">
     <fieldset class="collect_fieldset">
         <legend class="collect_fieldset_legend">病员信息</legend>
         {{ form.csrf_token }}
@@ -20,6 +21,7 @@
                     {{ form.patientSex.label }}
                     {{ form.patientSex }}
                 </div>
+
                 <div class="w-100"></div>
                 <div class="col">
                     {{ form.patientID.label }}
@@ -34,6 +36,9 @@
                     {{ form.patientAddr }}
                 </div>
             </div>
+            <div class="col">
+                {{ form.patientSearch }}
+            </div>
         </div>
     </fieldset>
 </form>
@@ -47,8 +52,6 @@
         <button type="submit">上传</button>
     </fieldset>
 </form>
-
-
 
 
 {% endblock content %}

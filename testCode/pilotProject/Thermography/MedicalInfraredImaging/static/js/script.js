@@ -20,16 +20,21 @@ const interval = setInterval(() => {
 /*************************************** Query data by pressing the Return Key *********************************/
 
 // Retrieve Patient info
-document.getElementById("patientNum")
-    .addEventListener('keyup', function (event) {
-        if (event.code === 'Enter') {
-            event.preventDefault();
-            alert("It worked!")
-            // document.querySelector("form").submit();
-            document.querySelectorAll("form")[0].reset();
-            document.querySelectorAll("form")[0].submit();
-            // document.getElementById("patientNum").submit();
-
-        }
-    });
+// document.getElementById("patientNum")
+//     .addEventListener('keyup', function (event) {
+//         if (event.code === 'Enter') {
+//             event.preventDefault();
+//             alert("The patient data on this page will be removed and the form will commit once!")
+//             // document.querySelectorAll("form")[0].reset();
+//             document.querySelectorAll("form")[0].submit();
+//
+//         }
+//     });
 /*************************************** Query data by pressing the Return Key *********************************/
+
+
+function test(){
+    // alert("The patient data on this page will be removed and the form will commit once!");
+    // document.querySelectorAll("form")[0].reset();
+    document.getElementById("patientName").value="";
+}
