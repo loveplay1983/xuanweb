@@ -35,20 +35,8 @@ const interval = setInterval(() => {
 //         }
 //     });
 
-
-//
-// function test(){
-//     // alert("The patient data on this page will be removed and the form will commit once!");
-//     // document.querySelectorAll("form")[0].reset();
-//     document.getElementById("patientName").value="";
-// }
-
-
 /********************************* flash message disappear after few sends **************************************/
-// $(document).ready(function () {
-//         setTimeout(function () {
-//             $('#msg').fadeOut('slow');
-//         }, 2000)
-//     }
-// )
+// window.setTimeout(function() {
+//     $(".alert").fadeTo(500, 0)
+// }, 4000);
 

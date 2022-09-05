@@ -75,7 +75,7 @@
 * [flask app routing](https://www.geeksforgeeks.org/flask-app-routing/)
 
 * [get_flashed_message](https://stackoverflow.com/questions/57660542/flask-closing-flash-message)
-
+* [flash](https://www.youtube.com/watch?v=T1PLBEEZU8o)
 
 
 
