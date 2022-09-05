@@ -1,4 +1,9 @@
-/***************************************  Datetime display in the navbar *********************************/
+/******************** Test **************************/
+// jQuery(document).ready(function ($) {
+//     alert("js is working");
+// });
+
+/********************* datatime in nav ****************************/
 
 // Function to format 1 in 01
 const zeroFill = n => {
@@ -14,7 +19,6 @@ const interval = setInterval(() => {
         zeroFill(now.getMinutes()) + ':' +
         zeroFill(now.getSeconds());
 }, 1000);
-/***************************************  Datetime display in the navbar *********************************/
 
 
 /*************************************** Query data by pressing the Return Key *********************************/
@@ -30,11 +34,21 @@ const interval = setInterval(() => {
 //
 //         }
 //     });
-/*************************************** Query data by pressing the Return Key *********************************/
 
 
-function test(){
-    // alert("The patient data on this page will be removed and the form will commit once!");
-    // document.querySelectorAll("form")[0].reset();
-    document.getElementById("patientName").value="";
-}
+//
+// function test(){
+//     // alert("The patient data on this page will be removed and the form will commit once!");
+//     // document.querySelectorAll("form")[0].reset();
+//     document.getElementById("patientName").value="";
+// }
+
+
+/********************************* flash message disappear after few sends **************************************/
+// $(document).ready(function () {
+//         setTimeout(function () {
+//             $('#msg').fadeOut('slow');
+//         }, 2000)
+//     }
+// )
+

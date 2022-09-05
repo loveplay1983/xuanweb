@@ -74,6 +74,11 @@
 
 * [flask app routing](https://www.geeksforgeeks.org/flask-app-routing/)
 
+* [get_flashed_message](https://stackoverflow.com/questions/57660542/flask-closing-flash-message)
+
+
+
+
 # HTML
 * [center legend of fieldset](https://stackoverflow.com/questions/4006824/how-to-center-the-legend-element-what-to-use-instead-of-aligncenter-attribu)
   ```

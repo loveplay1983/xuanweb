@@ -17,10 +17,9 @@ def index():
 @app.route("/collect", methods=["GET", "POST"])
 def collectData():
     patientInfo = PatientInfo()
-
-    # if patientInfo.validate_on_submit():
-    #     test = patientInfo.patientName.data
-    #     flash("Welcome, {}!!!".format(test))
+    if patientInfo.validate_on_submit():
+        pName = patientInfo.patientName.data
+        flash("欢迎就诊, {}!".format(pName))
     uname = request.form.get("patientNum")
 
     # To-Do
