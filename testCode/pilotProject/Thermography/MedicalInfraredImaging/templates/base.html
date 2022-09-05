@@ -35,30 +35,13 @@
 {% endblock nav %}
 
 <main class="container">
-    {% for message in get_flashed_messages(with_categories=true) %}
-    <div class="alert alert-info" role="alert" id="msg">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        {{ message[1] }}
-    </div>
-    {% endfor %}
-
-    <!--    {% with messages = get_flashed_messages(with_categories=true) %}-->
-    <!--    {% if messages %}-->
-    <!--    <ul class=flashes>-->
-    <!--        {% for category, message in messages %}-->
-    <!--        <li class="{{ category }}">{{ message }}</li>-->
-    <!--        {% endfor %}-->
-    <!--    </ul>-->
-    <!--    {% endif %}-->
-    <!--    {% endwith %}-->
-
+    {% block flash_message %}{% endblock flash_message %}
     {% block content %}{% endblock content %}
-
     {% block footer %}
     <footer>
-        <small> &copy; 2022 <a href="https://github.com/loveplay1983" title="Fork me on GitHub">Xuans' Git</a> /
+        <medium> &copy; 2022 <a href="https://github.com/loveplay1983" title="Fork me on GitHub">Xuans' Git</a> /
             <a href="https://github.com/loveplay1983/xuanweb" title="Flask test project">Flask Study</a>
-        </small>
+        </medium>
     </footer>
     {% endblock footer%}
 </main>
@@ -68,13 +51,11 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 
-
 <script type="text/javascript">
-window.setTimeout(function() {
-    $('.msg').fadeOut('fast');
-}, 1000);
+    window.setTimeout(function () {
+        $('.msg').fadeOut('fast');
+    }, 1000);
 </script>
-
 
 </body>
 </html>

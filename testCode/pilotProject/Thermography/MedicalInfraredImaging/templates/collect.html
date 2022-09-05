@@ -1,10 +1,25 @@
 {% extends "base.html" %}
 
+{% block flash_message %}
+{% for message in get_flashed_messages(with_categories=true) %}
+<div class="alert alert-warning" role="alert" id="msg">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{ message[1] }}
+</div>
+{% endfor %}
+
+<!--    {% with messages = get_flashed_messages(with_categories=true) %}-->
+<!--    {% if messages %}-->
+<!--    <ul class=flashes>-->
+<!--        {% for category, message in messages %}-->
+<!--        <li class="{{ category }}">{{ message }}</li>-->
+<!--        {% endfor %}-->
+<!--    </ul>-->
+<!--    {% endif %}-->
+<!--    {% endwith %}-->
+{% endblock flash_message %}
+
 {% block content %}
-
-{{ uname }}
-
-
 <form method="post" id="collect_patient_form">
     <fieldset class="collect_fieldset">
         <legend class="collect_fieldset_legend">病员信息</legend>
@@ -50,7 +65,7 @@
 <form method="post" id="collect_first_clinic">
     <fieldset class="collect_fieldset">
         <legend class="collect_fieldset_legend">数据收集</legend>
-        <textarea name="" id="testText" cols="120"></textarea><br>
+        <textarea name="" id="testText" cols="120" rows="15"></textarea><br>
         <button type="submit">上传</button>
     </fieldset>
 </form>
