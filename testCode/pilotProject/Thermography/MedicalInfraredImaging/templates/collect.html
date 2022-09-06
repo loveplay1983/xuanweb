@@ -20,6 +20,8 @@
 {% endblock flash_message %}
 
 {% block content %}
+
+{{ p_num }}
 <form method="post" id="collect_patient_form">
     <fieldset class="collect_fieldset">
         <legend class="collect_fieldset_legend">病员信息</legend>
@@ -65,7 +67,7 @@
 <form method="post" id="collect_first_clinic">
     <fieldset class="collect_fieldset">
         <legend class="collect_fieldset_legend">数据收集</legend>
-        <textarea name="" id="testText" cols="120" rows="15"></textarea><br>
+        <textarea name="" id="testText" cols="120" rows="8"></textarea><br>
         <button type="submit">上传</button>
     </fieldset>
 </form>

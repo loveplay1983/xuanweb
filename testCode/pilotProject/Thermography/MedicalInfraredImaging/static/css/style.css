@@ -46,13 +46,49 @@
 }
 
 .alert{
-    margin: 0px 0px 20px 0px;
+    padding: 0 0 20 0;
     display: block;
     width: 100%;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
 }
+
+/* Hide alert with css*/
+#msg {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+        background: none;
+        font-weight: unset;
+        font-size:1px;
+        padding: 0 0 0 0;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+        background: none;
+        font-weight: unset;
+        font-size:1px;
+        padding: 0 0 0 0
+    }
+}
+
 
 /* main content */
 .container {

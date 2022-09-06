@@ -23,6 +23,7 @@
 * [shell_context_processor](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database/page/0)
 
 * [%r vs %s in python](https://stackoverflow.com/questions/6005159/when-to-use-r-instead-of-s-in-python)
+  
   > The %s specifier converts the object using str(), and %r converts it using repr().
   
 * [format r(repr) of print in python3](https://stackoverflow.com/questions/33337564/format-rrepr-of-print-in-python3)
@@ -32,6 +33,7 @@
   ```
   
 * [index vs primary key](https://sqlwithmanoj.com/2015/08/10/difference-between-index-and-primary-key-msdn-tsql-forum/#:~:text=The%20primary%20key%20are%20the,define%20rules%20for%20the%20table.)
+  
   > An index is a physical concept and serves as a means to locate rows faster, but is not intended to define rules for the table.
   
 * # [multiple db connection with raw sql](https://stackoverflow.com/questions/41290675/run-sql-in-several-different-databases-with-flask-sqlalchemy) 
@@ -42,6 +44,7 @@
   results_db1 = engine_db1.execute(sql)
   results_db2 = engine_db2.execute(sql)
   ```
+  
 * # [multi-db with bind - sqlalchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/binds/#binds)
   ```
   SQLALCHEMY_DATABASE_URI = 'postgres://localhost/main'
@@ -51,19 +54,28 @@
   }
   ```
   
-* # [raw sql via sqlalchemy](https://www.youtube.com/watch?v=FEtJgtmogSY)
+* # raw sql via sqlalchemy
+  
+  * https://www.youtube.com/watch?v=FEtJgtmogSY
+  * https://chartio.com/resources/tutorials/how-to-execute-raw-sql-in-sqlalchemy/
+  * https://docs.sqlalchemy.org/en/14/core/connections.html#connectionless-execution-implicit-execution
+  * https://stackoverflow.com/questions/17972020/how-to-execute-raw-sql-in-flask-sqlalchemy-app
+
   ```
   test = db.engine.execute("xxx")
   for each in test:
     print(each)  # each is a list that consist of  a set of tuples with which each tuple represents a record
   ```
+  
+* # [raw sql via sqlchemy2.0](https://docs.sqlalchemy.org/en/14/changelog/migration_20.html#migration-20-implicit-execution)
 
 * [different sql join](https://www.w3schools.com/sql/sql_join.asp#:~:text=LEFT%20(OUTER)%20JOIN%20%3A%20Returns,either%20left%20or%20right%20table)
+  
   * (INNER) JOIN: Returns records that have matching values in both tables
   * LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
   * RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
-  * FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
-
+* FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+  
 * [HTTP](https://www.tutorialspoint.com/http/http_quick_guide.htm)
 
 * [HTML entities](https://www.w3schools.com/charsets/ref_html_entities_4.asp)
@@ -75,6 +87,7 @@
 * [flask app routing](https://www.geeksforgeeks.org/flask-app-routing/)
 
 * [get_flashed_message](https://stackoverflow.com/questions/57660542/flask-closing-flash-message)
+
 * [flash](https://www.youtube.com/watch?v=T1PLBEEZU8o)
 
 
@@ -187,3 +200,44 @@
 * [manipulate database](https://stackoverflow.com/questions/857670/how-to-connect-to-sql-server-database-from-javascript-in-the-browser)
 * [clear input](https://stackoverflow.com/questions/17237772/html-how-to-clear-input-using-javascript)
 * [jinja and js](https://www.learn-codes.net/javascript/how-to-set-a-value-inside-jinja-template-and-pass-it-to-javascript-variable/)
+
+
+
+# CSS
+
+* [hide element via css](https://stackoverflow.com/questions/21993661/css-auto-hide-elements-after-5-seconds)
+
+```html, css
+html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+#hideMe {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+```
+

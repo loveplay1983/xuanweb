@@ -18,7 +18,7 @@ class PatientInfo(FlaskForm):
     patientNum = StringField("门诊号", validators=[DataRequired()])
     # patientName = StringField("姓名", render_kw={"readonly": True})
     patientName = StringField("姓名")
-    patientSex = StringField("性别", validators=[Length(1)])
+    patientSex = StringField("性别")
     patientID = StringField("身份证")
     patientPhone = StringField("电话")
     patientAddr = StringField("地址")
