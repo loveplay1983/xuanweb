@@ -43,4 +43,4 @@ def collectData():
         """
         pName = patientInfo.patientName.data
         flash("欢迎就诊, {}!".format(pName))  # pName could be info[0]
-    return render_template("collect.html", form=patientInfo, p_num=pNum)
+    return render_template("collect.html", form=patientInfo)
