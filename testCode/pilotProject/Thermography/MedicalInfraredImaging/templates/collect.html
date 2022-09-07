@@ -27,7 +27,7 @@
         <legend class="patient_legend">病员信息</legend>
         {{ form.csrf_token }}
         <div class="patient_content">
-            <div class="row">
+            <div class="row justify-content-betweenr">
                 <div class="col">
                     {{ form.patientNum.label }}
                     {{ form.patientNum }}
@@ -40,8 +40,9 @@
                     {{ form.patientSex.label }}
                     {{ form.patientSex }}
                 </div>
-
-                <div class="w-100"></div>
+            </div>
+            <!--            <div class="w-100"></div>-->
+            <div class="row justify-content-between">
                 <div class="col">
                     {{ form.patientID.label }}
                     {{ form.patientID }}
@@ -67,7 +68,7 @@
 <form method="post" id="clinic_form">
     <fieldset class="clinic_fieldset">
         <legend class="clinic_legend">数据收集</legend>
-        <textarea name="" id="testText" cols="120" rows="8"></textarea><br>
+        <textarea name="" id="testText" cols="119" rows="10"></textarea><br>
         <button type="submit">上传</button>
     </fieldset>
 </form>
