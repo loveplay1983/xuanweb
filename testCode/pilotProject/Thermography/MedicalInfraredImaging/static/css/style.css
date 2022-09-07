@@ -45,7 +45,7 @@
     background-color: #DCDCCA;
 }
 
-.alert{
+.alert {
     padding: 0 0 20 0;
     display: block;
     width: 100%;
@@ -66,25 +66,27 @@
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
+
 @keyframes cssAnimation {
     to {
-        width:0;
-        height:0;
-        overflow:hidden;
+        width: 0;
+        height: 0;
+        overflow: hidden;
         background: none;
         font-weight: unset;
-        font-size:1px;
+        font-size: 1px;
         padding: 0 0 0 0;
     }
 }
+
 @-webkit-keyframes cssAnimation {
     to {
-        width:0;
-        height:0;
-        visibility:hidden;
+        width: 0;
+        height: 0;
+        visibility: hidden;
         background: none;
         font-weight: unset;
-        font-size:1px;
+        font-size: 1px;
         padding: 0 0 0 0
     }
 }
@@ -110,14 +112,33 @@
 
 /*}*/
 
-.collect_fieldset {
+/* collect page content*/
+#patient_form{}
+#clinic_form{}
+
+.patient_fieldset {
     border: solid thin;
     color: black;
     width: auto;
     margin: 0 auto;
 }
 
-.collect_fieldset_legend {
+.clinic_fieldset {
+    border: solid thin;
+    color: black;
+    width: auto;
+    margin: 0 auto;
+}
+
+.patient_legend {
+    color: #180638;
+    font-size: 20px;
+    width: auto;
+    margin: 0 auto;
+    padding: 5px 25px 5px 25px;
+}
+
+.clinic_legend {
     color: #180638;
     font-size: 20px;
     width: auto;
@@ -137,18 +158,6 @@
 /* section for data collect and initial clinic record */
 
 /* Test form for data collection*/
-.fieldset_frame {
-    border: solid thin;
-    color: black;
-    width: auto;
-    margin: 0 auto;
-}
-
-
-#testText {
-    width: auto;
-
-}
 
 
 /* footer*/

@@ -152,10 +152,13 @@
   ```
   
 * [js, html code examples](https://codepen.io/)
+
 * [js, html code playground](https://jsfiddle.net/)
+
 * [js, html code demo](https://www.codeply.com/)
 
 * [flex tutorial](https://www.quackit.com/css/flexbox/tutorial/)
+
 * [grid tutorial](https://www.quackit.com/css/grid/)
 
 * ### Different unit
@@ -181,9 +184,14 @@
 * [what is flex: 1](https://stackoverflow.com/questions/37386244/what-does-flex-1-mean)
 
 * [change image with range slider](https://codepen.io/salt/pen/vmBaNK)
+
 * [change image with range slider2](https://stackoverflow.com/questions/59499604/how-to-change-the-images-based-on-the-range-slider)
+
 * [change image with range slider3](https://stackoverflow.com/questions/25936001/html-javascript-change-image-with-slider-bar)
+
 * [img placeholer](https://stackoverflow.com/questions/32909488/how-do-i-make-a-placeholder-image-in-html-if-the-original-image-hasnt-been-foun)
+
+* ### [fieldset and grid](https://stackoverflow.com/questions/51076747/grid-layout-on-fieldset-bug-on-chrome)
 
 
 # flask wtforms
@@ -241,7 +249,9 @@ html, body {
 }
 ```
 
-
+* [CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+* [display: contents](https://caniuse.com/css-display-contents)
+* 
 
 # Git
 

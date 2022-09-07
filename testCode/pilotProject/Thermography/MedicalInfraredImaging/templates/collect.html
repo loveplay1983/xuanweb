@@ -22,11 +22,11 @@
 {% block content %}
 
 {{ p_num }}
-<form method="post" id="collect_patient_form">
-    <fieldset class="collect_fieldset">
-        <legend class="collect_fieldset_legend">病员信息</legend>
+<form method="post" id="patient_form">
+    <fieldset class="patient_fieldset">
+        <legend class="patient_legend">病员信息</legend>
         {{ form.csrf_token }}
-        <div class="container">
+        <div class="patient_content">
             <div class="row">
                 <div class="col">
                     {{ form.patientNum.label }}
@@ -64,9 +64,9 @@
 
 <br>
 
-<form method="post" id="collect_first_clinic">
-    <fieldset class="collect_fieldset">
-        <legend class="collect_fieldset_legend">数据收集</legend>
+<form method="post" id="clinic_form">
+    <fieldset class="clinic_fieldset">
+        <legend class="clinic_legend">数据收集</legend>
         <textarea name="" id="testText" cols="120" rows="8"></textarea><br>
         <button type="submit">上传</button>
     </fieldset>

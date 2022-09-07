@@ -49,7 +49,7 @@ def index():
 
 @app.route("/test")
 def test():
-    return render_template("test.html")
+    return render_template("range-slider-test.html")
 
 @app.route("/flash")
 def showFlash():

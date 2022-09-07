@@ -1,5 +1,53 @@
-/*.img_place{*/
-/*    width: 200px;*/
-/*    height: 300px;*/
-/*    border: 5px solid black;*/
-/*}*/
+* {
+    box-sizing: border-box;
+}
+
+.myForm {
+    display: grid;
+    grid-template-areas:
+      "my_legend my_legend my_legend"
+      "name email phone"
+      "addr hobby resume";
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: .8em;
+    background: #eee;
+    padding: 1.2em;
+}
+
+#content{
+    display: contents;
+}
+
+.my_legend{
+    grid-area: my_legend;
+    color: #180638;
+    font-size: 30px;
+    font-weight: bold;
+    width: auto;
+    margin: 0 auto;
+    padding: 5px 25px 5px 25px;
+}
+
+#name{
+    grid-area: name;
+}
+
+#email{
+    grid-area: email;
+}
+#phone{
+    grid-area: phone;
+}
+
+#addr{
+    grid-area: addr;
+}
+
+#hobby{
+    grid-area: hobby;
+}
+
+#resume{
+    grid-area:resume;
+}
