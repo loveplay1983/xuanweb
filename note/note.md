@@ -241,3 +241,9 @@ html, body {
 }
 ```
 
+
+
+# Git
+
+* [merge different branches](https://stackoverflow.com/questions/14168677/merge-development-branch-with-master)
+* [git tutorial](https://marklodato.github.io/visual-git-guide/index-en.html#basic-usage)
