@@ -333,3 +333,22 @@ pango_context_set_round_glyph_positions
 # Web
 
 * [base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64)
+
+  
+
+# Scraping
+
+* [web-scraping](https://realpython.com/tutorials/web-scraping/)
+* [urllib vs request vs beautifulsoup vs scrapy](https://www.reddit.com/r/learnpython/comments/4lphgr/urllib_and_requests_vs_scrapy_and_beautiful_soup/)
+* [web scraping, regEx, data visualization](https://towardsdatascience.com/web-scraping-regular-expressions-and-data-visualization-doing-it-all-in-python-37a1aade7924)
+* [web-crawling in python]()https://machinelearningmastery.com/web-crawling-in-python/
+* [urllib.request, http request](https://realpython.com/urllib-request/)
+* [regEx for web scrapy](https://oxylabs.io/blog/regex-web-scraping)
+
+### Download all images from website
+
+* https://www.codespeedy.com/download-all-images-of-a-webpage-using-python/
+* https://stackoverflow.com/questions/18408307/how-to-extract-and-download-all-images-from-a-website-using-beautifulsoup
+* https://www.thepythoncode.com/article/download-web-page-images-python
+
+* https://www.geeksforgeeks.org/how-to-download-all-images-from-a-web-page-in-python/
