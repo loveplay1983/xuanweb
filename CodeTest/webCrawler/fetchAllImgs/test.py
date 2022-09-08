@@ -35,9 +35,9 @@ Email  : michaelxuan@hotmail.com
 # main(url)
 
 
-import urllib2
+import urllib3
 from bs4 import BeautifulSoup
-page = urllib2.urlopen('http://www.youtube.com/')
+page = urllib3.urlopen('http://www.youtube.com/')
 soup = BeautifulSoup(page)
 tags=soup.findAll('img')
 print "\n".join(set(tag['src'] for tag in tags))
