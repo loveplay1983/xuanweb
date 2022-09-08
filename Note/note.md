@@ -161,6 +161,8 @@
 
 * [grid tutorial](https://www.quackit.com/css/grid/)
 
+* [img src vs data-src](https://stackoverflow.com/questions/15320052/what-are-all-the-differences-between-src-and-data-src-attributes)
+
 * ### Different unit
   > PX: Pixels (px) are considered absolute units, although they 1
   > are relative to the DPI and resolution of the viewing device. 
