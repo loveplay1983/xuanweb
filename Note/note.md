@@ -334,6 +334,8 @@ pango_context_set_round_glyph_positions
 
 * [base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64)
 
+* [W3C vs WHATWG](https://stackoverflow.com/questions/6825713/html5-w3c-vs-whatwg-which-gives-the-most-authoritative-spec)
+
   
 
 # Scraping
