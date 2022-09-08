@@ -213,6 +213,7 @@
 
 # CSS
 
+* [At-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
 * [hide element via css](https://stackoverflow.com/questions/21993661/css-auto-hide-elements-after-5-seconds)
 
 ```html, css
@@ -251,8 +252,7 @@ html, body {
 
 * [CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 * [display: contents](https://caniuse.com/css-display-contents)
-
-  
+* 
 
 # Git
 
@@ -265,23 +265,71 @@ html, body {
   ```git
   git push --set-upstream origin dev
   ```
+  
+* Delete branch
+
+  ```git
+  // delete branch locally
+  git branch -d localBranchName
+  
+  // delete branch remotely
+  git push origin --delete remoteBranchName
+  ```
+
+  
 
 # PDF and Printing 
 
 * https://artsysops.com/2021/01/02/how-to-open-a-pdf-file-on-the-browser-with-flask/
+
 * https://pythonprogramming.altervista.org/make-a-pdf-from-html-with-python-and-flask/
+
 * https://stackoverflow.com/questions/28165704/convert-html-to-pdf-using-python-flask
+
 * https://stackoverflow.com/questions/18281433/flask-handling-a-pdf-as-its-own-page
+
 * https://pythonhosted.org/Flask-WeasyPrint/
+
 * https://www.youtube.com/watch?v=C8jxInLM9nM
+
 * https://python.libhunt.com/compare-pypdf2-vs-weasyprint
+
 * https://doubletapp.ai/en/blog/19/pdf-generation
+
 * https://www.reddit.com/r/flask/comments/vd5ei3/print_a_pdf_file_from_flask_web_application/
+
 * **https://developer.mozilla.org/en-US/docs/Web/API/Window/print**
+
 * **https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_print**
 
 * http://https://www.w3docs.com/snippets/html/how-to-embed-pdf-in-html.html
+
 * [embed pdf in html page](https://www.w3docs.com/snippets/html/how-to-embed-pdf-in-html.html)
-* [print.js](https://printjs.crabbly.com/)
+
+* [print.js print part of the html by id](https://printjs.crabbly.com/)
+
+  ```js, html
+   <form method="post" action="#" id="printJS-form">
+      ...
+   </form>
+  
+   <button type="button" onclick="printJS('printJS-form', 'html')">
+      Print Form
+   </button>
+  ```
+
+  
+
 * [printjs example](https://codesandbox.io/examples/package/print-js)
 
+* [flask-weasyprint error](https://stackoverflow.com/questions/68720486/how-to-fix-function-symbol-pango-context-set-round-glyph-positions-error)
+
+```
+pango_context_set_round_glyph_positions
+```
+
+
+
+# Web
+
+* [base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64)

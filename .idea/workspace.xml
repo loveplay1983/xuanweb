@@ -44,15 +44,6 @@
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/dialog.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/timeSyncClient.pro" afterDir="false" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-      <change afterPath="$PROJECT_DIR$/Note/note.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Note/screencapture-geekflare-python-asynchronous-web-frameworks-2020-11-18-06_00_04.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Note/screencapture-medium-SkyscannerEng-from-flask-to-aiohttp-22f1ddc5dd5e-2020-11-18-05_59_28.pdf" afterDir="false" />
->>>>>>> main
->>>>>>> main
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/coding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -121,17 +112,8 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
-=======
-      <change beforePath="$PROJECT_DIR$/Noe/note.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noe/screencapture-geekflare-python-asynchronous-web-frameworks-2020-11-18-06_00_04.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noe/screencapture-medium-SkyscannerEng-from-flask-to-aiohttp-22f1ddc5dd5e-2020-11-18-05_59_28.pdf" beforeDir="false" />
->>>>>>> main
->>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +156,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -187,22 +168,8 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;settings.editor.splitter.proportion&quot;: &quot;0.21017203&quot;
-=======
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/loveplay1983/workstation/coding/webDesignWithPython/CodeTest/codSnippet/pdfPrint",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "settings.editor.splitter.proportion": "0.21017203"
->>>>>>> main
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CodeTest/codSnippet/pdfPrint" />
