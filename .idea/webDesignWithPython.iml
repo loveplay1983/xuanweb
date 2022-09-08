@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/testCode/pilotProject/MsgBoard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/testCode/demos/bluelog-master" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/testCode/pilotProject/Thermography" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CodeTest/pilotProject/Thermography" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CodeTest/pilotProject/Thermography/MedicalInfraredImaging" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
