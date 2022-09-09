@@ -353,15 +353,22 @@ pango_context_set_round_glyph_positions
 
 * https://www.codespeedy.com/download-all-images-of-a-webpage-using-python/
 * https://stackoverflow.com/questions/18408307/how-to-extract-and-download-all-images-from-a-website-using-beautifulsoup
-* https://www.thepythoncode.com/article/download-web-page-images-python
-
 * https://www.geeksforgeeks.org/how-to-download-all-images-from-a-web-page-in-python/
+* **https://www.thepythoncode.com/article/download-web-page-images-python**
 
 
 
 # Regular Expression
 
 * https://regexr.com/
+* https://regex101.com/
 * https://www.rexegg.com/regex-quickstart.html
 * https://www.regular-expressions.info/refquick.html
 * https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+
+### Commonly used RegeX
+
+* https://medium.com/@booyakarahul/common-regular-expressions-handbook-601501b16474
+* https://www.c-sharpcorner.com/UploadFile/ee01e6/important-list-of-regular-expressions-and-its-uses/
+* https://regexland.com/most-common-regular-expressions/
+* https://digitalfortress.tech/tips/top-15-commonly-used-regex/
