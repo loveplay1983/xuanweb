@@ -356,3 +356,12 @@ pango_context_set_round_glyph_positions
 * https://www.thepythoncode.com/article/download-web-page-images-python
 
 * https://www.geeksforgeeks.org/how-to-download-all-images-from-a-web-page-in-python/
+
+
+
+# Regular Expression
+
+* https://regexr.com/
+* https://www.rexegg.com/regex-quickstart.html
+* https://www.regular-expressions.info/refquick.html
+* https://www.w3schools.com/jsref/jsref_obj_regexp.asp
