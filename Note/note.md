@@ -340,7 +340,9 @@ pango_context_set_round_glyph_positions
 * [http client vs rest client](https://stackoverflow.com/questions/49950973/difference-between-http-client-and-rest-client#:~:text=HTTP%20client%20is%20a%20client,and%20this%20service%20is%20RESTful.)
 * [http vs rest](https://www.baeldung.com/cs/rest-vs-http)
 * [what is restful - video](https://www.youtube.com/watch?v=SLwpqD8n3d0)
-* [rest web-service](https://www.youtube.com/watch?v=LooL6_chvN4)
+* **[rest web-service](https://www.youtube.com/watch?v=LooL6_chvN4)**
+* https://www.youtube.com/watch?v=-mN3VyJuCjM
+* https://www.youtube.com/watch?v=Q-BpqyOT3a8
 
 # Scraping
 
