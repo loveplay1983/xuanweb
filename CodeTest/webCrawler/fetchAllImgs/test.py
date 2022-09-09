@@ -35,9 +35,17 @@ Email  : michaelxuan@hotmail.com
 # main(url)
 
 
-import urllib3
-from bs4 import BeautifulSoup
-page = urllib3.urlopen('http://www.youtube.com/')
-soup = BeautifulSoup(page)
-tags=soup.findAll('img')
-print "\n".join(set(tag['src'] for tag in tags))
+# import urllib3
+# from bs4 import BeautifulSoup
+# page = urllib3.urlopen('http://www.youtube.com/')
+# soup = BeautifulSoup(page)
+# tags=soup.findAll('img')
+# print "\n".join(set(tag['src'] for tag in tags))
+
+
+import requests
+import os
+from tqdm import tqdm
+from bs4 import BeautifulSoup as bs
+from urllib.parse import urljoin, urlparse
+
