@@ -403,3 +403,8 @@ pango_context_set_round_glyph_positions
 * [Thermography guideline](https://www.youtube.com/watch?v=8Oz8WAnMKW8)
 * [medical thermography](https://www.youtube.com/watch?v=8XxE0POMMns)
 
+### Guidelines
+
+* https://thermohuman.com/2020/11/26/how-thermography-can-help-you/
+* https://www.iact-org.org/professionals/thermog-guidelines.html#clinical
+
