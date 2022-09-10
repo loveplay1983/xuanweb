@@ -408,3 +408,14 @@ pango_context_set_round_glyph_positions
 * https://thermohuman.com/2020/11/26/how-thermography-can-help-you/
 * https://www.iact-org.org/professionals/thermog-guidelines.html#clinical
 
+
+
+# Images websites
+
+https://buffer.com/library/free-images/
+
+
+
+# IP proxy
+
+https://blog.csdn.net/aaronjny/article/details/87865942#t10

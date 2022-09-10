@@ -44,34 +44,6 @@
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/dialog.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/timeSyncClient.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/.ipynb_checkpoints/bs4Test-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/bs4Test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1657664066011-ed54a1be81d2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1659535824233-966cc8de61a5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1660866838212-df428c885827" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1661956602153-23384936a1d3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1661961112951-f2bfd1f253ce" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662581871665-f299ba8ace07" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662659415466-bdc20865303c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662715555538-09d0097a6ef2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662722246439-9990d39ab4f2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662725461878-08cf9a790168" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662729429584-ff91702c2c87" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662732765006-59eb9f01d807" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662733625046-ac900bb77091" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662734724939-962430945ca3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662735142465-c443674e0390" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662743065111-435a92c58a5d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662752531842-3e27007f85fe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662754746111-ea991b9bd3d2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662758949073-56537345d85d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662803774446-c3c6afca5d41" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662808115501-af50b8bb86c3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662810144427-db6f49da41a7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662810331468-a260f67a936f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662813696894-3bf5b3b9c15b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test/photo-1662814438857-8886641b3c7c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/coding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -141,7 +113,9 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/.ipynb_checkpoints/bs4Test-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/.ipynb_checkpoints/bs4Test-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/bs4Test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/bs4Test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Note/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/Note/note.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
