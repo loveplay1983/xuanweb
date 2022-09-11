@@ -357,10 +357,15 @@ pango_context_set_round_glyph_positions
 # Scraping
 
 * [web-scraping](https://realpython.com/tutorials/web-scraping/)
+
 * [urllib vs request vs beautifulsoup vs scrapy](https://www.reddit.com/r/learnpython/comments/4lphgr/urllib_and_requests_vs_scrapy_and_beautiful_soup/)
+
 * [web scraping, regEx, data visualization](https://towardsdatascience.com/web-scraping-regular-expressions-and-data-visualization-doing-it-all-in-python-37a1aade7924)
+
 * [web-crawling in python]()https://machinelearningmastery.com/web-crawling-in-python/
+
 * [urllib.request, http request](https://realpython.com/urllib-request/)
+
 * [regEx for web scrapy](https://oxylabs.io/blog/regex-web-scraping)
 
 * ### Tutorial
@@ -370,8 +375,12 @@ pango_context_set_round_glyph_positions
   https://realpython.com/beautiful-soup-web-scraper-python/
 
   https://www.dataquest.io/blog/web-scraping-python-using-beautiful-soup/
+  
+* [List of agent-string](https://deviceatlas.com/blog/list-of-user-agent-strings)
 
+* 
 
+  
 
 ### Download all images from website
 

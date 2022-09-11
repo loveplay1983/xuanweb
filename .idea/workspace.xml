@@ -113,6 +113,7 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/study.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/study.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +127,7 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -289,7 +291,7 @@
       <workItem from="1662382429906" duration="6424000" />
       <workItem from="1662725176012" duration="3190000" />
       <workItem from="1662865915380" duration="2255000" />
-      <workItem from="1662903261702" duration="5733000" />
+      <workItem from="1662903261702" duration="6571000" />
     </task>
     <servers />
   </component>
