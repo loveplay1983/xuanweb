@@ -11,14 +11,22 @@ from tqdm import tqdm
 from bs4 import BeautifulSoup as bs
 from urllib.parse import urljoin, urlparse
 
+path = "test"
+
+url = "https://unsplash.com/s/photos/japanese-girl"
+
+headers = {
+    'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1'
+}
+
 
 def is_valid(url):
     parsed = urlparse(url)
     return bool(parsed.netloc) and bool(parsed.scheme)
 
 
-def get_all_imgs(url):
-    soup = bs(requests.get(url).content, "html.parser")
+def get_all_imgs(url, headers):
+    soup = bs(requests.get(url=url, headers=headers).content.decode(), "html.parser")
     urls = []
     for img in tqdm(soup.find_all("img"), "Extracting images"):
         img_url = img.attrs.get("src")
@@ -67,7 +75,11 @@ def download(url, pathname):
             progress.update(len(data))
 
 
-def main(url, path):
-    imgs = get_all_imgs(url)
+def main(path, url, headers):
+    imgs = get_all_imgs(url=url, headers=headers)
     for img in imgs:
-        download(img, path)
+        download(img, pathname=path)
+
+
+if __name__ == "__main__":
+    main(path, url, headers)

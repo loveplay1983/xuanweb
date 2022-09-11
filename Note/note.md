@@ -363,6 +363,16 @@ pango_context_set_round_glyph_positions
 * [urllib.request, http request](https://realpython.com/urllib-request/)
 * [regEx for web scrapy](https://oxylabs.io/blog/regex-web-scraping)
 
+* ### Tutorial
+
+  https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
+
+  https://realpython.com/beautiful-soup-web-scraper-python/
+
+  https://www.dataquest.io/blog/web-scraping-python-using-beautiful-soup/
+
+
+
 ### Download all images from website
 
 * https://www.codespeedy.com/download-all-images-of-a-webpage-using-python/

@@ -3,6 +3,8 @@
 Author : Michael Xuan
 Project: Study
 Email  : michaelxuan@hotmail.com
+
+Comment: Note wechat has particular tag for image resource which is data-src
 """
 # coding:utf-8
 # __auth__ = "maiz"
@@ -14,7 +16,8 @@ import datetime
 import os
 
 # url = input("请输入url：")
-url = 'https://mp.weixin.qq.com/s?__biz=MzI4MzAxNzU3MA==&mid=2649159629&idx=1&sn=d63d2571aa1c0c9ca14fefd1f15047be&chksm=f3837fc0c4f4f6d62ed8c6af4a09f54af73182a9938f9ad984baf1ebc1fdf84df48d2c10fc73&mpshare=1&scene=23&srcid=0908T3nevW54iSbofXamKa2O&sharer_sharetime=1662609088930&sharer_shareid=6d5eaf21850267bfd7c8759114122690&exportkey=ASYoc44SifIXnFBhUTe2bm4%3D&acctmode=0'  # 获取连接
+# url = 'https://mp.weixin.qq.com/s?__biz=MzI4MzAxNzU3MA==&mid=2649159629&idx=1&sn=d63d2571aa1c0c9ca14fefd1f15047be&chksm=f3837fc0c4f4f6d62ed8c6af4a09f54af73182a9938f9ad984baf1ebc1fdf84df48d2c10fc73&mpshare=1&scene=23&srcid=0908T3nevW54iSbofXamKa2O&sharer_sharetime=1662609088930&sharer_shareid=6d5eaf21850267bfd7c8759114122690&exportkey=ASYoc44SifIXnFBhUTe2bm4%3D&acctmode=0'  # 获取连接
+url = "https://unsplash.com/s/photos/japanese-girl"
 curr_time = datetime.datetime.now()  # 获取系统时间
 print(curr_time)  # 打印时间 测试用
 headers = {
@@ -26,7 +29,7 @@ if os.path.exists(path):  # 检查是否存在这个文件夹
 else:
     os.mkdir(path)  # 不存在则创建
     print("创建成功！！！！正在保存图片")
-dirname = os.getcwd() + '' + path + ''  # 获取当前工作目录并加上之前的时间生成文件夹路径
+dirname = os.getcwd() + "/" + path  # 获取当前工作目录并加上之前的时间生成文件夹路径
 req = requests.get(url=url, headers=headers).content.decode()  # 向刚才输入的公众号链接里面发送请求
 # soup = BeautifulSoup(req, 'lxml')  # 用BeautifulSoup解析网页
 soup = BeautifulSoup(req, 'html.parser')
@@ -38,7 +41,8 @@ for i in res:  # 遍历所有的图片标签
     else:  # 否则获取data-src里面的内容获取图片链接
         print(f'链接：{i.get("data-src")}类型为：{i.get("data-type")}')
     try:  # 尝试去保存图片 如果保存图片错误则抛出异常
-        with open(dirname + f'{a}.{i.get("data-type")}',
+        print(os.path.join(dirname, f'{a}.{i.get("data-type")}'))
+        with open(os.path.join(dirname, f'{a}.{i.get("data-type")}'),
                   'wb') as f:  # 拼接路径+a.jpg a是等于数字 每添加一个 a自增一 相当于是给图片命名 并且以二进制的形式写入
             f.write(requests.get(url=i.get("data-src"), headers=headers).content)  # 向这个图片发送请求 并将图片的二进制写入
             f.close()  # 关闭写入
