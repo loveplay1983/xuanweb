@@ -354,6 +354,8 @@ pango_context_set_round_glyph_positions
 
 * **[what is idempotent](https://www.youtube.com/watch?v=I08syTslan8)**
 
+* [python and web service API](https://realpython.com/api-integration-in-python/)
+
 # Scraping
 
 * [web-scraping](https://realpython.com/tutorials/web-scraping/)
