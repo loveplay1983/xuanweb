@@ -469,3 +469,29 @@ https://buffer.com/library/free-images/
 # IP proxy
 
 https://blog.csdn.net/aaronjny/article/details/87865942#t10
+
+
+
+
+
+# Screen Capture
+
+* QT  - TODO
+
+  * Input patient ID
+  * Capture the desired region of the image
+  * Click the save button which will record the patient ID, as well as the captured region by generating a new folder according to the patient ID
+
+  https://doc.qt.io/qt-5/qscreen.html#grabWindow
+
+  https://doc.qt.io/qt-5/qtwidgets-desktop-screenshot-example.html
+
+* Make use of  **greenshot** and capture the image manually
+
+  * Create new folder
+
+  * Create patient folder
+
+  * Capture the desired region and save it to the destination folder manually
+
+    
