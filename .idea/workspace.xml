@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="762a4038-c6fa-41b5-8ee7-89a2763f05cf" name="Changes" comment="" />
+    <list default="true" id="762a4038-c6fa-41b5-8ee7-89a2763f05cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/viewer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,11 +21,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Python Script" />
         <option value="Jupyter Notebook" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -44,20 +55,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/loveplay1983/workstation/coding/webDesignWithPython/CodeTest/codSnippet/pdfPrint&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.21017203&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/loveplay1983/workstation/coding/webDesignWithPython/CodeTest/codSnippet/pdfPrint",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "settings.editor.splitter.proportion": "0.21017203"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CodeTest/codSnippet/pdfPrint" />
@@ -177,7 +189,7 @@
       <workItem from="1662865915380" duration="2255000" />
       <workItem from="1662903261702" duration="6571000" />
       <workItem from="1663027385007" duration="51000" />
-      <workItem from="1663027450738" duration="4881000" />
+      <workItem from="1663027450738" duration="11009000" />
     </task>
     <servers />
   </component>
