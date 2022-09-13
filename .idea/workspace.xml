@@ -2,22 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="762a4038-c6fa-41b5-8ee7-89a2763f05cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/backup/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/backup/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/backup/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/backup/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/backup/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/pythonTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/qtCallPython.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/widget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/widget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/callPython/qtCallPython/widget.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/componentCheck.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/componentCheck/componentCheck/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/datetimeEdit.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/widget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/widget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/datetimeedit/datetimeEdit/widget.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/docwidgetTest/dockwidgetTeest/dockwidgetTeest.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/docwidgetTest/dockwidgetTeest/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/docwidgetTest/dockwidgetTeest/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/docwidgetTest/dockwidgetTeest/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/networkRequest/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/networkRequest/networkRequest.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/networkRequest/test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/networkRequest/test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/networkRequest/test.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/qstackTest/qstackTest/dialog.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/qstackTest/qstackTest/dialog.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/qstackTest/qstackTest/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/qstackTest/qstackTest/qstackTest.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/qtablewidget/untitled/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/qtablewidget/untitled/untitled.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/qtablewidget/untitled/widget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/qtablewidget/untitled/widget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/qtablewidget/untitled/widget.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/splitterTest/splitterTest/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/splitterTest/splitterTest/splitterTest.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/dialog.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/dialog.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/dialog.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/timeSyncClient.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/coding.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web crawler/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Web crawler/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/TCPSocket.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/TCPSocket.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/.qmake.stash" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/.qmake.stash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_predefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_predefs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpclient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpclient.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpclient.o" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpclient.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/tcpclient.o" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/tcpclient.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/ui_tcpclient.h" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/build-tcpclient-Desktop_Qt_5_12_0_GCC_64bit-Debug/ui_tcpclient.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/tcpclient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/tcpclient.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/tcpclient.h" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/tcpclient.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/tcpclient.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/tcpclient.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/tcpclient.pro.user" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/tcpclient.pro.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/tcpclient.ui" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/client/tcpclient/tcpclient.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/TcpServer.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/TcpServer.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/TcpServer.pro.user" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/TcpServer.pro.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/server.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/server.h" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/server.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/tcpclientsocket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/tcpclientsocket.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/tcpclientsocket.h" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/tcpclientsocket.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/tcpserver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/tcpserver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/tcpserver.h" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/tcpserver.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/tcpserver.ui" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/TcpServer/tcpserver.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/.qmake.stash" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/.qmake.stash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_predefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_predefs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_server.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_server.o" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_server.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpclientsocket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpclientsocket.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpclientsocket.o" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpclientsocket.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpserver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpserver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpserver.o" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_tcpserver.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/server.o" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/server.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/tcpclientsocket.o" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/tcpclientsocket.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/tcpserver.o" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/tcpserver.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/ui_tcpserver.h" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/network/tcpSocket/server/build-TcpServer-Desktop_Qt_5_12_0_GCC_64bit-Debug/ui_tcpserver.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/build-firstQtProgram-Desktop_Qt_5_12_0_GCC_64bit-Debug/.qmake.stash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/build-firstQtProgram-Desktop_Qt_5_12_0_GCC_64bit-Debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/build-firstQtProgram-Desktop_Qt_5_12_0_GCC_64bit-Debug/firstQtProgram" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/build-firstQtProgram-Desktop_Qt_5_12_0_GCC_64bit-Debug/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/build-firstQtProgram-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_predefs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/build-firstQtProgram-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_testwidget.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/build-firstQtProgram-Desktop_Qt_5_12_0_GCC_64bit-Debug/moc_testwidget.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/build-firstQtProgram-Desktop_Qt_5_12_0_GCC_64bit-Debug/testwidget.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/build-firstQtProgram-Desktop_Qt_5_12_0_GCC_64bit-Debug/ui_testwidget.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/firstQtProgram.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/firstQtProgram.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/firstQtProgram.pro.user" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/firstQtProgram.pro.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/testwidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/testwidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/testwidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/testwidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/testwidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/../c++/qt/test/firstQtProgram/testwidget.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/some_note/Ncurses" beforeDir="false" afterPath="$PROJECT_DIR$/../linux/some_note/Ncurses" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../makefile/cmake_tutorial/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/cmake_tutorial/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellofunc.c" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellofunc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.c" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/hellomake.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/imgs/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/viewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/codSnippet/imgViewer/viewer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,21 +158,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/loveplay1983/workstation/coding/webDesignWithPython/CodeTest/codSnippet/pdfPrint",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
-    "settings.editor.splitter.proportion": "0.21017203"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/loveplay1983/workstation/coding/webDesignWithPython/CodeTest/codSnippet/pdfPrint&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.21017203&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CodeTest/codSnippet/pdfPrint" />
@@ -196,6 +293,7 @@
       <workItem from="1662903261702" duration="6571000" />
       <workItem from="1663027385007" duration="51000" />
       <workItem from="1663027450738" duration="15940000" />
+      <workItem from="1663073473054" duration="5885000" />
     </task>
     <servers />
   </component>
