@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="762a4038-c6fa-41b5-8ee7-89a2763f05cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/study.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/webCrawler/fetchAllImgs/study.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="762a4038-c6fa-41b5-8ee7-89a2763f05cf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +177,7 @@
       <workItem from="1662865915380" duration="2255000" />
       <workItem from="1662903261702" duration="6571000" />
       <workItem from="1663027385007" duration="51000" />
-      <workItem from="1663027450738" duration="4870000" />
+      <workItem from="1663027450738" duration="4881000" />
     </task>
     <servers />
   </component>
