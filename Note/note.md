@@ -506,9 +506,15 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 * Make use of  **greenshot** and capture the image manually
 
   * Create new folder
-
-  * Create patient folder
-
+* Create patient folder
   * Capture the desired region and save it to the destination folder manually
+* 
 
-    
+# Network
+
+* TCP/IP - OSI
+
+  https://community.fs.com/blog/tcpip-vs-osi-whats-the-difference-between-the-two-models.html
+
+  https://www.guru99.com/difference-tcp-ip-vs-osi-model.html
+
