@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="762a4038-c6fa-41b5-8ee7-89a2763f05cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CodeTest/pythonModuleTest/basicMath/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/pythonModuleTest/basicMath/addition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/pythonModuleTest/basicMath/division.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/pythonModuleTest/basicMath/expo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/pythonModuleTest/basicMath/multi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeTest/pythonModuleTest/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeTest/pilotProject/Thermography/MedicalInfraredImaging/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/CodeTest/pilotProject/Thermography/MedicalInfraredImaging/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/bluelog-master/bluelog/static/ckeditor/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/bluelog-master/bluelog/static/ckeditor/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Note/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/Note/note.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
