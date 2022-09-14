@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="762a4038-c6fa-41b5-8ee7-89a2763f05cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webDesignWithPython.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Note/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/Note/note.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
