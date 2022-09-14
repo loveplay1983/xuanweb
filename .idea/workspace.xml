@@ -44,9 +44,6 @@
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/dialog.ui" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../c++/qt/test/timeSyncWithThreadTest/Client/timeSyncClient/timeSyncClient.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Study/03_form/uploads/22fb9cc64496470da871d4d906009c43.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Study/03_form/uploads/4608b0961f0642ad8406a0d7f4d047a8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Study/03_form/uploads/739c23a6149c4806b96aa343d59a6a2e.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/coding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -117,8 +114,6 @@
       <change beforePath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../makefile/simple_makefile_demo/note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Note/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/Note/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Study/03_form/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Study/03_form/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Study/03_form/uploads/b54e06e11ae942b681fe8719b85be545.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

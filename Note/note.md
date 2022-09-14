@@ -518,3 +518,7 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 
   https://www.guru99.com/difference-tcp-ip-vs-osi-model.html
 
+* Web Service, and Web Socket
+
+  https://www.quora.com/What-is-the-difference-between-a-socket-and-a-web-service
+
