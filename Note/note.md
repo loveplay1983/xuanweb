@@ -522,3 +522,17 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 
   https://www.quora.com/What-is-the-difference-between-a-socket-and-a-web-service
 
+* socket vs http
+
+  https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/
+
+  https://www.educba.com/websocket-vs-rest/
+
+# Flask
+
+*  Sending data from local node to server via web socket
+
+  https://medium.com/a-layman/send-images-to-the-flask-server-and-show-images-on-the-browser-bcdfb81d16cd
+
+* 
+
