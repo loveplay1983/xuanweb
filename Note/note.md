@@ -2,6 +2,8 @@
 
 * # [flask tutorial](https://www.youtube.com/watch?v=KrRzZGcHjK8&list=PLXmMXHVSvS-BlLA5beNJojJLlpE0PJgCW&index=9)
 
+* [greyli](https://github.com/greyli/helloflask)
+
 * [jinja2 super()](https://jinja.palletsprojects.com/en/3.1.x/templates/?highlight=super)
     > It’s possible to render the contents of the parent 
     > block by calling super(). This gives back the results 
@@ -74,6 +76,7 @@
   * (INNER) JOIN: Returns records that have matching values in both tables
   * LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
   * RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+  
 * FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
   
 * [HTTP](https://www.tutorialspoint.com/http/http_quick_guide.htm)
