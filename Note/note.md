@@ -507,8 +507,16 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 
   * Create new folder
 * Create patient folder
+  
   * Capture the desired region and save it to the destination folder manually
-* 
+
+* Capture the selected area
+
+  https://stackoverflow.com/questions/24666152/taking-a-screenshot-from-the-selected-areaqrubberband-on-qt
+
+  https://forum.qt.io/topic/95705/screenshot-selection/2
+
+
 
 # Network
 
