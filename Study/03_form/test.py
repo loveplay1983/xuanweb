@@ -38,7 +38,7 @@ app.config["ALLOWED_EXTENSIONS"] = ["png", "jpg", "jpeg", "gif"]
 
 # Flask config
 # set request body's max length - 3MB
-app.config["MAX_CONTENT_LENGTH"] = 3 * 1024 * 1024
+app.config["MAX_CONTENT_LENGTH"] = 10 * 1024 * 1024
 
 # Flask-CKEditor config
 app.config["CKEDITOR_SERVE_LOCAL"] = True
@@ -46,7 +46,7 @@ app.config["CKEDITOR_FILE_UPLOADER"] = "upload_for_ckeditor"
 
 # Flask-Dropzone config
 app.config["DROPZONE_ALLOWED_FILE_TYPE"] = "image"
-app.config["DROPZONE_MAX_FILE_SIZE"] = 3  # 3MB - please check line 42
+app.config["DROPZONE_MAX_FILE_SIZE"] = 10  # 3MB - please check line 42
 app.config["DROPZONE_MAX_FILES"] = 30
 
 # Pass ckeditor and dropzone to flask instance

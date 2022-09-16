@@ -117,7 +117,7 @@ CKEDITOR.stylesSet.add( 'default', [
 
 	{ name: 'Featured Snippet', type: 'widget', widget: 'codeSnippet', attributes: { 'class': 'code-featured' } },
 
-	{ name: 'Featured Formula', type: 'widget', widget: 'mathjax', attributes: { 'class': 'math-featured' } },
+	{ name: 'Featured Formula', type: 'widget', widget: 'mathjax', attributes: { 'class': 'basicMath-featured' } },
 
 	{ name: '240p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-240p' }, group: 'size' },
 	{ name: '360p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-360p' }, group: 'size' },

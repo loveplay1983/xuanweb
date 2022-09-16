@@ -1,13 +1,25 @@
 # Will add categorization later 
 
+* [pip](https://pip.pypa.io/en/stable/)
+  
+* [pip requirement.txt](pip freeze > requirements.txt)
+  
+* [Conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+  
+* [share env](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
+  
 * # [flask tutorial](https://www.youtube.com/watch?v=KrRzZGcHjK8&list=PLXmMXHVSvS-BlLA5beNJojJLlpE0PJgCW&index=9)
 
+* [greyli](https://github.com/greyli/helloflask)
+
 * [jinja2 super()](https://jinja.palletsprojects.com/en/3.1.x/templates/?highlight=super)
+  
     > It’s possible to render the contents of the parent 
     > block by calling super(). This gives back the results 
-    > of the parent block
+> of the parent block
 
 * [whitespace](https://python-web.teclado.com/section11/lectures/02_jinja_whitespace_control/)
+  
   ```
   app.jinja_env.lstrip_blocks = True
   app.jinja_env.trim_blocks = True
@@ -74,6 +86,7 @@
   * (INNER) JOIN: Returns records that have matching values in both tables
   * LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
   * RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+  
 * FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
   
 * [HTTP](https://www.tutorialspoint.com/http/http_quick_guide.htm)
@@ -387,11 +400,15 @@ pango_context_set_round_glyph_positions
 
 * ### Tutorial
 
-  https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
+  https://realpython.com/python-web-scraping-practical-introduction/
 
   https://realpython.com/beautiful-soup-web-scraper-python/
 
   https://www.dataquest.io/blog/web-scraping-python-using-beautiful-soup/
+  
+  https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
+  
+  
   
 * [List of agent-string](https://deviceatlas.com/blog/list-of-user-agent-strings)
 
@@ -489,9 +506,41 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 * Make use of  **greenshot** and capture the image manually
 
   * Create new folder
-
-  * Create patient folder
-
+* Create patient folder
+  
   * Capture the desired region and save it to the destination folder manually
 
-    
+* Capture the selected area
+
+  https://stackoverflow.com/questions/24666152/taking-a-screenshot-from-the-selected-areaqrubberband-on-qt
+
+  https://forum.qt.io/topic/95705/screenshot-selection/2
+
+
+
+# Network
+
+* TCP/IP - OSI
+
+  https://community.fs.com/blog/tcpip-vs-osi-whats-the-difference-between-the-two-models.html
+
+  https://www.guru99.com/difference-tcp-ip-vs-osi-model.html
+
+* Web Service, and Web Socket
+
+  https://www.quora.com/What-is-the-difference-between-a-socket-and-a-web-service
+
+* socket vs http
+
+  https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/
+
+  https://www.educba.com/websocket-vs-rest/
+
+# Flask
+
+*  Sending data from local node to server via web socket
+
+  https://medium.com/a-layman/send-images-to-the-flask-server-and-show-images-on-the-browser-bcdfb81d16cd
+
+* 
+
