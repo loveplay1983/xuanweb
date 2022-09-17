@@ -7,16 +7,6 @@
     {{ message[1] }}
 </div>
 {% endfor %}
-
-<!--    {% with messages = get_flashed_messages(with_categories=true) %}-->
-<!--    {% if messages %}-->
-<!--    <ul class=flashes>-->
-<!--        {% for category, message in messages %}-->
-<!--        <li class="{{ category }}">{{ message }}</li>-->
-<!--        {% endfor %}-->
-<!--    </ul>-->
-<!--    {% endif %}-->
-<!--    {% endwith %}-->
 {% endblock flash_message %}
 
 {% block content %}
@@ -74,5 +64,8 @@
 </form>
 
 <button onclick="window.print()">Print this page</button>
+
+<div style="float: left;">Left Divddddddddddddddddddddddddddddddddddddddddddddd</div>
+<div style="float: right;">Right Divddddddddddddddddddddddddddddddddddddddddddddddddd</div>
 
 {% endblock content %}

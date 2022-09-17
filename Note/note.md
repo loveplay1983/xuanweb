@@ -542,5 +542,11 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 
   https://medium.com/a-layman/send-images-to-the-flask-server-and-show-images-on-the-browser-bcdfb81d16cd
 
-* 
+* ImportError: cannot import name 'TimedJSONWebSignatureSerializer' from 'itsdangerous' 
+
+  https://chowdera.com/2022/04/202204060140006884.html
+  
+*  what is UserMixin
+
+   https://stackoverflow.com/questions/63231163/what-is-the-usermixin-in-flask
 

@@ -5,6 +5,7 @@ Project: Study
 Email  : michaelxuan@hotmail.com
 """
 from flask import flash, redirect, url_for, render_template, request
+from flask_dropzone import Dropzone
 from MedicalInfraredImaging import app, db
 from MedicalInfraredImaging.forms import PatientInfo
 
@@ -44,3 +45,11 @@ def collectData():
         pName = patientInfo.patientName.data
         flash("欢迎就诊, {}!".format(pName))  # pName could be info[0]
     return render_template("collect.html", form=patientInfo)
+
+
+@app.route("/drop-upload", methods=["GET", "POST"])
+def dropUpload():
+    if request.method == "POST":
+        if "file" not in request.files:
+
+
