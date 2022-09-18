@@ -46,19 +46,29 @@ def collectData():
         pName = patient.patientName.data
         flash("欢迎就诊, {}!".format(pName))  # pName could be info[0]
 
+        # saveDir = settings.UPLOAD_PATH + "/" + patient.patientNum.data
+        # if request.method == "POST":
+        #     # if "file" not in request.files:
+        #     #     return "This field is required!", 400
+        #     f = request.files.get("file")
+        #     if f and allowed_file(f.filename):
+        #         f.save(os.path.join(saveDir, f.filename))
+        #     else:
+        #         return "Invalid file type", 400
+
     return render_template("collect.html", form=patient)
 
 
-@app.route("/drop-upload", methods=["GET", "POST"])
-def dropUpload():
-    patient = Patient()
-    saveDir = settings.UPLOAD_PATH + "/" + patient.patientNum.data
-    if request.method == "POST":
-        if "file" not in request.files:
-            return "This field is required!", 400
-        f = request.files.get("file")
-        if f and allowed_file(f.filename):
-            f.save(os.path.join(saveDir, f.filename))
-        else:
-            return "Invalid file type", 400
-    return render_template("collect.html")
+# @app.route("/drop-upload", methods=["GET", "POST"])
+# def dropUpload():
+#     patient = Patient()
+#     saveDir = settings.UPLOAD_PATH + "/" + patient.patientNum.data
+#     if request.method == "POST":
+#         # if "file" not in request.files:
+#         #     return "This field is required!", 400
+#         f = request.files.get("file")
+#         if f and allowed_file(f.filename):
+#             f.save(os.path.join(saveDir, f.filename))
+#         else:
+#             return "Invalid file type", 400
+#     return render_template("collect.html")
