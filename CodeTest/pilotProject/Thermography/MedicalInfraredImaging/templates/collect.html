@@ -4,7 +4,7 @@
     {{ super() }}
     {{ dropzone.load() }}
     {{ dropzone.config(max_files=10, timeout=10000, default_message='"点击上传或拖放图像文件至此"') }}
-    {{ dropzone.style("border: 2px dashed #0087F7; margin: 10%; min-height: 550px;") }}
+    {{ dropzone.style("border: 2px dashed #0087F7; margin: 0 35px; min-height: 300px;") }}
 {% endblock %}
 
 {% block flash_message %}
@@ -15,13 +15,11 @@
 </div>
 {% endfor %}
 {% endblock flash_message %}
-
 {% block content %}
 
-{{ p_num }}
 <form method="post" id="patient_form">
-    <fieldset class="patient_fieldset">
-        <legend class="patient_legend">病员信息</legend>
+    <fieldset class="patient-fieldset">
+        <legend id="patient-info">病员信息</legend>
         {{ form.csrf_token }}
         <div class="patient_content">
             <div class="row justify-content-between r">
@@ -82,7 +80,14 @@
       <p id="drop-image">热成像图上传</p>
       {{ dropzone.create(action_view="collectData") }}
   </div>
-  <div class="init-clinic"><textarea></textarea></div>
+  <div class="init-clinic">
+      <fieldset class="clinic-fieldset">
+          <legend id="clinic-title">初次评估</legend>
+          <textarea id="clinic-content" rows="4" cols="60"></textarea>
+          <br>
+          <button>确定</button>
+      </fieldset>
+  </div>
 </div>
 
 
