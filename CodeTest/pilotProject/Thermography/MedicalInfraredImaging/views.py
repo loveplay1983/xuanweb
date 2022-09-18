@@ -47,9 +47,9 @@ def collectData():
     return render_template("collect.html", form=patientInfo)
 
 
-@app.route("/drop-upload", methods=["GET", "POST"])
-def dropUpload():
-    if request.method == "POST":
-        if "file" not in request.files:
+# @app.route("/drop-upload", methods=["GET", "POST"])
+# def dropUpload():
+#     if request.method == "POST":
+#         if "file" not in request.files:
 
 

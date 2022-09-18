@@ -93,7 +93,7 @@
 
 
 /* main content */
-.container {
+.main {
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -151,9 +151,10 @@
     padding: 5px 25px 5px 25px;
 }
 
-.col{
+.col {
     padding-left: 50px;
 }
+
 /* search and store patient data */
 #patient_info_query {
     width: 50px;
@@ -164,8 +165,34 @@
 
 
 /* section for data collect and initial clinic record */
+#data-collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    grid-gap: 10px;
+    align-items: center;
+    background-color: beige;
+}
 
-/* Test form for data collection*/
+#data-collection > div {
+    padding: 20px;
+    font-size: 4vw;
+    color: white;
+}
+
+.image-collection {
+    background: orangered;
+    height: 100%;
+}
+
+.init-clinic {
+    background: yellowgreen;
+    height: 100%;
+}
+
+/*body {*/
+/*    margin: 0;*/
+/*}*/
 
 
 /* footer*/
