@@ -171,23 +171,42 @@
     grid-template-rows: 100vh;
     grid-gap: 10px;
     align-items: center;
-    background-color: beige;
+    /*background-color: beige;*/
+    /*border-color: black;*/
+    /*border-style: solid;*/
+    /*border-width: thin;*/
+    /*padding: 5px 10px 5px 10px;*/
 }
 
-#data-collection > div {
-    padding: 20px;
-    font-size: 4vw;
-    color: white;
+/*#data-collection > div {*/
+/*    padding: 20px;*/
+/*    font-size: 4vw;*/
+/*    color: white;*/
+/*}*/
+
+#drop-image {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px 0 0 0;
+    text-align: center;
 }
 
 .image-collection {
-    background: orangered;
+    /*background: orangered;*/
     height: 100%;
+    width: auto;
+    border-color: #C8EBD5;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .init-clinic {
-    background: yellowgreen;
+    /*background: yellowgreen;*/
     height: 100%;
+    width: auto;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
 }
 
 /*body {*/

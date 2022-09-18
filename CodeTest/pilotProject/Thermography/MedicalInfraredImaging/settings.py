@@ -21,5 +21,6 @@ SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URI", dev_db)
 DROPZONE_ALLOWED_FILE_TYPE = "image"
 DROPZONE_MAX_FILE_SIZE = 10
 DROPZONE_MAX_FILES = 30
+# DROPZONE_DEFAULT_MESSAGE = "点击上传或拖放图像文件至此"
 ALLOWED_EXTENSIONS = ["png", "jpg", "jpeg", "gif"]
 UPLOAD_PATH = os.path.join(app.root_path, "uploads")

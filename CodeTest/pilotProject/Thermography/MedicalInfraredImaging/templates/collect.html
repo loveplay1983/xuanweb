@@ -3,7 +3,8 @@
 {% block head %}
     {{ super() }}
     {{ dropzone.load() }}
-    {{ dropzone.style("border: 2px dashed #0087F7; margin: 10%; min-height: 300px;") }}
+    {{ dropzone.config(max_files=10, timeout=10000, default_message='"点击上传或拖放图像文件至此"') }}
+    {{ dropzone.style("border: 2px dashed #0087F7; margin: 10%; min-height: 550px;") }}
 {% endblock %}
 
 {% block flash_message %}
@@ -77,8 +78,11 @@
 <!--<button onclick="window.print()">Print this page</button>-->
 
 <div id="data-collection">
-  <div class="image-collection">{{ dropzone.create(action_view="collectData") }}</div>
-  <div class="init-clinic">tes2</div>
+  <div class="image-collection">
+      <p id="drop-image">热成像图上传</p>
+      {{ dropzone.create(action_view="collectData") }}
+  </div>
+  <div class="init-clinic"><textarea></textarea></div>
 </div>
 
 
