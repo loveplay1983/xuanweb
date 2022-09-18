@@ -8,6 +8,6 @@ CKEDITOR.plugins.setLang( 'filetools', 'pt-br', {
 	httpError404: 'Um erro HTTP ocorreu durante o envio do arquivo (404: Arquivo não encontrado).',
 	httpError403: 'Um erro HTTP ocorreu durante o envio do arquivo (403: Proibido).',
 	httpError: 'Um erro HTTP ocorreu durante o envio do arquivo (status do erro: %1)',
-	noUrlError: 'A URL de upload não está definida.',
+	noUrlError: 'A URL de uploads não está definida.',
 	responseError: 'Resposta incorreta do servidor.'
 } );

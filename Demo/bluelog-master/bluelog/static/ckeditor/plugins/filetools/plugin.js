@@ -11,7 +11,7 @@
 
 		beforeInit: function( editor ) {
 			/**
-			 * An instance of the {@link CKEDITOR.fileTools.uploadRepository upload repository}.
+			 * An instance of the {@link CKEDITOR.fileTools.uploadRepository uploads repository}.
 			 * It allows you to create and get {@link CKEDITOR.fileTools.fileLoader file loaders}.
 			 *
 			 *		var loader = editor.uploadRepository.create( file );
@@ -76,7 +76,7 @@
 			}, null, null, 999 );
 
 			/**
-			 * Event fired when the {CKEDITOR.fileTools.fileLoader file upload} response is received and needs to be parsed.
+			 * Event fired when the {CKEDITOR.fileTools.fileLoader file uploads} response is received and needs to be parsed.
 			 * If the event is not {@link CKEDITOR.eventInfo#stop stopped} or {@link CKEDITOR.eventInfo#cancel canceled},
 			 * the default response handler will be used. Refer to the
 			 * [Uploading Dropped or Pasted Files](#!/guide/dev_file_upload) article for more information.
@@ -98,8 +98,8 @@
 				try {
 					var response = JSON.parse( xhr.responseText );
 
-					// Error message does not need to mean that upload finished unsuccessfully.
-					// It could mean that ex. file name was changes during upload due to naming collision.
+					// Error message does not need to mean that uploads finished unsuccessfully.
+					// It could mean that ex. file name was changes during uploads due to naming collision.
 					if ( response.error && response.error.message ) {
 						data.message = response.error.message;
 					}
@@ -211,7 +211,7 @@
 	 * (e.g. acquired from the {@link CKEDITOR.plugins.clipboard.dataTransfer#getFile} method) or with data as a Base64 string.
 	 * Note that if the constructor gets the data as a Base64 string, there is no need to load the data, the data is already loaded.
 	 *
-	 * The `FileLoader` is created for a single load and upload process so if you abort the process,
+	 * The `FileLoader` is created for a single load and uploads process so if you abort the process,
 	 * you need to create a new `FileLoader`.
 	 *
 	 * All process parameters are stored in public properties.
@@ -225,7 +225,7 @@
 	 *
 	 * The second type is the {@link #event-update} event. It is fired every time the {@link #status} changes, the progress changes
 	 * or the {@link #method-update} method is called. Is is created to synchronize the visual representation of the loader with
-	 * its status. For example if the dialog window shows the upload progress, it should be refreshed on
+	 * its status. For example if the dialog window shows the uploads progress, it should be refreshed on
 	 * the {@link #event-update} listener. Then when the user closes and reopens this dialog, the {@link #method-update} method should
 	 * be called to refresh the progress.
 	 *
@@ -321,7 +321,7 @@
 	/**
 	 * The loader status. Possible values:
 	 *
-	 * * `created` &ndash; The loader was created, but neither load nor upload started.
+	 * * `created` &ndash; The loader was created, but neither load nor uploads started.
 	 * * `loading` &ndash; The file is being loaded from the user's storage.
 	 * * `loaded` &ndash; The file was loaded, the process is finished.
 	 * * `uploading` &ndash; The file is being uploaded to the server.
@@ -388,10 +388,10 @@
 	 */
 
 	/**
-	 * The total size of upload data in bytes.
-	 * If the `xhr.upload` object is present, this value will indicate the total size of the request payload, not only the file
-	 * size itself. If the `xhr.upload` object is not available and the real upload size cannot be obtained, this value will
-	 * be equal to {@link #total}. It has a `null` value until the upload size is known.
+	 * The total size of uploads data in bytes.
+	 * If the `xhr.uploads` object is present, this value will indicate the total size of the request payload, not only the file
+	 * size itself. If the `xhr.uploads` object is not available and the real uploads size cannot be obtained, this value will
+	 * be equal to {@link #total}. It has a `null` value until the uploads size is known.
 	 *
 	 * 		loader.on( 'update', function() {
 	 * 			// Wait till uploadTotal is present.
@@ -419,7 +419,7 @@
 	 */
 
 	/**
-	 * The target of the upload.
+	 * The target of the uploads.
 	 *
 	 * @readonly
 	 * @property {String} uploadUrl
@@ -434,7 +434,7 @@
 	 */
 
 	/**
-	 * Native `XMLHttpRequest` reference used to upload the file.
+	 * Native `XMLHttpRequest` reference used to uploads the file.
 	 *
 	 * @readonly
 	 * @property {XMLHttpRequest} xhr
@@ -465,14 +465,14 @@
 		/**
 		 * Loads a file from the storage on the user's device to the `data` attribute and uploads it to the server.
 		 *
-		 * The order of {@link #status statuses} for a successful load and upload is:
+		 * The order of {@link #status statuses} for a successful load and uploads is:
 		 *
 		 * * `created`,
 		 * * `loading`,
 		 * * `uploading`,
 		 * * `uploaded`.
 		 *
-		 * @param {String} url The upload URL.
+		 * @param {String} url The uploads URL.
 		 * @param {Object} [additionalRequestParameters] Additional parameters that would be passed to
 	 	 * the {@link CKEDITOR.editor#fileUploadRequest} event.
 		 */
@@ -543,13 +543,13 @@
 		/**
 		 * Uploads a file to the server.
 		 *
-		 * The order of the {@link #status statuses} for a successful upload is:
+		 * The order of the {@link #status statuses} for a successful uploads is:
 		 *
 		 * * `created`,
 		 * * `uploading`,
 		 * * `uploaded`.
 		 *
-		 * @param {String} url The upload URL.
+		 * @param {String} url The uploads URL.
 		 * @param {Object} [additionalRequestParameters] Additional data that would be passed to
 	 	 * the {@link CKEDITOR.editor#fileUploadRequest} event.
 		 */
@@ -589,7 +589,7 @@
 			xhr.onerror = onError;
 			xhr.onabort = onAbort;
 
-			// https://dev.ckeditor.com/ticket/13533 - When xhr.upload is present attach onprogress, onerror and onabort functions to get actual upload
+			// https://dev.ckeditor.com/ticket/13533 - When xhr.uploads is present attach onprogress, onerror and onabort functions to get actual uploads
 			// information.
 			if ( xhr.upload ) {
 				xhr.upload.onprogress = function( evt ) {
@@ -607,13 +607,13 @@
 				xhr.upload.onabort = onAbort;
 
 			} else {
-				// https://dev.ckeditor.com/ticket/13533 - If xhr.upload is not supported - fire update event anyway and set uploadTotal to file size.
+				// https://dev.ckeditor.com/ticket/13533 - If xhr.uploads is not supported - fire update event anyway and set uploadTotal to file size.
 				loader.uploadTotal = loader.total;
 				loader.update();
 			}
 
 			xhr.onload = function() {
-				// https://dev.ckeditor.com/ticket/13433 - Call update at the end of the upload. When xhr.upload object is not supported there will be
+				// https://dev.ckeditor.com/ticket/13433 - Call update at the end of the uploads. When xhr.uploads object is not supported there will be
 				// no update events fired during the whole process.
 				loader.update();
 
@@ -659,7 +659,7 @@
 			};
 
 			function onError() {
-				// Prevent changing status twice, when XHR.error and XHR.upload.onerror could be called together.
+				// Prevent changing status twice, when XHR.error and XHR.uploads.onerror could be called together.
 				if ( loader.status == 'error' ) {
 					return;
 				}
@@ -669,7 +669,7 @@
 			}
 
 			function onAbort() {
-				// Prevent changing status twice, when XHR.onabort and XHR.upload.onabort could be called together.
+				// Prevent changing status twice, when XHR.onabort and XHR.uploads.onabort could be called together.
 				if ( loader.status == 'abort' ) {
 					return;
 				}
@@ -698,8 +698,8 @@
 
 		/**
 		 * Updates the state of the `FileLoader` listeners. This method should be called if the state of the visual representation
-		 * of the upload process is out of synchronization and needs to be refreshed (e.g. because of an undo operation or
-		 * because the dialog window with the upload is closed and reopened). Fires the {@link #event-update} event.
+		 * of the uploads process is out of synchronization and needs to be refreshed (e.g. because of an undo operation or
+		 * because the dialog window with the uploads is closed and reopened). Fires the {@link #event-update} event.
 		 */
 		update: function() {
 			this.fire( 'update' );
@@ -801,7 +801,7 @@
 	// Two plugins extend this object.
 	if ( !CKEDITOR.fileTools ) {
 		/**
-		 * Helpers to load and upload a file.
+		 * Helpers to load and uploads a file.
 		 *
 		 * @since 4.5
 		 * @singleton
@@ -815,7 +815,7 @@
 		fileLoader: FileLoader,
 
 		/**
-		 * Gets the upload URL from the {@link CKEDITOR.config configuration}. Because of backward compatibility
+		 * Gets the uploads URL from the {@link CKEDITOR.config configuration}. Because of backward compatibility
 		 * the URL can be set using multiple configuration options.
 		 *
 		 * If the `type` is defined, then four configuration options will be checked in the following order

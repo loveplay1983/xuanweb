@@ -14,9 +14,8 @@ from wtforms.validators import DataRequired, Length, ValidationError, Email
 
 
 # Data Collection
-class PatientInfo(FlaskForm):
+class Patient(FlaskForm):
     patientNum = StringField("门诊号", validators=[DataRequired()])
-    # patientName = StringField("姓名", render_kw={"readonly": True})
     patientName = StringField("姓名")
     patientSex = StringField("性别")
     patientID = StringField("身份证")
@@ -25,28 +24,17 @@ class PatientInfo(FlaskForm):
     patientSearch = SubmitField("检索", render_kw={"hidden": True})
 
 
-class DataCollect(FlaskForm):
+class Collection(FlaskForm):
     pass
 
 
-class InitialReport(FlaskForm):
+class InitClinic(FlaskForm):
     patientFirstClinic = TextAreaField()
 
 
-# Clinical Form
-class ClinicalInfo(FlaskForm):
-    clinicNum = IntegerField("就诊号", validators=[DataRequired()])
-    clinicName = StringField("姓名")
-    clinicSex = StringField("性别", validators=[Length(1)])
-    clinicID = IntegerField("身份证")
-    clinicPhone = IntegerField("电话")
-    clinicAddr = StringField("地址")
-    clinicSearch = SubmitField("检索")
-
-
-class DataDisplay(FlaskForm):
+class SaveImage(FlaskForm):
     pass
 
 
-class FinalReport(FlaskForm):
+class DocClinic(FlaskForm):
     pass

@@ -251,7 +251,7 @@ def get_image(filename):
 
 @admin_bp.route('/upload', methods=['POST'])
 def upload_image():
-    f = request.files.get('upload')
+    f = request.files.get('uploads')
     if not allowed_file(f.filename):
         return upload_fail('Image only!')
     f.save(os.path.join(current_app.config['BLUELOG_UPLOAD_PATH'], f.filename))

@@ -34,7 +34,7 @@
  * 	id : 'uploadButton',
  * 	filebrowser : 'tabId:elementId',
  * 	label : editor.lang.common.uploadSubmit,
- * 	'for' : [ 'upload', 'upload' ]
+ * 	'for' : [ 'uploads', 'uploads' ]
  * }
  * </pre>
  *
@@ -226,7 +226,7 @@
 
 		editor._.filebrowserSe = this;
 
-		// If user didn't select the file, stop the upload.
+		// If user didn't select the file, stop the uploads.
 		if ( !dialog.getContentElement( this[ 'for' ][ 0 ], this[ 'for' ][ 1 ] ).getInputElement().$.value )
 			return false;
 
@@ -239,7 +239,7 @@
 	// Setups the file element.
 	//
 	// @param {CKEDITOR.ui.dialog.file}
-	//            fileInput The file element used during file upload.
+	//            fileInput The file element used during file uploads.
 	// @param {Object}
 	//            filebrowser Object containing filebrowser settings assigned to
 	//            the fileButton associated with this file element.
@@ -323,7 +323,7 @@
 						}
 
 						if ( uploadFile.call( sender, evt ) ) {
-							// Use one of two upload strategies, either form or XHR based (#643).
+							// Use one of two uploads strategies, either form or XHR based (#643).
 							if ( editor.config.filebrowserUploadMethod === 'form' || !isFileUploadApiSupported ) {
 								// Append token preventing CSRF attacks.
 								appendToken( fileInput );
@@ -485,7 +485,7 @@
  * Read more in the [documentation](#!/guide/dev_file_browse_upload)
  * and see the [SDK sample](https://sdk.ckeditor.com/samples/fileupload.html).
  *
- *		config.filebrowserUploadUrl = '/uploader/upload.php';
+ *		config.filebrowserUploadUrl = '/uploader/uploads.php';
  *
  * **Note:** This is a configuration setting for a [file browser/uploader](#!/guide/dev_file_browse_upload).
  * To configure [uploading dropped or pasted files](#!/guide/dev_file_upload) use the {@link CKEDITOR.config#uploadUrl}
@@ -536,7 +536,7 @@
  * Read more in the [documentation](#!/guide/dev_file_manager_configuration-section-adding-file-manager-scripts-for-selected-dialog-windows)
  * and see the [SDK sample](https://sdk.ckeditor.com/samples/fileupload.html).
  *
- *		config.filebrowserImageUploadUrl = '/uploader/upload.php?type=Images';
+ *		config.filebrowserImageUploadUrl = '/uploader/uploads.php?type=Images';
  *
  * **Note:** This is a configuration setting for a [file browser/uploader](#!/guide/dev_file_browse_upload).
  * To configure [uploading dropped or pasted files](#!/guide/dev_file_upload) use the {@link CKEDITOR.config#uploadUrl}
@@ -555,7 +555,7 @@
  * Read more in the [documentation](#!/guide/dev_file_manager_configuration-section-adding-file-manager-scripts-for-selected-dialog-windows)
  * and see the [SDK sample](https://sdk.ckeditor.com/samples/fileupload.html).
  *
- *		config.filebrowserFlashUploadUrl = '/uploader/upload.php?type=Flash';
+ *		config.filebrowserFlashUploadUrl = '/uploader/uploads.php?type=Flash';
  *
  * @since 3.0
  * @cfg {String} filebrowserFlashUploadUrl='' (empty string = disabled)]
@@ -623,13 +623,13 @@
  *
  * Available values:
  *
- *	* `'xhr'` &ndash; XMLHttpRequest is used to upload the file. Using this option allows to set additional XHR headers with
+ *	* `'xhr'` &ndash; XMLHttpRequest is used to uploads the file. Using this option allows to set additional XHR headers with
  * the {@link CKEDITOR.config#fileTools_requestHeaders} option.
  *	* `'form'` &ndash; The file is uploaded by submitting a traditional `<form>` element. **Note: That was the only option available until CKEditor 4.9.0.**
  *
  * Example:
  *
- *		// All browsers will use a plain form element to upload the file.
+ *		// All browsers will use a plain form element to uploads the file.
  *		config.filebrowserUploadMethod = 'form';
  *
  * @since 4.9.0

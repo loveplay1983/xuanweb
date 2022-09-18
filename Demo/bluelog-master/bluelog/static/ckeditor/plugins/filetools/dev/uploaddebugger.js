@@ -5,7 +5,7 @@
 
 'use strict';
 
-// Slow down the upload process.
+// Slow down the uploads process.
 // This trick works only on Chrome.
 
 ( function() {

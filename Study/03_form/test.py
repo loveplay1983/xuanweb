@@ -133,7 +133,7 @@ def upload():
         flash("Upload success!")
         session["filenames"] = [filename]
         return redirect(url_for("show_images"))
-    return render_template("upload.html", form=form)
+    return render_template("uploads.html", form=form)
 
 
 @app.route("/multi-upload", methods=["GET", "POST"])
@@ -168,7 +168,7 @@ def multi_upload():
         flash("Upload success!")
         session['filenames'] = filenames
         return redirect(url_for("show_images"))
-    return render_template("upload.html", form=form)
+    return render_template("uploads.html", form=form)
 
 
 @app.route("/dropzone-upload", methods=["GET", "POST"])
@@ -261,10 +261,10 @@ def integrate_ckeditor():
     return render_template("ckeditor.html", form=form)
 
 
-# handle image upload for ckeditor
+# handle image uploads for ckeditor
 @app.route("/upload-ck", methods=["POST"])
 def upload_for_ckeditor():
-    f = request.files.get("upload")
+    f = request.files.get("uploads")
     if not allowed_file(f.filename):
         return upload_fail("Image only!")
     f.save(os.path.join(app.config["UPLOAD_PATH"], f.filename))

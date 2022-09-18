@@ -30,13 +30,13 @@ class FortyTwoForm(FlaskForm):
             raise ValidationError('Must be 42.')
 
 
-# upload form
+# uploads form
 class UploadForm(FlaskForm):
     photo = FileField('Upload Image', validators=[FileRequired(), FileAllowed(['jpg', 'jpeg', 'png', 'gif'])])
     submit = SubmitField()
 
 
-# multiple files upload form
+# multiple files uploads form
 class MultiUploadForm(FlaskForm):
     photo = MultipleFileField('Upload Image', validators=[DataRequired()])
     submit = SubmitField()

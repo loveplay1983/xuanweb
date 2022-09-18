@@ -5,9 +5,10 @@ Project: Study
 Email  : michaelxuan@hotmail.com
 """
 from flask import flash, redirect, url_for, render_template, request
-from flask_dropzone import Dropzone
-from MedicalInfraredImaging import app, db
-from MedicalInfraredImaging.forms import PatientInfo
+from MedicalInfraredImaging import settings
+from MedicalInfraredImaging.forms import Patient
+from MedicalInfraredImaging.utils import *
+import os
 
 
 @app.route("/")
@@ -17,9 +18,9 @@ def index():
 
 @app.route("/collect", methods=["GET", "POST"])
 def collectData():
-    patientInfo = PatientInfo()      # PatientInfo - The first form class
+    patient = Patient()  # PatientInfo - The first form class
 
-    if patientInfo.validate_on_submit():
+    if patient.validate_on_submit():
         pNum = request.form.get("patientNum")
         # To-Do
         # Raw SQL in via SQLALchemy
@@ -42,14 +43,22 @@ def collectData():
            patientInfo.patientPhone.data = info[3]
            patientInfo.patientAddr.data = info[4] 
         """
-        pName = patientInfo.patientName.data
+        pName = patient.patientName.data
         flash("欢迎就诊, {}!".format(pName))  # pName could be info[0]
-    return render_template("collect.html", form=patientInfo)
+
+    return render_template("collect.html", form=patient)
 
 
-# @app.route("/drop-upload", methods=["GET", "POST"])
-# def dropUpload():
-#     if request.method == "POST":
-#         if "file" not in request.files:
-
-
+@app.route("/drop-upload", methods=["GET", "POST"])
+def dropUpload():
+    patient = Patient()
+    saveDir = settings.UPLOAD_PATH + "/" + patient.patientNum.data
+    if request.method == "POST":
+        if "file" not in request.files:
+            return "This field is required!", 400
+        f = request.files.get("file")
+        if f and allowed_file(f.filename):
+            f.save(os.path.join(saveDir, f.filename))
+        else:
+            return "Invalid file type", 400
+    return render_template("collect.html")

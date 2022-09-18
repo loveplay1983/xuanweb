@@ -133,7 +133,7 @@ def upload():
         )
         db.session.add(photo)
         db.session.commit()
-    return render_template('main/upload.html')
+    return render_template('main/uploads.html')
 
 
 @main_bp.route('/photo/<int:photo_id>')
