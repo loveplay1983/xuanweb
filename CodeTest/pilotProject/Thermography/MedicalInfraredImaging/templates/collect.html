@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block head %}
-    {{ super() }}
-    {{ dropzone.load() }}
-    {{ dropzone.config(max_files=10, timeout=10000, default_message='"点击上传或拖放图像文件至此"') }}
-    {{ dropzone.style("border: 2px dashed #0087F7; margin: 0 35px; min-height: 300px;") }}
+{{ super() }}
+{{ dropzone.load() }}
+{{ dropzone.config(max_files=10, timeout=10000, default_message='"点击上传或拖放图像文件至此"') }}
+{{ dropzone.style("border: 2px dashed #0087F7; margin: 0 35px; min-height: 300px;") }}
 {% endblock %}
 
 {% block flash_message %}
@@ -57,37 +57,21 @@
         </div>
     </fieldset>
 </form>
-
 <br>
 
-<!--<div>-->
-<!--    <div>-->
-
-<!--    </div>-->
-<!--</div>-->
-<!--<form method="post" id="clinic_form">-->
-<!--    <fieldset class="clinic_fieldset">-->
-<!--        <legend class="clinic_legend">数据收集</legend>-->
-<!--        <textarea name="" id="testText" cols="119" rows="10"></textarea><br>-->
-<!--        <button type="submit">上传</button>-->
-<!--    </fieldset>-->
-<!--</form>-->
-
-<!--<button onclick="window.print()">Print this page</button>-->
-
 <div id="data-collection">
-  <div class="image-collection">
-      <p id="drop-image">热成像图上传</p>
-      {{ dropzone.create(action_view="collectData") }}
-  </div>
-  <div class="init-clinic">
-      <fieldset class="clinic-fieldset">
-          <legend id="clinic-title">初次评估</legend>
-          <textarea id="clinic-content" rows="4" cols="60"></textarea>
-          <br>
-          <button>确定</button>
-      </fieldset>
-  </div>
+    <div class="image-collection">
+        <p id="drop-image">热成像图上传</p>
+        {{ dropzone.create(action_view="collectData") }}
+    </div>
+    <div class="init-clinic">
+        <fieldset class="clinic-fieldset">
+            <legend id="clinic-title">初次评估</legend>
+            <textarea id="clinic-content" rows="4" cols="60"></textarea>
+            <br>
+            <button>确定</button>
+        </fieldset>
+    </div>
 </div>
 
 

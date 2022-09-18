@@ -168,7 +168,7 @@ def multi_upload():
         flash("Upload success!")
         session['filenames'] = filenames
         return redirect(url_for("show_images"))
-    return render_template("uploads.html", form=form)
+    return render_template("upload.html", form=form)
 
 
 @app.route("/dropzone-upload", methods=["GET", "POST"])
