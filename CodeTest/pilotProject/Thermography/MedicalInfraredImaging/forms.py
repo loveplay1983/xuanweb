@@ -21,20 +21,10 @@ class Patient(FlaskForm):
     patientID = StringField("身份证")
     patientPhone = StringField("电话")
     patientAddr = StringField("地址")
-    patientSearch = SubmitField("检索", render_kw={"hidden": True})
+    # patientSearch = SubmitField("检索", render_kw={"hidden": True})
+    image = MultipleFileField("影像上传", validators=[DataRequired()])
+    submit = SubmitField(label="上传")
 
 
-class Collection(FlaskForm):
-    pass
 
 
-class InitClinic(FlaskForm):
-    patientFirstClinic = TextAreaField()
-
-
-class SaveImage(FlaskForm):
-    pass
-
-
-class DocClinic(FlaskForm):
-    pass

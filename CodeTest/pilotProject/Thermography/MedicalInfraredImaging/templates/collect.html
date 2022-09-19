@@ -52,31 +52,13 @@
                 </div>
             </div>
             <div class="col">
-                {{ form.patientSearch }}
+                {{ form.image.label }}
+                {{ form.image }}
+                {{ form.submit }}
             </div>
         </div>
     </fieldset>
     <br>
-    <div class="image-collection">
-        <p id="drop-image">热成像图上传</p>
-        {{ dropzone.create(action_view="collectData") }}
-    </div>
 </form>
-<br>
-
-<!--<div id="data-collection">-->
-<!--    <div class="image-collection">-->
-<!--        <p id="drop-image">热成像图上传</p>-->
-<!--    </div>-->
-<!--    <div class="init-clinic">-->
-<!--        <fieldset class="clinic-fieldset">-->
-<!--            <legend id="clinic-title">初次评估</legend>-->
-<!--            <textarea id="clinic-content" rows="4" cols="60"></textarea>-->
-<!--            <br>-->
-<!--            <button>确定</button>-->
-<!--        </fieldset>-->
-<!--    </div>-->
-<!--</div>-->
-
 <br>
 {% endblock content %}

@@ -37,23 +37,3 @@ def collectData():
 
     return render_template("collect.html", form=patient)
 
-
-
-    #     pName = patient.patientName.data
-    #     flash("欢迎就诊, {}!".format(pName))  # pName could be info[0]
-    #
-    #     saveDir = settings.UPLOAD_PATH
-    #     if request.method == "POST":
-    #         f = request.files.get("file")
-    #         if f and allowed_file(f.filename):
-    #             f.save(os.path.join(saveDir, f.filename))
-    #
-    # return render_template("collect.html", form=patient)
-
-#
-# @app.route("/dropImage", methods=["GET", "POST"])
-# def dropImage():
-
-
-
-# @app.route("/uploads/")
