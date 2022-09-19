@@ -1,10 +1,8 @@
-{% extends "base.html" %}
-{% from "macros.html" import form_field %}
+{% extends 'base.html' %}
+{% from 'macros.html' import form_field %}
 
 {% block content %}
-    <h2>
-        Integrate <a href="https://ckeditor.com">CKEditor</a>
-        with <a href="https://github.com/greyli/flask-ckeditor">Flask-CKEditor</a>
+    <h2>Integrate <a href="https://ckeditor.com">CKEditor</a> with <a href="https://github.com/helloflask/flask-ckeditor">Flask-CKEditor</a>
     </h2>
     <form method="post">
         {{ form.csrf_token }}
@@ -12,10 +10,10 @@
         {{ form_field(form.body) }}
         {{ form.submit }}
     </form>
-{% endblock%}
+{% endblock %}
 
 {% block scripts %}
     {{ super() }}
     {{ ckeditor.load() }}
-    {{ ckeditor.config(name="body") }}
+    {{ ckeditor.config(name='body') }}
 {% endblock %}
