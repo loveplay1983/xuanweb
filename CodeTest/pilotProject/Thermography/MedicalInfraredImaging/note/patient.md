@@ -51,3 +51,29 @@
 
 
 
+
+
+
+
+```
+# Raw SQL in via SQLALchemy
+# https://stackoverflow.com/questions/17972020/how-to-execute-raw-sql-in-flask-sqlalchemy-app
+"""
+1. Retrieve user input pNum;
+    ```
+    pNum = request.form.get("patientNum")
+    ```
+2. Query patient info includes name, sex, id, phone, and address, etc. 
+   by pNum via db.engine.execute('xxx')
+   ```
+   info = db.engine.execute("SELECT name, sex, id, phone, addr FROM xxx WHERE p-num = pNum")
+   ```
+3. Pass the query result back to the PatientInfo() form class, 
+   and set each field with the corresponding result data 
+   patientInfo.patientName.data = info[0]
+   patientInfo.patientSex.data = info[1]
+   patientInfo.patientID.data = info[2]
+   patientInfo.patientPhone.data = info[3]
+   patientInfo.patientAddr.data = info[4] 
+"""
+```

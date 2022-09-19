@@ -159,10 +159,10 @@
 
 /* section for data collect and initial clinic record */
 #data-collection {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh;
-    grid-gap: 10px;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr;*/
+    /*grid-template-rows: 0.1vh 50vh;*/
+    /*grid-gap: 10px;*/
     align-items: center;
     /*background-color: beige;*/
     /*border-color: b lack;*/

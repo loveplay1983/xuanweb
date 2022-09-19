@@ -10,8 +10,9 @@ from datetime import datetime
 
 
 # relationship table
-class Patient(db.Model):
+class PatientData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    cliNum = db.Column(db.Integer)
     name = db.Column(db.String(50))
     sex = db.Column(db.String(2))
     idNum = db.Column(db.Integer)
@@ -22,7 +23,7 @@ class Patient(db.Model):
     clinics = db.relationship("Clinic", back_populates="patient", cascade="all")
 
 
-class Image(db.Model):
+class ImageData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     description = db.Column(db.String(100))
     filename = db.Column(db.String(64))
@@ -40,7 +41,7 @@ class MedRecord(db.Model):
     patient = db.relationship("Patient", back_populates="records")
 
 
-class Clinic(db.Model):
+class ClinicData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     initClinic = db.Column(db.String(500))
     docClinic = db.Column(db.String(500))
