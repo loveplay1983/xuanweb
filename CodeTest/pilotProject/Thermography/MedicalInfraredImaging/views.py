@@ -7,7 +7,7 @@ Email  : michaelxuan@hotmail.com
 from flask import flash, redirect, url_for, render_template, request
 from MedicalInfraredImaging import settings, db, app
 from MedicalInfraredImaging.forms import PatientForm
-from MedicalInfraredImaging.models import Patient
+from MedicalInfraredImaging.models import Patient, ImageData, ClinicData
 from MedicalInfraredImaging.utils import allowed_file
 import os
 

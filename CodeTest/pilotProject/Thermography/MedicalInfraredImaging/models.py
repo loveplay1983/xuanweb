@@ -24,7 +24,7 @@ class Patient(db.Model):
 
 
 class ImageData(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column( db.Integer, primary_key=True)
     description = db.Column(db.String(100))
     filename = db.Column(db.String(64))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)

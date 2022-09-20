@@ -44,19 +44,17 @@
             <a href="https://github.com/loveplay1983/xuanweb" title="Flask test project">Flask Study</a>
         </medium>
     </footer>
-    {% endblock footer%}
+    {% endblock footer %}
 </main>
 
+
+{% block scripts %}
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
 
-<!--<script type="text/javascript">-->
-<!--    window.setTimeout(function () {-->
-<!--        $('.msg').fadeOut('fast');-->
-<!--    }, 1000);-->
-<!--</script>-->
 
 </body>
 </html>

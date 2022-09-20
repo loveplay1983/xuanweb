@@ -11,9 +11,9 @@
 {% block content %}
 
 <form method="post" id="patient_form">
+    {{ form.csrf_token }}
     <fieldset class="patient-fieldset">
         <legend id="patient-info">病员信息</legend>
-        {{ form.csrf_token }}
         <div class="patient_content">
             <div class="row justify-content-between r">
                 <div class="col">
@@ -50,9 +50,19 @@
     <div id="uploads">
         {{ form.image.label }}
         {{ form.image }}
-        {{ form.submit }}
     </div>
-
+    <div id="init-clinic">
+        {{ form.clinic }}
+    </div>
+    <br>
+    {{ form.submit }}
 </form>
 <br>
 {% endblock content %}
+
+
+{% block scripts %}
+{{ super() }}
+{{ ckeditor.load() }}
+{{ ckeditor.config(name='body') }}
+{% endblock %}
