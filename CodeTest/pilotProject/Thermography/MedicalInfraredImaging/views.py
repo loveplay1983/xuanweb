@@ -33,6 +33,9 @@ def collectData():
                           idNum=cliID, phone=cliPhone, addr=cliAddr)
         db.session.add(cliInfo)
         db.session.commit()
+
+
+
         return redirect(url_for("collectData"))
     return render_template("collect.html", form=patient)
 
