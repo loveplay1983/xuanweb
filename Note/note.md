@@ -469,6 +469,7 @@ pango_context_set_round_glyph_positions
 
 * [Thermography guideline](https://www.youtube.com/watch?v=8Oz8WAnMKW8)
 * [medical thermography](https://www.youtube.com/watch?v=8XxE0POMMns)
+* [medical thermography training](https://www.youtube.com/watch?v=tVNHZKxK0Us&t=4s)
 
 ### Guidelines
 

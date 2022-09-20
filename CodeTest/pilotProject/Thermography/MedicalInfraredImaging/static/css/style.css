@@ -46,7 +46,7 @@
 }
 
 .alert {
-    padding: 0 0 20 0;
+    padding: 0 0 20px 0;
     display: block;
     width: 100%;
     font-size: 25px;
@@ -98,19 +98,14 @@
     margin-right: 100px;
 }
 
-/*.alert_info {*/
-/*    width: 100%;*/
-/*    !*margin-left: 100px;*!*/
-/*    !*margin-right: 100px;*!*/
-/*    padding: 0.75rem 1.25rem;*/
-/*    margin-bottom: 1rem;*/
-/*    border: 1px solid transparent;*/
-/*    border-radius: 0.25rem;*/
-/*    color: #004085;*/
-/*    background-color: #cce5ff;*/
-/*    border-color: #b8daff;*/
 
-/*}*/
+/* patient list*/
+
+
+
+
+
+/* patient data input*/
 
 .patient-fieldset {
     border: solid thin;
@@ -120,13 +115,7 @@
     padding: 10px 2px 15px 2px;
 }
 
-.clinic-fieldset {
-    border: solid;
-    color: #47BA7C;
-    width: auto;
-    margin: 0 auto;
-    padding: 10px 2px 15px 2px;
-}
+
 
 #patient-info {
     color: #180638;
@@ -148,78 +137,14 @@
     padding-left: 50px;
 }
 
-/* search and store patient data */
-#patient_info_query {
-    width: 50px;
-    height: 40px;
-    /* Center horizontally*/
-    margin: 0 auto;
-}
+
+/* patient image upload */
 
 
-/* section for data collect and initial clinic record */
-#data-collection {
-    /*display: grid;*/
-    /*grid-template-columns: 1fr;*/
-    /*grid-template-rows: 0.1vh 50vh;*/
-    /*grid-gap: 10px;*/
-    align-items: center;
-    /*background-color: beige;*/
-    /*border-color: b lack;*/
-    /*border-style: solid;*/
-    /*border-width: thin;*/
-    /*padding: 5px 10px 5px 10px;*/
-}
 
-/*#data-collection > div {*/
-/*    padding: 20px;*/
-/*    font-size: 4vw;*/
-/*    color: white;*/
-/*}*/
 
-#drop-image {
-    font-size: 35px;
-    font-weight: bold;
-    padding: 20px 0 0 0;
-    text-align: center;
-}
 
-.image-collection {
-    /*background: orangered;*/
-    height: 100%;
-    width: auto;
-    /*border-color: #C8EBD5;*/
-    /*border-style: solid;*/
-    /*border-width: 2px;*/
-}
-
-.init-clinic {
-    /*background: yellowgreen;*/
-    height: 100%;
-    width: auto;
-    /*border-color: #70725D;*/
-    /*border-style: solid;*/
-    /*border-width: 2px;*/
-}
-
-#clinic-title {
-    color: #180638;
-    font-size: 35px;
-    font-weight: bold;
-    width: auto;
-    margin: 0 auto;
-    padding: 5px 25px 5px 25px;
-}
-
-#clinic-content{
-    min-height: 300px;
-
-}
-
-.clinic-fieldset{
-    padding: 0 20px 0 20px;
-    margin: 0 auto;
-}
+/* write init clinic*/
 
 /* footer*/
 footer {

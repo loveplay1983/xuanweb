@@ -1,12 +1,5 @@
 {% extends "base.html" %}
 
-{% block head %}
-{{ super() }}
-{{ dropzone.load() }}
-{{ dropzone.config(max_files=10, timeout=10000, default_message='"点击上传或拖放图像文件至此"') }}
-{{ dropzone.style("border: 2px dashed #0087F7; margin: 0 35px; min-height: 380px;") }}
-{% endblock %}
-
 {% block flash_message %}
 {% for message in get_flashed_messages(with_categories=true) %}
 <div class="alert alert-warning fade show" role="alert" id="msg">
@@ -51,14 +44,15 @@
                     {{ form.patientAddr }}
                 </div>
             </div>
-            <div class="col">
-                {{ form.image.label }}
-                {{ form.image }}
-                {{ form.submit }}
-            </div>
         </div>
     </fieldset>
     <br>
+    <div id="uploads">
+        {{ form.image.label }}
+        {{ form.image }}
+        {{ form.submit }}
+    </div>
+
 </form>
 <br>
 {% endblock content %}
