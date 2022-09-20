@@ -14,7 +14,7 @@ from wtforms.validators import DataRequired, Length, ValidationError, Email
 
 
 # Data Collection
-class Patient(FlaskForm):
+class PatientForm(FlaskForm):
     patientNum = StringField("门诊号", validators=[DataRequired()])
     patientName = StringField("姓名")
     patientSex = StringField("性别")
@@ -22,7 +22,7 @@ class Patient(FlaskForm):
     patientPhone = StringField("电话")
     patientAddr = StringField("地址")
     # patientSearch = SubmitField("检索", render_kw={"hidden": True})
-    image = MultipleFileField("影像上传", validators=[DataRequired()])
+    image = MultipleFileField("影像上传")
     submit = SubmitField(label="上传")
 
 

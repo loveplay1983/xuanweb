@@ -19,4 +19,4 @@ db = SQLAlchemy(app)
 bootstrap = Bootstrap(app)
 dropzone = Dropzone(app)
 
-from MedicalInfraredImaging import commands, errors, forms, models, views, settings
+from MedicalInfraredImaging import views, errors, commands, utils
