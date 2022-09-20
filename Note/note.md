@@ -556,3 +556,5 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 * [Mariadb](https://mariadb.com/resources/blog/using-sqlalchemy-with-mariadb-connector-python-part-1/)
 * [How-To](https://www.cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04)
 * [Maria vs MySQL](https://www.geeksforgeeks.org/difference-between-mysql-and-mariadb/)
+* [Maria installation on ubuntu 18.04](https://computingforgeeks.com/install-mariadb-on-ubuntu-and-centos/#:~:text=As%20of%20this%20writing%2C%20the,available%20on%20OS%20upstream%20repositories.)
+* [remove maridadb completely](https://unix.stackexchange.com/questions/550154/the-following-packages-have-unmet-dependencies-mariadb-server)
