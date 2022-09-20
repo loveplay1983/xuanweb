@@ -4,7 +4,7 @@ Author : Michael Xuan
 Project: Study
 Email  : michaelxuan@hotmail.com
 """
-from flask import flash, redirect, url_for, render_template, request
+from flask import flash, redirect, url_for, render_template, request, send_from_directory
 from MedicalInfraredImaging import settings, db, app
 from MedicalInfraredImaging.forms import PatientForm
 from MedicalInfraredImaging.models import Patient, ImageData, ClinicData
@@ -23,8 +23,11 @@ def index():
 def collectData():
     patient = PatientForm()
     if patient.validate_on_submit():
+
+
+
         cliNum = patient.patientNum.data
-        cliName = patient.patientName.data
+        cliName = patient.patientName.datak
         cliSex = patient.patientSex.data
         cliID = patient.patientID.data
         cliPhone = patient.patientPhone.data
@@ -36,6 +39,20 @@ def collectData():
 
 
 
+
+
         return redirect(url_for("collectData"))
     return render_template("collect.html", form=patient)
+
+
+@app.route("/uploads/<path:filename>")
+def get_file(filename):
+    return send_from_directory(app.config["UPLOAD_PATH"], filename)
+
+# @app.route("/upload", methods=["GET", "POST"])
+# def upload():
+#
+
+
+
 

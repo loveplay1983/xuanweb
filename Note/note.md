@@ -551,3 +551,8 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 
    https://stackoverflow.com/questions/63231163/what-is-the-usermixin-in-flask
 
+# Database
+
+* [Mariadb](https://mariadb.com/resources/blog/using-sqlalchemy-with-mariadb-connector-python-part-1/)
+* [How-To](https://www.cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04)
+* [Maria vs MySQL](https://www.geeksforgeeks.org/difference-between-mysql-and-mariadb/)
