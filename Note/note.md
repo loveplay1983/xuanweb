@@ -558,3 +558,27 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 * [Maria vs MySQL](https://www.geeksforgeeks.org/difference-between-mysql-and-mariadb/)
 * [Maria installation on ubuntu 18.04](https://computingforgeeks.com/install-mariadb-on-ubuntu-and-centos/#:~:text=As%20of%20this%20writing%2C%20the,available%20on%20OS%20upstream%20repositories.)
 * [remove maridadb completely](https://unix.stackexchange.com/questions/550154/the-following-packages-have-unmet-dependencies-mariadb-server)
+
+```linux
+The following packages were automatically installed and are no longer required:
+  linux-hwe-5.4-headers-5.4.0-121 linux-hwe-5.4-headers-5.4.0-122
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  galera-4 libaio1 libdbd-mysql-perl libdbi-perl libhtml-template-perl
+  libmariadb3 libpcre2-8-0 libpmem1 libreadline5 libterm-readkey-perl
+  mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common
+  mariadb-server-10.6 mariadb-server-core-10.6 socat
+Suggested packages:
+  libmldbm-perl libnet-daemon-perl libsql-statement-perl
+  libipc-sharedcache-perl mailx mariadb-test
+The following NEW packages will be installed:
+  galera-4 libaio1 libdbd-mysql-perl libdbi-perl libhtml-template-perl
+  libmariadb3 libpcre2-8-0 libpmem1 libreadline5 libterm-readkey-perl
+  mariadb-client mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common
+  mariadb-server mariadb-server-10.6 mariadb-server-core-10.6 socat
+0 upgraded, 18 newly installed, 0 to remove and 76 not upgraded.
+Need to get 25.1 MB of archives.
+After this operation, 201 MB of additional disk space will be used.
+
+```
+
