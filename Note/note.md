@@ -582,3 +582,10 @@ After this operation, 201 MB of additional disk space will be used.
 
 ```
 
+* MariaDB FAQ
+  * [[ERROR 1698 (28000): Access denied for user 'root'@'localhost'](https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost)](https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost)
+  * **mariadb and flask**
+    * https://kanchanardj.medium.com/forming-database-connection-between-maria-db-and-python-flask-31702c86fd95
+    * https://hackernoon.com/getting-started-with-mariadb-using-docker-python-and-flask-pa1i3ya3
+    * **https://www.bisptrainings.com/pdf/pdf_docs/MariaDBConnectivitywithPythonFlask-20191115023657.pdf**
+  * [add new user with full privileges](https://phoenixnap.com/kb/how-to-create-mariadb-user-grant-privileges)

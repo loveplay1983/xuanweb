@@ -6,6 +6,7 @@
 """
 from packages import Flask, os, sys, click, SQLAlchemy
 
+
 # SQLite URI compatible
 WIN = sys.platform.startswith("win")
 if WIN:
