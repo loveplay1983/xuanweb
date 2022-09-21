@@ -4,22 +4,22 @@ Author: Michael Xuan
 Purpose: Study
 Direction: web 
 """
-from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
-import mysql.connector as mariadb
+import os
+from datetime import datetime
 
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+import pymysql
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:xxm040506@localhost/xuan"
+app.debug = True
+
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://xuan:pgjdcwn1983@127.0.0.1:3306/xuan"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
 db = SQLAlchemy(app)
 
 
-@app.route("/act", methods=["GET", "POST"])
-def act():
-    if (request.method == "POST"):
-        try:
-            name = request.form["name"]
-            roll = request.form["roll"]
-            conn = mariadb.connect(user="")
-
-
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), unique=True)
