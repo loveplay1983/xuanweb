@@ -8,13 +8,7 @@ import os
 import sys
 from MedicalInfraredImaging import app
 
-WIN = sys.platform.startswith("win")
-if WIN:
-    prefix = "sqlite:///"
-else:
-    prefix = "sqlite:////"
-
-dev_db = prefix + os.path.join(os.path.dirname(app.root_path), "test.db")
+dev_db = "mysql+pymysql://xuan:pgjdcwn1983@127.0.0.1:3306/thermography"
 SECRET_KEY = os.getenv("SECRET_KEY", "secret string")
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URI", dev_db)
