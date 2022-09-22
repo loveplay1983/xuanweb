@@ -26,5 +26,7 @@ class PatientForm(FlaskForm):
     submit = SubmitField(label="上传")
 
 
-
-
+class ImaggUpload(FlaskForm):
+    patientNum = StringField("门诊号")
+    upload = MultipleFileField("影像上传", validators=[DataRequired()])
+    submit = SubmitField(label="上传")

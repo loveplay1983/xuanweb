@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block flash_message %}
+{% for message in get_flashed_messages(with_categories=true) %}
+<div class="alert alert-warning fade show" role="alert" id="msg">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{ message[1] }}
+</div>
+{% endfor %}
+{% endblock flash_message %}
+{% block content %}
+
+<form method="post" id="patient_form">
+    {{ form.csrf_token }}
+    <fieldset class="patient-fieldset">
+        <legend id="patient-info">病员信息</legend>
+        <div class="patient_content">
+            <div class="row justify-content-between r">
+                <div class="col">
+                    {{ form.patientNum.label }}
+                    {{ form.patientNum }}
+                </div>
+                <div class="col">
+                    {{ form.patientName.label }}
+                    {{ form.patientName }}
+                </div>
+                <div class="col">
+                    {{ form.patientSex.label }}
+                    {{ form.patientSex }}
+                </div>
+            </div>
+            <!--            <div class="w-100"></div>-->
+            <div class="row justify-content-between">
+                <div class="col">
+                    {{ form.patientID.label }}
+                    {{ form.patientID }}
+                </div>
+                <div class="col">
+                    {{ form.patientPhone.label }}
+                    {{ form.patientPhone }}
+                </div>
+                <div class="col">
+                    {{ form.patientAddr.label }}
+                    {{ form.patientAddr }}
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <br>
+    <div id="uploads">
+        {{ form.image.label }}
+        {{ form.image }}
+    </div>
+    <div id="init-clinic">
+        {{ form.clinic.label }}
+        {{ form.clinic }}
+    </div>
+    <br>
+    {{ form.submit }}
+</form>
+<br>
+{% endblock content %}
+
+
+{% block scripts %}
+{{ super() }}
+{{ ckeditor.load() }}
+{{ ckeditor.config(name='body') }}
+{% endblock %}
