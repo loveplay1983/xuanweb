@@ -20,30 +20,34 @@ class Patient(db.Model):
     addr = db.Column(db.String(240))
     images = db.relationship("ImageData", back_populates="patient", cascade="all")
     records = db.relationship("MedRecord", back_populates="patient", cascade="all")
-    clinics = db.relationship("ClinicData", back_populates="patient", cascade="all")
+    clinicsOperator = db.relationship("InitClinic", back_populates="patient", cascade="all")
+    clinicsDoc = db.relationship("DocClinic", back_populates="patient", cascade="all")
 
 
-class ImageData(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+class UploadImage(db.Model):
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), primary_key=True)
     description = db.Column(db.String(120))
     filename = db.Column(db.String(64))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
+
     patient = db.relationship("Patient", back_populates="images")
 
 
 class MedRecord(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), primary_key=True)
     hisDescription = db.Column(db.String(500))
     lisDescription = db.Column(db.String(500))
     pacsDescription = db.Column(db.String(500))
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
     patient = db.relationship("Patient", back_populates="records")
 
 
-class ClinicData(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+class InitClinic(db.Model):
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), primary_key=True)
     initClinic = db.Column(db.String(500))
-    docClinic = db.Column(db.String(500))
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
+    patient = db.relationship("Patient", back_populates="clinics")
+
+
+class DocClinic(db.Model):
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), primary_key=True)
+    docClinic = db.COlumn(db.String(500))
     patient = db.relationship("Patient", back_populates="clinics")

@@ -9,7 +9,7 @@ from flask_wtf.csrf import validate_csrf
 from wtforms import ValidationError
 from MedicalInfraredImaging import settings, db, app
 from MedicalInfraredImaging.forms import PatientForm
-from MedicalInfraredImaging.models import Patient, ImageData, ClinicData
+from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, InitClinic, DocClinic
 from MedicalInfraredImaging.utils import allowed_file
 import os
 
@@ -25,13 +25,12 @@ def index():
 def collectData():
     patient = PatientForm()
     if patient.validate_on_submit():
-
         # csrf check
-        # try:
-        #     validate_csrf(patient.csrf_token.data)
-        # except ValidationError:
-        #     flash("CSRF token error.")
-        #     return redirect(url_for("collectData"))
+        try:
+            validate_csrf(patient.csrf_token.data)
+        except ValidationError:
+            flash("CSRF token error.")
+            return redirect(url_for("collectData"))
 
         # Patient info
         cliNum = patient.patientNum.data
@@ -44,10 +43,6 @@ def collectData():
                           idNum=cliID, phone=cliPhone, addr=cliAddr)
 
         # image data
-        # if "photo" not in request.files:
-        #     flash("This field is required.")
-        #     return redirect(url_for("collectData"))
-
         for f in request.files.getlist("image"):
             if f and allowed_file(f.filename):
                 destDir = os.path.join(app.config["UPLOAD_PATH"], patient.patientNum.data)

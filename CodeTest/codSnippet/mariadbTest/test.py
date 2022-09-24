@@ -20,7 +20,6 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
 
-
 # relationship table
 class Patient(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -36,7 +35,7 @@ class Patient(db.Model):
 
 
 class ImageData(db.Model):
-    id = db.Column( db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     description = db.Column(db.String(120))
     filename = db.Column(db.String(64))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)

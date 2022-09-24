@@ -21,12 +21,6 @@ class PatientForm(FlaskForm):
     patientID = StringField("身份证")
     patientPhone = StringField("电话")
     patientAddr = StringField("地址")
-    image = MultipleFileField("影像上传")
+    image = MultipleFileField("影像上传", validators=[DataRequired()])
     clinic = CKEditorField("初次评估")
-    submit = SubmitField(label="上传")
-
-
-class ImaggUpload(FlaskForm):
-    patientNum = StringField("门诊号")
-    upload = MultipleFileField("影像上传", validators=[DataRequired()])
     submit = SubmitField(label="上传")
