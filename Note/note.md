@@ -214,9 +214,26 @@
 
 # Forms
 * [submit form with return key](https://www.techiedelight.com/submit-form-with-enter-key-javascript/)
+
 * [submit form with return key2](https://www.geeksforgeeks.org/how-to-submit-a-form-on-enter-button-using-jquery/)
+
 * [submit form with return key3](https://thewebdev.info/2022/02/02/how-to-submit-form-on-enter-key-press-with-javascript/)
+
 * [submit form with return key4](https://stackoverflow.com/questions/29943/how-to-submit-a-form-when-the-return-key-is-pressed)
+
+* # How to upload file and text content at the same time
+
+  https://stackoverflow.com/questions/50868227/flask-uploading-image-and-text-at-the-same-time
+
+  https://stackoverflow.com/questions/4526273/what-does-enctype-multipart-form-data-mean
+
+  https://www.section.io/engineering-education/how-to-handle-file-uploads-with-flask/
+
+  https://stackoverflow.com/questions/60409785/flask-wtforms-combining-textareafield-with-filefield
+
+* [uploading file](https://flask.palletsprojects.com/en/2.2.x/patterns/fileuploads/)
+
+  
 
 # Javascript
 * [change input value](https://stackoverflow.com/questions/54203535/changing-input-value-inside-a-form-tags-when-enter-key-is-pressed)

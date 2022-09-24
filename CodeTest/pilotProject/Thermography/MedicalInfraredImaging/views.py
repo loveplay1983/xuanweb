@@ -50,9 +50,10 @@ def collectData():
 
         for f in request.files.getlist("image"):
             if f and allowed_file(f.filename):
-                f.save(os.path.join(
-                    app.config["UPLOAD_PATH"], f.filename
-                ))
+                destDir = os.path.join(app.config["UPLOAD_PATH"], patient.patientNum.data)
+                if not os.path.exists(destDir):
+                    os.mkdir(destDir)
+                f.save(os.path.join(destDir, f.filename))
             else:
                 flash("Invalid file type.")
                 return redirect(url_for("collectData"))
