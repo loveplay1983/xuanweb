@@ -18,23 +18,24 @@ class Patient(db.Model):
     idNum = db.Column(db.Integer)
     phone = db.Column(db.String(11))
     addr = db.Column(db.String(240))
-    images = db.relationship("ImageData", back_populates="patient", cascade="all")
+    images = db.relationship("UploadImage", back_populates="patient", cascade="all")
     records = db.relationship("MedRecord", back_populates="patient", cascade="all")
     clinicsOperator = db.relationship("InitClinic", back_populates="patient", cascade="all")
     clinicsDoc = db.relationship("DocClinic", back_populates="patient", cascade="all")
 
 
 class UploadImage(db.Model):
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
     description = db.Column(db.String(120))
     filename = db.Column(db.String(64))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
-
     patient = db.relationship("Patient", back_populates="images")
 
 
 class MedRecord(db.Model):
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
     hisDescription = db.Column(db.String(500))
     lisDescription = db.Column(db.String(500))
     pacsDescription = db.Column(db.String(500))
@@ -42,12 +43,14 @@ class MedRecord(db.Model):
 
 
 class InitClinic(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
     patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), primary_key=True)
     initClinic = db.Column(db.String(500))
-    patient = db.relationship("Patient", back_populates="clinics")
+    patient = db.relationship("Patient", back_populates="clinicsOperator")
 
 
 class DocClinic(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
     patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), primary_key=True)
-    docClinic = db.COlumn(db.String(500))
-    patient = db.relationship("Patient", back_populates="clinics")
+    docClinic = db.Column(db.String(500))
+    patient = db.relationship("Patient", back_populates="clinicsDoc")

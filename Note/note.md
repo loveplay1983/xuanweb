@@ -624,4 +624,40 @@ After this operation, 201 MB of additional disk space will be used.
     DROP USER 'user1'@localhost;
     ```
 
+  * [GUI for mariadb](https://www.tecmint.com/mysql-gui-tools-for-linux/)
+
+* Flask SQLAlchemy FAQ
+
+  * [How to set up foreign key](https://stackoverflow.com/questions/16433338/inserting-new-records-with-one-to-many-relationship-in-sqlalchemy)
+
+    ```
+    class Person(db.Model):
+        id = db.Column(db.Integer, primary_key=True)
+        name = db.Column(db.String(50))
+        addresses = db.relationship('Address', backref='person',
+                                    lazy='dynamic')
+    
+    class Address(db.Model):
+        id = db.Column(db.Integer, primary_key=True)
+        email = db.Column(db.String(50))
+        person_id = db.Column(db.Integer, db.ForeignKey('person.id'))
+        
+        
+    a = Address(email='foo@bar.com')
+    p = Person(name='foo')
+    p.addresses.append(a)
+    
+    # OR
+    
+    a = Address(email='foo@bar.com')
+    p = Person(name='foo', addresses=[a])
+    
+    db.session.add(p)
+    db.session.add(a)
+    db.session.commit()
+    print(p.addresses.count()) # 1
+    print(p.addresses[0]) # <Address object at 0x10c098ed0>
+    print(p.addresses.filter_by(email='foo@bar.com').count()) # 1
+    ```
+
     
