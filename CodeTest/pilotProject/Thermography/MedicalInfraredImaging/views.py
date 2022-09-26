@@ -42,7 +42,7 @@ def collectData():
         cliInfo = Patient(cliNum=cliNum, name=cliName, sex=cliSex,
                           idNum=cliID, phone=cliPhone, addr=cliAddr)
 
-        # image data
+        # Image data
         imageFiles = ","
         images = []
         for f in request.files.getlist("image"):
@@ -58,13 +58,17 @@ def collectData():
         images = [str(each) for each in images]
         imageFiles = imageFiles.join(images)
         imageInfo = UploadImage(description=cliName, filename=imageFiles)
-
-        # Handle foreign key constraint
         cliInfo.images.append(imageInfo)
+
+        # Clinic data
+        clinicData = patient.clinic.data
+        initClinic = InitClinic(initClinic=clinicData)
+        cliInfo.clinicsOperator.append(initClinic)
 
         # Hand in the request to the database
         db.session.add(cliInfo)
         db.session.add(imageInfo)
+        db.session.add(initClinic)
         db.session.commit()
         return redirect(url_for("collectData"))
     return render_template("collect.html", form=patient)

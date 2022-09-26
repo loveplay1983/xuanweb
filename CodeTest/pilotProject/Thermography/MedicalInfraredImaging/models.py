@@ -44,13 +44,13 @@ class MedRecord(db.Model):
 
 class InitClinic(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), primary_key=True)
-    initClinic = db.Column(db.String(500))
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
+    initClinic = db.Column(db.String(1500))
     patient = db.relationship("Patient", back_populates="clinicsOperator")
 
 
 class DocClinic(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), primary_key=True)
-    docClinic = db.Column(db.String(500))
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
+    docClinic = db.Column(db.String(1500))
     patient = db.relationship("Patient", back_populates="clinicsDoc")
