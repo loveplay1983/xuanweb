@@ -567,6 +567,16 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 *  what is UserMixin
 
    https://stackoverflow.com/questions/63231163/what-is-the-usermixin-in-flask
+   
+*  how to distribute flask app
+
+   http://t.zoukankan.com/kongxiaoshuang-p-11899916.html
+
+   ```flask
+   flask run --host=0.0.0.0 --port=5000
+   ```
+
+   
 
 # Database
 
