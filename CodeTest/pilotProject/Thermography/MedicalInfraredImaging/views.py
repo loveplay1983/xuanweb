@@ -78,3 +78,9 @@ def collectData():
 # def get_file(filename):
 #     return send_from_directory(app.config["UPLOAD_PATH"], filename)
 
+@app.route("/clinic", methods=["GET", "POST"])
+def clinicView():
+    pass
+
+# @app.route("/clinic/viewer", method=["GET", "POST"])
+# def

@@ -24,3 +24,18 @@ class PatientForm(FlaskForm):
     image = MultipleFileField("影像上传", validators=[DataRequired()])
     clinic = CKEditorField("初次评估", validators=[DataRequired()])
     submit = SubmitField(label="上传")
+
+
+class DocViewer(FlaskForm):
+    pNum = StringField("门诊号", validators=[DataRequired()])
+    pName = StringField("姓名")
+    pSex = StringField("性别")
+    pid = StringField("身份证")
+    pPhone = StringField("电话")
+    pAddr = StringField("地址")
+    submit = SubmitField()
+
+
+class DocDecision(FlaskForm):
+    pClinic = CKEditorField("影像评估", validators=[DataRequired()])
+    submit = SubmitField(label="保存诊断")
