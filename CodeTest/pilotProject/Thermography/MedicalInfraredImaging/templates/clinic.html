@@ -10,7 +10,6 @@
 {% endblock flash_message %}
 
 
-
 {% block content %}
 <form method="post" id="patient_form" enctype="multipart/form-data">
     {{ form.csrf_token }}
@@ -49,5 +48,7 @@
     </fieldset>
     {{ form.submit }}
 </form>
+
+
 
 {% endblock content %}

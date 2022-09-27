@@ -28,11 +28,13 @@
     <div class="nav navbar-nav ml-auto" id="datetime"></div>
 </nav>
 
+{% block nav-button %}
 <div class="nav_menu">
     <a href="{{ url_for('index') }}" class="active navLink">首页</a>
-    <a href="{{ url_for('collectData') }}" class="navLink">数据收集</a>
-    <a href="{{ url_for('clinicView') }}" class="navLink">诊断分析</a>
+    <a href="{{ url_for('collectData') }}" class="navLink" id="data-collect">数据收集</a>
+    <a href="{{ url_for('clinicView') }}" class="navLink" id="data-clinic">诊断分析</a>
 </div>
+{% endblock nav-button %}
 {% endblock nav %}
 
 <main class="main">

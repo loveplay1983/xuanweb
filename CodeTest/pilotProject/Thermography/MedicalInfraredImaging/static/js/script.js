@@ -40,3 +40,13 @@ const interval = setInterval(() => {
 //     $(".alert").fadeTo(500, 0)
 // }, 4000);
 
+
+function collectBtn(){
+    document.getElementById("data-collect").style.backgroundColor = "red";
+}
+
+
+function clinicBtn(){
+
+}
+
