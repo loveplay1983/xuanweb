@@ -8,7 +8,7 @@ from flask import flash, redirect, url_for, render_template, request, send_from_
 from flask_wtf.csrf import validate_csrf
 from wtforms import ValidationError
 from MedicalInfraredImaging import settings, db, app
-from MedicalInfraredImaging.forms import PatientForm
+from MedicalInfraredImaging.forms import PatientForm, DocViewer
 from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, InitClinic, DocClinic
 from MedicalInfraredImaging.utils import allowed_file
 import os
@@ -80,7 +80,8 @@ def collectData():
 
 @app.route("/clinic", methods=["GET", "POST"])
 def clinicView():
-    pass
+    pView = DocViewer()
+    return render_template("clinic.html", form=pView)
 
 # @app.route("/clinic/viewer", method=["GET", "POST"])
 # def

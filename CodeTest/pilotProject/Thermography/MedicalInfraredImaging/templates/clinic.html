@@ -11,5 +11,43 @@
 
 
 
-{% block clinic %}
-{% endblock%}
+{% block content %}
+<form method="post" id="patient_form" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    <fieldset class="patient-fieldset">
+        <legend id="patient-info">病员信息</legend>
+        <div class="patient_content">
+            <div class="row justify-content-between r">
+                <div class="col">
+                    {{ form.pNum.label }}
+                    {{ form.pNum }}
+                </div>
+                <div class="col">
+                    {{ form.pName.label }}
+                    {{ form.pName }}
+                </div>
+                <div class="col">
+                    {{ form.pSex.label }}
+                    {{ form.pSex }}
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col">
+                    {{ form.pid.label }}
+                    {{ form.pid }}
+                </div>
+                <div class="col">
+                    {{ form.pPhone.label }}
+                    {{ form.pPhone }}
+                </div>
+                <div class="col">
+                    {{ form.pAddr.label }}
+                    {{ form.pAddr }}
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    {{ form.submit }}
+</form>
+
+{% endblock content %}
