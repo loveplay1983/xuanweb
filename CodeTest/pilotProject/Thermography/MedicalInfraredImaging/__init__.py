@@ -21,4 +21,4 @@ bootstrap = Bootstrap(app)
 dropzone = Dropzone(app)
 ckeditor = CKEditor(app)
 
-from MedicalInfraredImaging import views, errors, commands, utils
+from MedicalInfraredImaging import views, errors, commands, utils, models
