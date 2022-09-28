@@ -81,6 +81,16 @@ def collectData():
 @app.route("/clinic", methods=["GET", "POST"])
 def clinicView():
     pView = DocViewer()
+    patient = Patient.query.filter_by(cliNum=pView.pNum).first()
+    if pView.validate_on_submit():
+        # csrf check
+        try:
+            validate_csrf(pView.csrf_token.data)
+        except ValidationError:
+            flash("CSRF token error.")
+            return redirect(url_for("clinicView"))
+
+
     return render_template("clinic.html", form=pView)
 
 # @app.route("/clinic/viewer", method=["GET", "POST"])
