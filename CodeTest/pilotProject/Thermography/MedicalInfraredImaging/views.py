@@ -82,7 +82,7 @@ def collectData():
 def clinicView():
     pView = DocViewer()
     patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
-    pImgs = UploadImage.query.filter_by()
+    # pImgs = UploadImage.query.filter_by()
     if pView.validate_on_submit():
         # csrf check
         try:
