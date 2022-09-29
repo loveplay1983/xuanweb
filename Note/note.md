@@ -670,4 +670,29 @@ After this operation, 201 MB of additional disk space will be used.
     print(p.addresses.filter_by(email='foo@bar.com').count()) # 1
     ```
 
+  * [foreign key query](https://stackoverflow.com/questions/41569206/flask-sqlalchemy-foreign-key-relationships)
+  
+    ```flask sqlalchemy
+    class Request(db.Model):
+        __tablename__ = 'request'
+        id = db.Column(db.Integer, primary_key=True)
+        applicationdate = db.Column(db.DateTime)
+    
+    class Agent(db.Model):
+        __tablename__ = 'agent'
+        id = db.Column(db.Integer, primary_key=True)   
+        request_id = db.Column(db.Integer, db.ForeignKey('request.id'))
+        request = db.relationship("Request", backref=backref("request", uselist=False))
+    
+        name = db.Column(db.String(80))
+        company = db.Column(db.String(80))
+        address = db.Column(db.String(180))
+        
+    request = Request.query.first()
+    print(request.agent.name)
+    
+    agent = Agent.query.first()
+    print(agent.request.applicationdate)
+    ```
+  
     
