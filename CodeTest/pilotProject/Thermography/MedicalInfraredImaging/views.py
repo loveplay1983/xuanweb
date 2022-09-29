@@ -98,7 +98,12 @@ def clinicView():
             pView.pid.data = patient.idNum
             pView.pPhone.data = patient.phone
             pView.pAddr.data = patient.addr
-            flash(f"欢迎就诊, {patient.name}!")
+
+            # Test for retrieving the filenames
+            pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
+            img = UploadImage.query.filter_by(patientID=pid.id).first()
+            imgs = img.filename
+            flash(f"欢迎就诊, {patient.name}! 您的图像文件是, {imgs}")
         else:
             flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
