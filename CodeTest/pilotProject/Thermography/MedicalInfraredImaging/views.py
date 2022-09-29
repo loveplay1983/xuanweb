@@ -91,14 +91,17 @@ def clinicView():
             flash("CSRF token error.")
             return redirect(url_for("clinicView"))
 
-        pView.pNum.data = patient.cliNum
-        pView.pName.data = patient.name
-        pView.pSex.data = patient.sex
-        pView.pid.data = patient.idNum
-        pView.pPhone.data = patient.phone
-        pView.pAddr.data = patient.addr
-        flash(f"欢迎就诊, {patient.name}!")
-
+        if patient is not None:
+            pView.pNum.data = patient.cliNum
+            pView.pName.data = patient.name
+            pView.pSex.data = patient.sex
+            pView.pid.data = patient.idNum
+            pView.pPhone.data = patient.phone
+            pView.pAddr.data = patient.addr
+            flash(f"欢迎就诊, {patient.name}!")
+        else:
+            flash(f"未找到相关人员!!!")
+            return redirect(url_for("clinicView"))
     return render_template("clinic.html", form=pView)
 
 # @app.route("/clinic/viewer", method=["GET", "POST"])

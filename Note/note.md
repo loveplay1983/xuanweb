@@ -694,5 +694,6 @@ After this operation, 201 MB of additional disk space will be used.
     agent = Agent.query.first()
     print(agent.request.applicationdate)
     ```
-  
-    
+
+* SQL FAQ
+  * [Foreign key usage](https://www.digitalocean.com/community/tutorials/how-to-use-foreign-keys-in-sql)
