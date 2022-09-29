@@ -8,17 +8,6 @@
 </div>
 {% endblock navButton %}
 
-
-{% block flash_message %}
-{% for message in get_flashed_messages(with_categories=true) %}
-<div class="alert alert-warning fade show" role="alert" id="msg">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    {{ message[1] }}
-</div>
-{% endfor %}
-{% endblock flash_message %}
-
-
 {% block content %}
 <form method="post" id="patient_form" enctype="multipart/form-data">
     {{ form.csrf_token }}

@@ -17,6 +17,9 @@
     <!--    <link rel="stylesheet" href="../static/css/style.css" type="text/css">-->
     {% endblock head %}
 </head>
+
+{% block flash_message %}{% endblock flash_message %}
+
 <body>
 
 {% block nav %}
@@ -40,7 +43,6 @@
 {% endblock nav %}
 
 <main class="main">
-    {% block flash_message %}{% endblock flash_message %}
     {% block content %}{% endblock content %}
     {% block footer %}
     <footer>

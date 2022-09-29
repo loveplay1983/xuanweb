@@ -15,7 +15,7 @@ class Patient(db.Model):
     cliNum = db.Column(db.Integer)
     name = db.Column(db.String(120))
     sex = db.Column(db.String(8))
-    idNum = db.Column(db.Integer)
+    idNum = db.Column(db.String(18))
     phone = db.Column(db.String(11))
     addr = db.Column(db.String(240))
     images = db.relationship("UploadImage", back_populates="patient", cascade="all")
