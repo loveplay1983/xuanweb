@@ -101,16 +101,21 @@ def clinicView():
 
             flash(f"欢迎就诊, {patient.name}!")
 
-            # Test for retrieving the filenames
-            pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
-            img = UploadImage.query.filter_by(patientID=pid.id).first()
-            imgs = img.filename
-            destDir = os.path.join(app.config["UPLOAD_PATH"], pView.pNum.data)
+            # # Test for retrieving the filenames
+            # pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
+            # img = UploadImage.query.filter_by(patientID=pid.id).first()
+            # imgs = img.filename
+            # destDir = os.path.join(app.config["UPLOAD_PATH"], pView.pNum.data)
 
         else:
             flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
-    return render_template("clinic.html", form=pView, files=imgs, filePath=destDir)
+
+
+
+    # return render_template("clinic.html", form=pView, files=imgs, filePath=destDir)
+    return render_template("clinic.html", form=pView)
+
 
 # @app.route("/clinic/viewer", method=["GET", "POST"])
 # def
