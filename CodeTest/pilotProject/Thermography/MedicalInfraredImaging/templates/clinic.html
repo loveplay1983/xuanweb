@@ -17,9 +17,6 @@
 </div>
 {% endblock navButton %}
 
-
-
-
 {% block content %}
 <form method="post" id="patient_form" enctype="multipart/form-data">
     {{ form.csrf_token }}
@@ -59,31 +56,14 @@
     {{ form.submit }}
 </form>
 
+
 <div class="row">
+    {% for each in files %}
     <div class="column">
-        <img src="./imgs/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+        <img src="{{ filePath }}/{{ each }}" style="width:100%" onclick="openModal();currentSlide(1)"
              class="hover-shadow cursor thumbnail">
     </div>
-    <div class="column">
-        <img src="./imgs/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
-             class="hover-shadow cursor thumbnail">
-    </div>
-    <div class="column">
-        <img src="./imgs/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
-             class="hover-shadow cursor thumbnail">
-    </div>
-    <div class="column">
-        <img src="./imgs/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
-             class="hover-shadow cursor thumbnail">
-    </div>
-    <div class="column">
-        <img src="./imgs/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)"
-             class="hover-shadow cursor thumbnail">
-    </div>
-    <div class="column">
-        <img src="./imgs/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)"
-             class="hover-shadow cursor thumbnail">
-    </div>
+    {% endfor %}
 </div>
 
 <br>

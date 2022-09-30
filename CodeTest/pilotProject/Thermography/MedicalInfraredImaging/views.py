@@ -82,7 +82,7 @@ def collectData():
 def clinicView():
     pView = DocViewer()
     patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
-    # pImgs = UploadImage.query.filter_by()
+
     if pView.validate_on_submit():
         # csrf check
         try:
@@ -99,15 +99,18 @@ def clinicView():
             pView.pPhone.data = patient.phone
             pView.pAddr.data = patient.addr
 
+            flash(f"欢迎就诊, {patient.name}!")
+
             # Test for retrieving the filenames
             pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
             imgs = img.filename
-            flash(f"欢迎就诊, {patient.name}! 您的图像文件是, {imgs}")
+            destDir = os.path.join(app.config["UPLOAD_PATH"], pView.pNum.data)
+
         else:
             flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
-    return render_template("clinic.html", form=pView)
+    return render_template("clinic.html", form=pView, files=imgs, filePath=destDir)
 
 # @app.route("/clinic/viewer", method=["GET", "POST"])
 # def
