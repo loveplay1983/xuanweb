@@ -104,7 +104,7 @@ def clinicView():
             # Test for retrieving the filenames
             pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
-            imgs = img.filename
+            imgs = img.filename.split(",")
             destDir = os.path.join(app.config["UPLOAD_PATH"], str(pView.pNum.data))
             flash(f"{imgs}, {destDir}")
             return render_template("clinic.html", form=pView, files=imgs, filePath=destDir)
@@ -116,5 +116,5 @@ def clinicView():
     return render_template("clinic.html", form=pView)
 
 
-# @app.route("/clinic/viewer", method=["GET", "POST"])
+# @app.route("/clinic/screening", method=["GET", "POST"])
 # def

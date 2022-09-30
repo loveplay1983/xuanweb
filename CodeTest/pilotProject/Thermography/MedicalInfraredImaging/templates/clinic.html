@@ -58,50 +58,52 @@
 
 
 <div class="row">
-    {% for each in files %}
+    {% for file in files %}
     <div class="column">
-        <img src="{{ filePath }}/{{ each }}" style="width:100%" onclick="openModal();currentSlide(1)"
+        <img src="../uploads/{{ file }}" style="width:100%" onclick="openModal();currentSlide(1)"
              class="hover-shadow cursor thumbnail">
     </div>
     {% endfor %}
 </div>
 
+
+
 <br>
 
-<div id="myModal" class="modal">
+<!--<div id="myModal" class="modal">-->
 
-    <div class="modal-content">
+<!--    <div class="modal-content">-->
 
-        <div class="mySlides">
-            <div class="numbertext">1 / 5</div>
-            <img src="./imgs/1.jpg" style="width:100%">
-        </div>
+<!--        <div class="mySlides">-->
+<!--            <div class="numbertext">1 / 5</div>-->
+<!--            <img src="./imgs/1.jpg" style="width:100%">-->
+<!--        </div>-->
 
-        <div class="mySlides">
-            <div class="numbertext">2 / 5</div>
-            <img src="./imgs/2.jpg" style="width:100%">
-        </div>
+<!--        <div class="mySlides">-->
+<!--            <div class="numbertext">2 / 5</div>-->
+<!--            <img src="./imgs/2.jpg" style="width:100%">-->
+<!--        </div>-->
 
-        <div class="mySlides">
-            <div class="numbertext">3 / 5</div>
-            <img src="./imgs/3.jpg" style="width:100%">
-        </div>
+<!--        <div class="mySlides">-->
+<!--            <div class="numbertext">3 / 5</div>-->
+<!--            <img src="./imgs/3.jpg" style="width:100%">-->
+<!--        </div>-->
 
-        <div class="mySlides">
-            <div class="numbertext">4 / 5</div>
-            <img src="./imgs/4.jpg" style="width:100%">
-        </div>
-        <div class="mySlides">
-            <div class="numbertext">5 / 5</div>
-            <img src="./imgs/5.jpg" style="width:100%">
-        </div>
+<!--        <div class="mySlides">-->
+<!--            <div class="numbertext">4 / 5</div>-->
+<!--            <img src="./imgs/4.jpg" style="width:100%">-->
+<!--        </div>-->
+<!--        <div class="mySlides">-->
+<!--            <div class="numbertext">5 / 5</div>-->
+<!--            <img src="./imgs/5.jpg" style="width:100%">-->
+<!--        </div>-->
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!--        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
+<!--        <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
 
-    </div>
-    <p class="close cursor" onclick="closeModal()">&times;</p>
-</div>
+<!--    </div>-->
+<!--    <p class="close cursor" onclick="closeModal()">&times;</p>-->
+<!--</div>-->
 
 
 {% endblock content %}
