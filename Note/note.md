@@ -671,7 +671,7 @@ After this operation, 201 MB of additional disk space will be used.
     ```
 
   * [foreign key query](https://stackoverflow.com/questions/41569206/flask-sqlalchemy-foreign-key-relationships)
-  
+
     ```flask sqlalchemy
     class Request(db.Model):
         __tablename__ = 'request'
@@ -694,6 +694,8 @@ After this operation, 201 MB of additional disk space will be used.
     agent = Agent.query.first()
     print(agent.request.applicationdate)
     ```
+    
+  * [foreign key query2](https://stackoverflow.com/questions/19407450/referencing-values-using-foreign-key-on-flask-sql-alchemy)
 
 * SQL FAQ
   
