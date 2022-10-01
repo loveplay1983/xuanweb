@@ -60,11 +60,12 @@
 <div class="row">
     {% for file in files %}
     <div class="column">
-        <img src="../uploads/{{ file }}" style="width:100%" onclick="openModal();currentSlide(1)"
+        <img src="{{ url_for('getFile', fileFolder=fileFolder, fileName=file) }}" style="width:100%" onclick="openModal();currentSlide(1)"
              class="hover-shadow cursor thumbnail">
     </div>
     {% endfor %}
 </div>
+
 
 
 

@@ -74,9 +74,10 @@ def collectData():
     return render_template("collect.html", form=patient)
 
 
-# @app.route("/uploads/<path:filename>")
-# def get_file(filename):
-#     return send_from_directory(app.config["UPLOAD_PATH"], filename)
+@app.route("/uploads/<path:fileFolder>/<path:fileName>")
+def getFile(fileFolder, fileName):
+    return send_from_directory(os.path.join(app.config["UPLOAD_PATH"], fileFolder),
+                               fileName)
 
 @app.route("/clinic", methods=["GET", "POST"])
 def clinicView():
@@ -102,19 +103,19 @@ def clinicView():
             flash(f"欢迎就诊, {patient.name}!")
 
             # Test for retrieving the filenames
+            fileFolder = pView.pNum.data
             pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
             imgs = img.filename.split(",")
-            destDir = os.path.join(app.config["UPLOAD_PATH"], str(pView.pNum.data))
-            flash(f"{imgs}, {destDir}")
-            return render_template("clinic.html", form=pView, files=imgs, filePath=destDir)
-
+            # destDir = os.path.join(app.config["UPLOAD_PATH"], str(pView.pNum.data))
+            # flash(f"{imgs}, {destDir}")
+            flash(f"{imgs}")
+            # return render_template("clinic.html", form=pView, files=imgs, filePath=destDir)
+            return render_template("clinic.html", form=pView,
+                                   fileFolder=fileFolder, files=imgs)
         else:
             flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
 
     return render_template("clinic.html", form=pView)
 
-
-# @app.route("/clinic/screening", method=["GET", "POST"])
-# def
