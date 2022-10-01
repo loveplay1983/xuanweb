@@ -576,7 +576,19 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
    flask run --host=0.0.0.0 --port=5000
    ```
 
-   
+*  Display image in flask app
+
+   https://www.youtube.com/watch?v=dP-2NVUgh50
+
+*  The art of dynamic routes
+
+   https://hackersandslackers.com/flask-routes/
+
+   https://dev.to/ketanip/routing-in-flask-23ff
+
+   https://www.geeksforgeeks.org/generating-dynamic-urls-in-flask/
+
+   https://www.educative.io/courses/flask-develop-web-applications-in-python/N82DNr7ZDMz
 
 # Database
 
