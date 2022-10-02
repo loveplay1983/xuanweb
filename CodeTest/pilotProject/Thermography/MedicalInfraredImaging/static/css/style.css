@@ -313,3 +313,8 @@ img.hover-shadow {
     object-fit: cover;
 
 }
+
+/* erros */
+.text-center{
+    font-size: 150px;
+}
