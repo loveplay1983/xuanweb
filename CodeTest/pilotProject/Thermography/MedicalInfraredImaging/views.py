@@ -4,7 +4,7 @@ Author : Michael Xuan
 Project: Study
 Email  : michaelxuan@hotmail.com
 """
-from flask import flash, redirect, url_for, render_template, request, send_from_directory
+from flask import flash, redirect, url_for, render_template, request, send_from_directory, make_response
 from flask_wtf.csrf import validate_csrf
 from wtforms import ValidationError
 from MedicalInfraredImaging import settings, db, app
@@ -79,6 +79,7 @@ def getFile(fileFolder, fileName):
     return send_from_directory(os.path.join(app.config["UPLOAD_PATH"], fileFolder),
                                fileName)
 
+
 @app.route("/clinic", methods=["GET", "POST"])
 def clinicView():
     pView = DocViewer()
@@ -118,4 +119,5 @@ def clinicView():
             return redirect(url_for("clinicView"))
 
     return render_template("clinic.html", form=pView)
+
 
