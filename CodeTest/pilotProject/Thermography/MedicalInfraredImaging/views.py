@@ -101,7 +101,7 @@ def clinicView():
             pView.pPhone.data = patient.phone
             pView.pAddr.data = patient.addr
 
-            flash(f"欢迎就诊, {patient.name}!")
+            flash(f"就诊人员, {patient.name}!")
 
             # Test for retrieving the filenames
             fileFolder = pView.pNum.data
@@ -110,7 +110,7 @@ def clinicView():
             imgs = img.filename.split(",")
             # destDir = os.path.join(app.config["UPLOAD_PATH"], str(pView.pNum.data))
             # flash(f"{imgs}, {destDir}")
-            flash(f"{imgs}")
+            # flash(f"{imgs}")
             # return render_template("clinic.html", form=pView, files=imgs, filePath=destDir)
             return render_template("clinic.html", form=pView,
                                    fileFolder=fileFolder, files=imgs)

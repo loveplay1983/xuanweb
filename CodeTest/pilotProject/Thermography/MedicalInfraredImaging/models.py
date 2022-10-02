@@ -28,7 +28,7 @@ class UploadImage(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
     description = db.Column(db.String(120))
-    filename = db.Column(db.String(64))
+    filename = db.Column(db.String(500))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
     patient = db.relationship("Patient", back_populates="images")
 
