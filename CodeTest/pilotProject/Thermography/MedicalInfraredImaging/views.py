@@ -8,7 +8,7 @@ from flask import flash, redirect, url_for, render_template, request, send_from_
 from flask_wtf.csrf import validate_csrf
 from wtforms import ValidationError
 from MedicalInfraredImaging import settings, db, app
-from MedicalInfraredImaging.forms import PatientForm, DocViewer
+from MedicalInfraredImaging.forms import PatientForm, DocViewer, DocDecision
 from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, InitClinic, DocClinic
 from MedicalInfraredImaging.utils import allowed_file
 import os
@@ -82,7 +82,8 @@ def getFile(fileFolder, fileName):
 
 @app.route("/clinic", methods=["GET", "POST"])
 def clinicView():
-    pView = DocViewer()
+    pView = DocViewer()   # Query patient info from doctor view
+    docDecision = DocDecision()  # Record clinical decision from doctor view
     patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
 
     if pView.validate_on_submit():
@@ -117,6 +118,18 @@ def clinicView():
         else:
             flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
+
+
+    if docDecision.validate_on_submit():
+        # csrf check
+        try:
+            validate_csrf(docDecision.csrf_token.data)
+        except ValidationError:
+            flash("CSRF token error.")
+            return redirect(url_for("clinicView"))
+
+
+
 
     return render_template("clinic.html", form=pView)
 
