@@ -82,7 +82,7 @@ def getFile(fileFolder, fileName):
 
 @app.route("/clinic", methods=["GET", "POST"])
 def clinicView():
-    pView = DocViewer()   # Query patient info from doctor view
+    pView = DocViewer()  # Query patient info from doctor view
     docDecision = DocDecision()  # Record clinical decision from doctor view
     patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
 
@@ -119,18 +119,12 @@ def clinicView():
             flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
 
-
     if docDecision.validate_on_submit():
-        # csrf check
-        try:
-            validate_csrf(docDecision.csrf_token.data)
-        except ValidationError:
-            flash("CSRF token error.")
-            return redirect(url_for("clinicView"))
+        if patient is not None:
+            pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
+            flash(f"{pid}")
+            return render_template("clinic.html", docForm=docDecision, form=pView)
+    return render_template("clinic.html", form=pView, docForm=docDecision)
 
-
-
-
-    return render_template("clinic.html", form=pView)
-
-
+# @app.route("clinic/doc-write", methods=["GET", "POST"])
+# def docWrite():

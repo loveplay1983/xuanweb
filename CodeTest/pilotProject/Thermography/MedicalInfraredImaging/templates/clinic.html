@@ -82,4 +82,19 @@
     <p class="close cursor" onclick="closeModal()">&times;</p>
 </div>
 
+<form method="post" id="doc-write">
+    {{ docForm.csrf_token }}
+    {{ docForm.pClinic.label }}
+    {{ docForm.pClinic}}
+    <br>
+    {{ docForm.submit }}
+</form>
+
 {% endblock content %}
+
+
+{% block scripts %}
+{{ super() }}
+{{ ckeditor.load() }}
+{{ ckeditor.config(name='body') }}
+{% endblock %}
