@@ -113,7 +113,7 @@ def clinicView():
             # flash(f"{imgs}, {destDir}")
             # flash(f"{imgs}")
             # return render_template("clinic.html", form=pView, files=imgs, filePath=destDir)
-            return render_template("clinic.html", form=pView,
+            return render_template("clinic.html", form=pView, docForm=docDecision,
                                    fileFolder=fileFolder, files=imgs)
         else:
             flash(f"未找到相关人员!!!")
