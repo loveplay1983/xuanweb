@@ -86,7 +86,7 @@ def clinicView():
     docDecision = DocDecision()  # Record clinical decision from doctor view
     patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
 
-    if pView.validate_on_submit():
+    if pView.submit1.data and pView.validate_on_submit():
         # csrf check
         try:
             validate_csrf(pView.csrf_token.data)
@@ -109,21 +109,20 @@ def clinicView():
             pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
             imgs = img.filename.split(",")
-            # destDir = os.path.join(app.config["UPLOAD_PATH"], str(pView.pNum.data))
-            # flash(f"{imgs}, {destDir}")
-            # flash(f"{imgs}")
-            # return render_template("clinic.html", form=pView, files=imgs, filePath=destDir)
             return render_template("clinic.html", form=pView, docForm=docDecision,
                                    fileFolder=fileFolder, files=imgs)
         else:
             flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
 
-    if docDecision.validate_on_submit():
+    if docDecision.submit2.data and docDecision.validate_on_submit():
         if patient is not None:
-            pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
-            flash(f"{pid}")
-            return render_template("clinic.html", docForm=docDecision, form=pView)
+        #     pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
+        #     flash(f"{pid}")
+        #     return render_template("clinic.html", docForm=docDecision, form=pView)
+            flash("test")
+            return render_template("clinic.html", form=pView, docForm=docDecision)
+
     return render_template("clinic.html", form=pView, docForm=docDecision)
 
 # @app.route("clinic/doc-write", methods=["GET", "POST"])
