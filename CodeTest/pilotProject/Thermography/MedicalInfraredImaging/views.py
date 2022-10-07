@@ -115,25 +115,29 @@ def clinicView():
             return render_template("clinic.html", form=pView,
                                    fileFolder=fileFolder, files=imgs)
         else:
-            flash(f"未找到相关人员!!!")
+            flash("未找到相关人员!!!")
             return redirect(url_for("clinicView"))
     return render_template("clinic.html", form=pView)
 
 
 @app.route("/clinic/doc-write", methods=["GET", "POST"])
 def docWrite():
-    # flash("诊断输入")
     cliDecision = DocDecision()
 
     if cliDecision.validate_on_submit():
         patient = Patient.query.filter_by(cliNum=cliDecision.pNum.data).first()
-        cliData = cliDecision.pClinic.data
-        docClinic = DocClinic(docClinic=cliData)
-        patient.clinicsDoc.append(docClinic)
+        if patient is not None:
+            flash(patient.id)
+            cliData = cliDecision.pClinic.data
+            flash(cliData)
+            docClinic = DocClinic(docClinic=cliData)
+            patient.clinicsDoc.append(docClinic)
 
-        db.session.add(docClinic)
-        db.session.commit()
+            db.session.add(docClinic)
+            db.session.commit()
 
-        return render_template("docWrite.html", form=cliDecision)
-
+            return render_template("docWrite.html", form=cliDecision)
+        else:
+            flash("人员信息错误,请重输")
+            return redirect(url_for("docWrite"))
     return render_template("docWrite.html", form=cliDecision)
