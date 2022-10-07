@@ -19,7 +19,7 @@
 
 {% block content %}
 <h1>红外热成像图诊断</h1>
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     {{ form.pNum.label }}
     {{ form.pNum }}
     {{ form.pClinic.label }}

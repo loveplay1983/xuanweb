@@ -125,19 +125,18 @@ def docWrite():
     cliDecision = DocDecision()
 
     if cliDecision.validate_on_submit():
-        patient = Patient.query.filter_by(cliNum=cliDecision.pNum.data).first()
-        if patient is not None:
-            flash(patient.id)
-            cliData = cliDecision.pClinic.data
-            flash(cliData)
-            docClinic = DocClinic(docClinic=cliData)
-            patient.clinicsDoc.append(docClinic)
-
-            db.session.add(docClinic)
-            db.session.commit()
-
-            return render_template("docWrite.html", form=cliDecision)
-        else:
-            flash("人员信息错误,请重输")
-            return redirect(url_for("docWrite"))
+        flash("a")
+        # patient = Patient.query.filter_by(cliNum=cliDecision.pNum.data).first()
+        # if patient is not None:
+        #     flash(patient.id)
+        #     cliData = cliDecision.pClinic.data
+        #     flash(cliData)
+        #     docClinic = DocClinic(docClinic=cliData)
+        #     patient.clinicsDoc.append(docClinic)
+        #     db.session.add(docClinic)
+        #     db.session.commit()
+        #     return redirect(url_for("clinicView"))
+        # else:
+        #     flash("人员信息错误,请重输")
+        #     return redirect(url_for("docWrite"))
     return render_template("docWrite.html", form=cliDecision)

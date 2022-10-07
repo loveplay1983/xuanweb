@@ -13,7 +13,6 @@ from wtforms import StringField, PasswordField, BooleanField, IntegerField, \
 from wtforms.validators import DataRequired, Length, ValidationError, Email
 
 
-# Data Collection
 class PatientForm(FlaskForm):
     patientNum = StringField("门诊号", validators=[DataRequired()])
     patientName = StringField("姓名")
