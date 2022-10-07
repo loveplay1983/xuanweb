@@ -4,17 +4,20 @@ Author : Michael Xuan
 Project: Study
 Email  : michaelxuan@hotmail.com
 """
-from flask import flash, redirect, url_for, render_template, request, send_from_directory, make_response
+from flask import flash, redirect, url_for, render_template, request, \
+    send_from_directory, make_response, g
 from flask_wtf.csrf import validate_csrf
 from wtforms import ValidationError
 from MedicalInfraredImaging import settings, db, app
 from MedicalInfraredImaging.forms import PatientForm, DocViewer, DocDecision
-from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, InitClinic, DocClinic
+from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, \
+    InitClinic, DocClinic
 from MedicalInfraredImaging.utils import allowed_file
 import os
 
 currentClinicNum = 0
 
+gpid = ""
 
 @app.route("/")
 def index():
@@ -84,9 +87,10 @@ def getFile(fileFolder, fileName):
 def clinicView():
     pView = DocViewer()  # Query patient info from doctor view
     docDecision = DocDecision()  # Record clinical decision from doctor view
-    patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
 
     if pView.validate_on_submit():
+        patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
+
         # csrf check
         try:
             validate_csrf(pView.csrf_token.data)
@@ -109,10 +113,11 @@ def clinicView():
             pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
             imgs = img.filename.split(",")
-            # destDir = os.path.join(app.config["UPLOAD_PATH"], str(pView.pNum.data))
-            # flash(f"{imgs}, {destDir}")
-            # flash(f"{imgs}")
-            # return render_template("clinic.html", form=pView, files=imgs, filePath=destDir)
+            #
+            # test = pid.id
+            # g.test = test
+            #
+            # flash(g.test)
             return render_template("clinic.html", form=pView, docForm=docDecision,
                                    fileFolder=fileFolder, files=imgs)
         else:
@@ -120,10 +125,9 @@ def clinicView():
             return redirect(url_for("clinicView"))
 
     if docDecision.validate_on_submit():
-        if patient is not None:
-            pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
-            flash(f"{pid}")
-            return render_template("clinic.html", docForm=docDecision, form=pView)
+        test = pView.pNum.data
+        flash(test)
+
     return render_template("clinic.html", form=pView, docForm=docDecision)
 
 # @app.route("clinic/doc-write", methods=["GET", "POST"])

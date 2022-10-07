@@ -589,6 +589,10 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
    https://www.geeksforgeeks.org/generating-dynamic-urls-in-flask/
 
    https://www.educative.io/courses/flask-develop-web-applications-in-python/N82DNr7ZDMz
+   
+*  flask context
+
+   https://testdriven.io/blog/flask-contexts/
 
 # Database
 
