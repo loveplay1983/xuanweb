@@ -108,7 +108,6 @@ def clinicView():
             pid = Patient.query.filter_by(cliNum=cliView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
             imgs = img.filename.split(",")
-            # flash(imgs)
             return render_template("clinic.html", form=cliView,
                                    fileFolder=fileFolder, files=imgs)
         else:

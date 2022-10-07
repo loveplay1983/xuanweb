@@ -12,7 +12,7 @@ from datetime import datetime
 # relationship table
 class Patient(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    cliNum = db.Column(db.Integer)
+    cliNum = db.Column(db.Integer, unique=True)
     name = db.Column(db.String(120))
     sex = db.Column(db.String(8))
     idNum = db.Column(db.String(18))
