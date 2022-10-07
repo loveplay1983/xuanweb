@@ -12,6 +12,8 @@ from MedicalInfraredImaging.forms import PatientForm, DocViewer, DocDecision
 from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, InitClinic, DocClinic
 from MedicalInfraredImaging.utils import allowed_file
 import os
+from MedicalInfraredImaging.utils import MyEncoder
+import json
 
 currentClinicNum = 0
 
@@ -66,10 +68,14 @@ def collectData():
         cliInfo.clinicsOperator.append(initClinic)
 
         # Hand in the request to the database
-        db.session.add(cliInfo)
-        db.session.add(imageInfo)
-        db.session.add(initClinic)
-        db.session.commit()
+        try:
+            db.session.add(cliInfo)
+            db.session.add(imageInfo)
+            db.session.add(initClinic)
+            db.session.commit()
+        except Exception as e:
+            e = {"异常名称": e}
+            flash(json.dumps(e, cls=MyEncoder, indent=4))
         return redirect(url_for("collectData"))
     return render_template("collect.html", form=patient)
 

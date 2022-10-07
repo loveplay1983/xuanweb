@@ -7,6 +7,8 @@ Direction: web
 from MedicalInfraredImaging import app
 import os
 import uuid
+import json
+import datetime
 
 
 def allowed_file(filename):
@@ -18,3 +20,20 @@ def random_filename(filename):
     ext = os.path.splitext(filename)[1]
     new_filename = uuid.uuid4().hex + ext
     return new_filename
+
+
+class MyEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, datetime.datetime):
+            print("MyEncoder-datetime.datetime")
+            return obj.strftime("%Y-%m-%d %H:%M:%S")
+        if isinstance(obj, bytes):
+            return str(obj, encoding='utf-8')
+        if isinstance(obj, int):
+            return int(obj)
+        elif isinstance(obj, float):
+            return float(obj)
+        # elif isinstance(obj, array):
+        #    return obj.tolist()
+        else:
+            return super(MyEncoder, self).default(obj)
