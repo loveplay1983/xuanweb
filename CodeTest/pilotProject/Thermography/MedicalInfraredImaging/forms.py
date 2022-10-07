@@ -13,6 +13,7 @@ from wtforms import StringField, PasswordField, BooleanField, IntegerField, \
 from wtforms.validators import DataRequired, Length, ValidationError, Email
 
 
+# Data Collection
 class PatientForm(FlaskForm):
     patientNum = StringField("门诊号", validators=[DataRequired()])
     patientName = StringField("姓名")
@@ -36,6 +37,5 @@ class DocViewer(FlaskForm):
 
 
 class DocDecision(FlaskForm):
-    pNum = StringField("请输入门诊号", validators=[DataRequired()])
     pClinic = CKEditorField("影像评估", validators=[DataRequired()])
     submit2 = SubmitField(label="保存诊断")

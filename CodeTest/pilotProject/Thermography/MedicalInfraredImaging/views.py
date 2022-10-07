@@ -4,20 +4,16 @@ Author : Michael Xuan
 Project: Study
 Email  : michaelxuan@hotmail.com
 """
-from flask import flash, redirect, url_for, render_template, request, \
-    send_from_directory, make_response, g
+from flask import flash, redirect, url_for, render_template, request, send_from_directory, make_response
 from flask_wtf.csrf import validate_csrf
 from wtforms import ValidationError
 from MedicalInfraredImaging import settings, db, app
 from MedicalInfraredImaging.forms import PatientForm, DocViewer, DocDecision
-from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, \
-    InitClinic, DocClinic
+from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, InitClinic, DocClinic
 from MedicalInfraredImaging.utils import allowed_file
 import os
 
 currentClinicNum = 0
-
-gpid = ""
 
 
 @app.route("/")
@@ -86,14 +82,11 @@ def getFile(fileFolder, fileName):
 
 @app.route("/clinic", methods=["GET", "POST"])
 def clinicView():
-    pView = DocViewer()
+    pView = DocViewer()  # Query patient info from doctor view
+    docDecision = DocDecision()  # Record clinical decision from doctor view
+    patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
 
-<<<<<<< HEAD
     if pView.submit1.data and pView.validate_on_submit():
-=======
-    if pView.validate_on_submit():
-        patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
->>>>>>> 9c24682c77d2fbb6528482771394f033fdf50f95
         # csrf check
         try:
             validate_csrf(pView.csrf_token.data)
@@ -116,16 +109,11 @@ def clinicView():
             pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
             imgs = img.filename.split(",")
-<<<<<<< HEAD
             return render_template("clinic.html", form=pView, docForm=docDecision,
-=======
-            return render_template("clinic.html", form=pView,
->>>>>>> 9c24682c77d2fbb6528482771394f033fdf50f95
                                    fileFolder=fileFolder, files=imgs)
         else:
-            flash("未找到相关人员!!!")
+            flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
-<<<<<<< HEAD
 
     if docDecision.submit2.data and docDecision.validate_on_submit():
         if patient is not None:
@@ -139,28 +127,3 @@ def clinicView():
 
 # @app.route("clinic/doc-write", methods=["GET", "POST"])
 # def docWrite():
-=======
-    return render_template("clinic.html", form=pView)
-
-
-@app.route("/clinic/doc-write", methods=["GET", "POST"])
-def docWrite():
-    cliDecision = DocDecision()
-
-    if cliDecision.validate_on_submit():
-        flash("a")
-        # patient = Patient.query.filter_by(cliNum=cliDecision.pNum.data).first()
-        # if patient is not None:
-        #     flash(patient.id)
-        #     cliData = cliDecision.pClinic.data
-        #     flash(cliData)
-        #     docClinic = DocClinic(docClinic=cliData)
-        #     patient.clinicsDoc.append(docClinic)
-        #     db.session.add(docClinic)
-        #     db.session.commit()
-        #     return redirect(url_for("clinicView"))
-        # else:
-        #     flash("人员信息错误,请重输")
-        #     return redirect(url_for("docWrite"))
-    return render_template("docWrite.html", form=cliDecision)
->>>>>>> 9c24682c77d2fbb6528482771394f033fdf50f95
