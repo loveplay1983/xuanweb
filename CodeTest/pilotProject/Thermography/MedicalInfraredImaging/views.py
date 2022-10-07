@@ -86,8 +86,7 @@ def getFile(fileFolder, fileName):
 
 @app.route("/clinic", methods=["GET", "POST"])
 def clinicView():
-    pView = DocViewer()  # Query patient info from doctor view
-    docDecision = DocDecision()  # Record clinical decision from doctor view
+    pView = DocViewer()
 
     if pView.validate_on_submit():
         patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
@@ -113,18 +112,28 @@ def clinicView():
             pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
             imgs = img.filename.split(",")
-
-            g.pid_ = pid.id
-
-            return render_template("clinic.html", form=pView, docForm=docDecision,
+            return render_template("clinic.html", form=pView,
                                    fileFolder=fileFolder, files=imgs)
         else:
             flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
-    return render_template("clinic.html", form=pView, docForm=docDecision)
+    return render_template("clinic.html", form=pView)
 
 
 @app.route("/clinic/doc-write", methods=["GET", "POST"])
 def docWrite():
-    flash(g.pid_)
-    return render_template("docWrite.html")
+    # flash("诊断输入")
+    cliDecision = DocDecision()
+
+    if cliDecision.validate_on_submit():
+        patient = Patient.query.filter_by(cliNum=cliDecision.pNum.data).first()
+        cliData = cliDecision.pClinic.data
+        docClinic = DocClinic(docClinic=cliData)
+        patient.clinicsDoc.append(docClinic)
+
+        db.session.add(docClinic)
+        db.session.commit()
+
+        return render_template("docWrite.html", form=cliDecision)
+
+    return render_template("docWrite.html", form=cliDecision)
