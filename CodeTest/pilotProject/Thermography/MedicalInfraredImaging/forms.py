@@ -33,9 +33,10 @@ class DocViewer(FlaskForm):
     pid = StringField("身份证")
     pPhone = StringField("电话")
     pAddr = StringField("地址")
-    submit1 = SubmitField(render_kw={"hidden": True})
+    submit = SubmitField(render_kw={"hidden": True})
 
 
 class DocDecision(FlaskForm):
+    pNum = StringField("请输入门诊号", validators=[DataRequired()])
     pClinic = CKEditorField("影像评估", validators=[DataRequired()])
-    submit2 = SubmitField(label="保存诊断")
+    submit = SubmitField(label="保存诊断")
