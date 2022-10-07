@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block flash_message %}
+{% for message in get_flashed_messages(with_categories=true) %}
+<div class="alert alert-warning fade show" role="alert" id="msg">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{ message[1] }}
+</div>
+{% endfor %}
+{% endblock flash_message %}
+
+{% block navButton %}
+<div class="nav_menu">
+    <a href="{{ url_for('index') }}" class="active navLink">首页</a>
+    <a href="{{ url_for('collectData') }}" class="navLink" id="data-collect">数据收集</a>
+    <a href="{{ url_for('clinicView') }}" class="navLink" id="data-clinic" style="background-color: red">诊断分析</a>
+</div>
+{% endblock navButton %}
+
+{% block content %}
+<h1>红外热成像图诊断</h1>
+<form method="post" enctype="multipart/form-data">
+    {{ form.pNum.label }}
+    {{ form.pNum }}
+    {{ form.pClinic.label }}
+    {{ form.pClinic }}
+    {{ form.submit }}
+</form>
+
+{% endblock content %}
+
+{% block scripts %}
+{{ super() }}
+{{ ckeditor.load() }}
+{{ ckeditor.config(name='body') }}
+{% endblock %}
