@@ -13,7 +13,7 @@
 <div class="nav_menu">
     <a href="{{ url_for('index') }}" class="active navLink">首页</a>
     <a href="{{ url_for('collectData') }}" class="navLink" id="data-collect">数据收集</a>
-    <a href="{{ url_for('clinicView') }}" class="navLink" id="data-clinic" style="background-color: red">诊断分析</a>
+    <a href="{{ url_for('clinicView') }}" class="navLink" id="data-clinic" style="background-color: red">图像检查</a>
 </div>
 {% endblock navButton %}
 
@@ -83,22 +83,7 @@
 </div>
 
 <br>
-<hr>
-<br>
 
-<form method="post" id="doc-write">
-    {{ docForm.csrf_token }}
-    {{ docForm.pClinic.label }}
-    {{ docForm.pClinic}}
-    <br>
-    {{ docForm.submit2 }}
-</form>
+<h1><a href="{{ url_for('docWrite') }}">医生诊断</a></h1>
 
 {% endblock content %}
-
-
-{% block scripts %}
-{{ super() }}
-{{ ckeditor.load() }}
-{{ ckeditor.config(name='body') }}
-{% endblock %}

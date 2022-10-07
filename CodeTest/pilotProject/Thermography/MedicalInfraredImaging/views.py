@@ -19,6 +19,7 @@ currentClinicNum = 0
 
 gpid = ""
 
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -90,7 +91,6 @@ def clinicView():
 
     if pView.validate_on_submit():
         patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
-
         # csrf check
         try:
             validate_csrf(pView.csrf_token.data)
@@ -113,22 +113,18 @@ def clinicView():
             pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
             imgs = img.filename.split(",")
-            #
-            # test = pid.id
-            # g.test = test
-            #
-            # flash(g.test)
+
+            g.pid_ = pid.id
+
             return render_template("clinic.html", form=pView, docForm=docDecision,
                                    fileFolder=fileFolder, files=imgs)
         else:
             flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
-
-    if docDecision.validate_on_submit():
-        test = pView.pNum.data
-        flash(test)
-
     return render_template("clinic.html", form=pView, docForm=docDecision)
 
-# @app.route("clinic/doc-write", methods=["GET", "POST"])
-# def docWrite():
+
+@app.route("/clinic/doc-write", methods=["GET", "POST"])
+def docWrite():
+    flash(g.pid_)
+    return render_template("docWrite.html")
