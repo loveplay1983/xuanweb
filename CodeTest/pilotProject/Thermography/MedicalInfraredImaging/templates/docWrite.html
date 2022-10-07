@@ -21,6 +21,7 @@
 <h1>红外成像诊断</h1>
 <hr>
 <form method="post" id="doc_form" enctype="multipart/form-data">
+    {{ form.csrf_token }}
     {{ form.pNum.label }}
     {{ form.pNum }}
     {{ form.pClinic }}

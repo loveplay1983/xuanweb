@@ -108,6 +108,7 @@ def clinicView():
             pid = Patient.query.filter_by(cliNum=cliView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
             imgs = img.filename.split(",")
+            # flash(imgs)
             return render_template("clinic.html", form=cliView,
                                    fileFolder=fileFolder, files=imgs)
         else:
@@ -118,6 +119,18 @@ def clinicView():
 
 @app.route("/clinic/doc-write", methods=["GET", "POST"])
 def docWrite():
-    cliWrite = DocDecision()
-    flash("write test")
-    return render_template("docWrite.html", form=cliWrite)
+    # flash("write test")
+    form = DocDecision()
+    if form.validate_on_submit():
+        patient = Patient.query.filter_by(cliNum=form.pNum.data).first()
+        pid = patient.id
+        docClinic = form.pClinic.data
+        docText = DocClinic(patientID=pid, docClinic=docClinic)
+
+        db.session.add(docText)
+        db.session.commit()
+
+        flash("a")
+        return redirect(url_for("clinicView"))
+
+    return render_template("docWrite.html", form=form)
