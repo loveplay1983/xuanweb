@@ -26,7 +26,7 @@ class Patient(db.Model):
 
 class UploadImage(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), unique=True)
     description = db.Column(db.String(120))
     filename = db.Column(db.String(500))
     timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
@@ -35,7 +35,7 @@ class UploadImage(db.Model):
 
 class MedRecord(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), unique=True)
     hisDescription = db.Column(db.String(500))
     lisDescription = db.Column(db.String(500))
     pacsDescription = db.Column(db.String(500))
@@ -44,13 +44,13 @@ class MedRecord(db.Model):
 
 class InitClinic(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), unique=True)
     initClinic = db.Column(db.String(1500))
     patient = db.relationship("Patient", back_populates="clinicsOperator")
 
 
 class DocClinic(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"))
+    patientID = db.Column(db.Integer, db.ForeignKey("patient.id"), unique=True)
     docClinic = db.Column(db.String(1500))
     patient = db.relationship("Patient", back_populates="clinicsDoc")
