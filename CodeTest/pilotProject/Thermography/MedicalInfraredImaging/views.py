@@ -130,15 +130,19 @@ def docWrite():
     # flash("write test")
     form = DocDecision()
     if form.validate_on_submit():
-        patient = Patient.query.filter_by(cliNum=form.pNum.data).first()
-        pid = patient.id
-        docClinic = form.pClinic.data
-        docText = DocClinic(patientID=pid, docClinic=docClinic)
+        try:
+            patient = Patient.query.filter_by(cliNum=form.pNum.data).first()
+            pid = patient.id
+            docClinic = form.pClinic.data
+            docText = DocClinic(patientID=pid, docClinic=docClinic)
 
-        db.session.add(docText)
-        db.session.commit()
+            db.session.add(docText)
+            db.session.commit()
 
-        flash("a")
-        return redirect(url_for("clinicView"))
+            flash("添加诊断成功")
+            return redirect(url_for("clinicView"))
+        except Exception:
+            flash("异常，请重试")
+            return redirect(url_for("docWrite"))
 
     return render_template("docWrite.html", form=form)
