@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}404 错误{% endblock %}
+
+{% block content %}
+    <p class="text-center">重复的病患ID!!!</p>
+{% endblock content %}
+
+{% block footer %}
+    <a href="{{ url_for('collectData') }}">&larr; Go Back</a>
+{% endblock %}

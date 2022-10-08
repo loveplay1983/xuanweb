@@ -5,7 +5,8 @@ Project: Study
 Email  : michaelxuan@hotmail.com
 """
 
-from flask import make_response, render_template
+from flask import make_response, render_template, \
+    redirect, url_for
 from MedicalInfraredImaging import app
 
 
@@ -34,3 +35,8 @@ def server_error(e):
         render_template("errors/500.html"),
         500
     )
+
+
+@app.route("/errors/duplicated-patient-id")
+def duplicatedPatientID():
+    return render_template("errors/duplicatedID.html")

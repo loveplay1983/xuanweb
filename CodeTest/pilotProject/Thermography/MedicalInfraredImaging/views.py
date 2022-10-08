@@ -12,8 +12,9 @@ from MedicalInfraredImaging.forms import PatientForm, DocViewer, DocDecision
 from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, InitClinic, DocClinic
 from MedicalInfraredImaging.utils import allowed_file
 import os
-from MedicalInfraredImaging.utils import MyEncoder
-import json
+# from MedicalInfraredImaging.utils import MyEncoder
+# import json
+# from MedicalInfraredImaging.utils import DuplicatedID
 
 currentClinicNum = 0
 
@@ -73,10 +74,12 @@ def collectData():
             db.session.add(imageInfo)
             db.session.add(initClinic)
             db.session.commit()
-        except Exception as e:
-            e = {"异常名称": e}
-            flash(json.dumps(e, cls=MyEncoder, indent=4))
-        return redirect(url_for("collectData"))
+            return redirect(url_for("collectData"))
+        # except Exception as e:
+        #     e = {"异常名称": e}
+        #     flash(json.dumps(e, cls=MyEncoder, indent=4))
+        except Exception:
+            return redirect(url_for("duplicatedPatientID"))
     return render_template("collect.html", form=patient)
 
 

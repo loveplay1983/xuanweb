@@ -37,3 +37,7 @@ class MyEncoder(json.JSONEncoder):
         #    return obj.tolist()
         else:
             return super(MyEncoder, self).default(obj)
+
+
+# class DuplicatedID(Exception):
+#     pass
