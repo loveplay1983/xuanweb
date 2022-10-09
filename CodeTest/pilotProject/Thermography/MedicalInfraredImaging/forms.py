@@ -33,6 +33,7 @@ class DocViewer(FlaskForm):
     pid = StringField("身份证")
     pPhone = StringField("电话")
     pAddr = StringField("地址")
+    initClinic = TextAreaField(label="初次评估意见")
     submit = SubmitField(render_kw={"hidden": True})
 
 

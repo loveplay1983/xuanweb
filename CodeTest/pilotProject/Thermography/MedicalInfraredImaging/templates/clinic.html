@@ -20,7 +20,7 @@
 {% block content %}
 <form method="post" id="patient_form" enctype="multipart/form-data">
     {{ form.csrf_token }}
-    <fieldset class="patient-fieldset">
+    <fieldset id="patient-fieldset">
         <legend id="patient-info">病员信息</legend>
         <div class="patient_content">
             <div class="row justify-content-between r">
@@ -53,6 +53,12 @@
             </div>
         </div>
     </fieldset>
+    <fieldset id="init-cli-fieldset">
+        <legend id="init-clinic">初次评估意见</legend>
+        <div id="init-cli">
+           {{ form.initClinic(cols=125, rows=5) }}
+        </div>
+    </fieldset>
     {{ form.submit }}
 </form>
 
@@ -72,7 +78,7 @@
     <div class="modal-content">
         {% for file in files %}
         <div class="mySlides">
-                <div class="numbertext">{{ loop.index }} / {{ loop.length }}</div>
+            <div class="numbertext">{{ loop.index }} / {{ loop.length }}</div>
             <img src="{{ url_for('getFile', fileFolder=fileFolder, fileName=file) }}" style="width:100%">
         </div>
         {% endfor %}

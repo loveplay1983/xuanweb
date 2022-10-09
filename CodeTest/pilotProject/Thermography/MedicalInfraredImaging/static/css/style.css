@@ -107,8 +107,16 @@
 
 /* patient data input*/
 
-.patient-fieldset {
+#patient-fieldset {
     border: solid thin;
+    color: black;
+    width: auto;
+    margin: 0 auto;
+    padding: 10px 2px 15px 2px;
+}
+
+#init-cli-fieldset{
+    border: dashed thin;
     color: black;
     width: auto;
     margin: 0 auto;
@@ -124,6 +132,25 @@
     margin: 0 auto;
     padding: 5px 25px 5px 25px;
 }
+
+#init-clinic{
+    color: #180638;
+    font-size: 20px;
+    width: auto;
+    margin: 0 auto;
+    padding: 5px 25px 5px 25px;
+}
+
+#init-cli{
+    width: auto;
+    margin: 0 auto;
+    padding: 0 10px 0 10px
+}
+
+#initClinic{
+    border-color: rgba(255, 255, 255, 0);
+}
+
 
 .clinic_legend {
     color: #180638;

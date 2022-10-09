@@ -11,7 +11,7 @@
 {% block content %}
 <form method="post" id="patient_form" enctype="multipart/form-data">
     {{ form.csrf_token }}
-    <fieldset class="patient-fieldset">
+    <fieldset id="patient-fieldset">
         <legend id="patient-info">病员信息</legend>
         <div class="patient_content">
             <div class="row justify-content-between r">

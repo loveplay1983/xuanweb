@@ -133,6 +133,7 @@ def docWrite():
         try:
             patient = Patient.query.filter_by(cliNum=form.pNum.data).first()
             pid = patient.id
+
             docClinic = form.pClinic.data
             docText = DocClinic(patientID=pid, docClinic=docClinic)
 
