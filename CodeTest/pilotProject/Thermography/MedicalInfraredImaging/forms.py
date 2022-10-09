@@ -9,7 +9,7 @@ from flask_ckeditor import CKEditorField
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileRequired, FileAllowed
 from wtforms import StringField, PasswordField, BooleanField, IntegerField, \
-    TextAreaField, SubmitField, MultipleFileField
+    TextAreaField, SubmitField, MultipleFileField, SelectField
 from wtforms.validators import DataRequired, Length, ValidationError, Email
 
 
@@ -17,7 +17,7 @@ from wtforms.validators import DataRequired, Length, ValidationError, Email
 class PatientForm(FlaskForm):
     patientNum = StringField("门诊号", validators=[DataRequired()])
     patientName = StringField("姓名")
-    patientSex = StringField("性别")
+    patientSex = SelectField("性别", choices=[('男', '男'), ('女', '女')])
     patientID = StringField("身份证")
     patientPhone = StringField("电话")
     patientAddr = StringField("地址")
@@ -28,12 +28,12 @@ class PatientForm(FlaskForm):
 
 class DocViewer(FlaskForm):
     pNum = StringField("门诊号", validators=[DataRequired()])
-    pName = StringField("姓名")
-    pSex = StringField("性别")
-    pid = StringField("身份证")
-    pPhone = StringField("电话")
-    pAddr = StringField("地址")
-    initClinic = TextAreaField(label="初次评估意见")
+    pName = StringField("姓名", render_kw={"readonly": True})
+    pSex = StringField("性别", render_kw={"readonly": True})
+    pid = StringField("身份证", render_kw={"readonly": True})
+    pPhone = StringField("电话", render_kw={"readonly": True})
+    pAddr = StringField("地址", render_kw={"readonly": True})
+    initClinic = TextAreaField(label="初次评估意见", render_kw={"readonly": True})
     submit = SubmitField(render_kw={"hidden": True})
 
 
