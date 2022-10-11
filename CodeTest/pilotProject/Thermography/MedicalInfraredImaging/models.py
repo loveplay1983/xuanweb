@@ -18,6 +18,7 @@ class Patient(db.Model):
     idNum = db.Column(db.String(18))
     phone = db.Column(db.String(11))
     addr = db.Column(db.String(240))
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow, index=True)
     images = db.relationship("UploadImage", back_populates="patient", cascade="all")
     records = db.relationship("MedRecord", back_populates="patient", cascade="all")
     clinicsOperator = db.relationship("InitClinic", back_populates="patient", cascade="all")
