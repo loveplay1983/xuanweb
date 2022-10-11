@@ -1,4 +1,10 @@
-# Will add categorization later 
+# Will add categorization later
+
+# # Python FAQ
+
+* remove HTML tag from within a string
+
+  https://stackoverflow.com/questions/9662346/python-code-to-remove-html-tags-from-a-string
 
 * [pip](https://pip.pypa.io/en/stable/)
   
