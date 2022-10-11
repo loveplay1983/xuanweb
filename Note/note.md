@@ -305,7 +305,7 @@ html, body {
 * [CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 * [display: contents](https://caniuse.com/css-display-contents)
 
-  
+* [remove textarea styling](https://stackoverflow.com/questions/17109702/remove-all-stylings-border-glow-from-textarea)
 
 # Git
 

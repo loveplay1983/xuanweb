@@ -10,7 +10,7 @@ from wtforms import ValidationError
 from MedicalInfraredImaging import settings, db, app
 from MedicalInfraredImaging.forms import PatientForm, DocViewer, DocDecision
 from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, InitClinic, DocClinic
-from MedicalInfraredImaging.utils import allowed_file
+from MedicalInfraredImaging.utils import allowed_file, removeTag
 import os
 # from MedicalInfraredImaging.utils import MyEncoder
 # import json
@@ -116,7 +116,7 @@ def clinicView():
             cliPid = Patient.query.filter_by(cliNum=cliView.pNum.data).first()
             initCli = InitClinic.query.filter_by(patientID=cliPid.id).first()
             cliMsg = initCli.initClinic
-            cliView.initClinic.data = cliMsg[3:-4]
+            cliView.initClinic.data = removeTag(cliMsg)
 
             # Test for retrieving the filenames
             fileFolder = cliView.pNum.data

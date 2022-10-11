@@ -6,6 +6,7 @@ Direction: web
 """
 from MedicalInfraredImaging import app
 import os
+import re
 import uuid
 import json
 import datetime
@@ -39,5 +40,6 @@ class MyEncoder(json.JSONEncoder):
             return super(MyEncoder, self).default(obj)
 
 
-# class DuplicatedID(Exception):
-#     pass
+def removeTag(raw):
+    cleaner = re.compile('<.*?>|&([a-z0-9]+|#[0-9]{1,6}|#x[0-9a-f]{1,6});')
+    return re.sub(cleaner, "", raw)

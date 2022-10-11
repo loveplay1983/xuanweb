@@ -148,6 +148,22 @@
     background: white;
 }
 
+/* Remove textarea outline */
+textarea#initClinic {
+  // other stuff
+  -moz-appearance:none;
+  outline:0 none transparent;
+}
+
+/*textarea:focus, input:focus{*/
+textarea:focus{
+    outline: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
 
 .clinic_legend {
     color: #180638;
