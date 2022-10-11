@@ -112,6 +112,12 @@ def clinicView():
 
             flash(f"就诊人员, {patient.name}!")
 
+            # init clinic suggestion
+            cliPid = Patient.query.filter_by(cliNum=cliView.pNum.data).first()
+            initCli = InitClinic.query.filter_by(patientID=cliPid.id).first()
+            cliMsg = initCli.initClinic
+            cliView.initClinic.data = cliMsg[3:-4]
+
             # Test for retrieving the filenames
             fileFolder = cliView.pNum.data
             pid = Patient.query.filter_by(cliNum=cliView.pNum.data).first()

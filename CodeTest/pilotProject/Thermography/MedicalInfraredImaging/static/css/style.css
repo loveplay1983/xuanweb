@@ -102,9 +102,6 @@
 /* patient list*/
 
 
-
-
-
 /* patient data input*/
 
 #patient-fieldset {
@@ -115,14 +112,13 @@
     padding: 10px 2px 15px 2px;
 }
 
-#init-cli-fieldset{
+#init-cli-fieldset {
     border: dashed thin;
     color: black;
     width: auto;
     margin: 0 auto;
-    padding: 10px 2px 15px 2px;
+    padding: 10px 15px 10px 15px;
 }
-
 
 
 #patient-info {
@@ -133,7 +129,7 @@
     padding: 5px 25px 5px 25px;
 }
 
-#init-clinic{
+#init-clinic {
     color: #180638;
     font-size: 20px;
     width: auto;
@@ -141,14 +137,15 @@
     padding: 5px 25px 5px 25px;
 }
 
-#init-cli{
+#init-cli {
     width: auto;
     margin: 0 auto;
-    padding: 0 10px 0 10px
+    border: none;
 }
 
-#initClinic{
-    border-color: rgba(255, 255, 255, 0);
+#initClinic {
+    border: none;
+    background: white;
 }
 
 
@@ -168,9 +165,6 @@
 /* patient image upload */
 
 
-
-
-
 /* write init clinic*/
 
 /* footer*/
@@ -182,7 +176,6 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
 
 
 /* patient image viewer */
@@ -342,6 +335,6 @@ img.hover-shadow {
 }
 
 /* erros */
-.text-center{
+.text-center {
     font-size: 150px;
 }
