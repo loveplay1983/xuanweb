@@ -1,0 +1,9 @@
+{% if patients %}
+    {% for patient in patients %}
+        <h3 class="text-primary">
+            <a href="{{ url_for('showPatient',
+            patient_id=patient.id) }}">{{ patient.cliNum}} - {{ patient.name }}
+            </a>
+        </h3>
+    {% endfor %}
+{% endif %}
