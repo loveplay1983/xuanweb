@@ -217,6 +217,7 @@
 
 # flask wtforms
 * [adding id or class name to wtforms](https://stackoverflow.com/questions/53896335/add-id-field-in-stringfield-object-in-wtforms)
+* [search form](https://www.blog.pythonlibrary.org/2017/12/13/flask-101-how-to-add-a-search-form/)
 
 # Forms
 * [submit form with return key](https://www.techiedelight.com/submit-form-with-enter-key-javascript/)
