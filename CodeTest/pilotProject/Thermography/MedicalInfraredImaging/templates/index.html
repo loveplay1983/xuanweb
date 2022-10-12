@@ -1,5 +1,14 @@
 {% extends "base.html" %}
+{% from "bootstrap/pagination.html" import render_pager %}
 
 {% block content %}
-<h1>病患诊断列表</h1>
+<div id="patient-list-title">
+    <h1>病患诊断列表</h1>
+</div>
+<div id="patient-list">
+    {% include "patientList.html" %}
+    {% if patients %}
+        <div id="page-footer">{{ render_pager(pagination) }}</div>
+    {% endif %}
+</div>
 {% endblock content %}

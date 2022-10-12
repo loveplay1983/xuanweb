@@ -21,7 +21,11 @@ currentClinicNum = 0
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    page = request.args.get("page", 1, type=int)
+    perPage = app.config["POST_PER_PAGE"]
+    pagination = Patient.query.order_by(Patient.timestamp.desc()).paginate(page, per_page=perPage)
+    patients = pagination.items
+    return render_template("index.html", pagination=pagination, patients=patients)
 
 
 @app.route("/collect", methods=["GET", "POST"])

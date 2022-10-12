@@ -17,3 +17,4 @@ DROPZONE_MAX_FILE_SIZE = 10
 DROPZONE_MAX_FILES = 30
 ALLOWED_EXTENSIONS = ["png", "jpg", "jpeg", "gif"]
 UPLOAD_PATH = os.path.join(app.root_path, "uploads")
+POST_PER_PAGE = 10
