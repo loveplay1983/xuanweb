@@ -23,7 +23,7 @@ currentClinicNum = 0
 def index():
     page = request.args.get("page", 1, type=int)
     perPage = app.config["POST_PER_PAGE"]
-    pagination = Patient.query.order_by(Patient.timestamp.asc()).paginate(page, per_page=perPage)
+    pagination = Patient.query.order_by(Patient.timestamp.desc()).paginate(page, per_page=perPage)
     patients = pagination.items
     return render_template("index.html", pagination=pagination, patients=patients)
 
@@ -161,4 +161,5 @@ def docWrite():
 
 @app.route("/patients/<int:patient_id>", methods=["GET", "POST"])
 def showPatient(patient_id):
-    return render_template("patients.html")
+    patient = Patient.query.get_or_404(patient_id)
+    return render_template("patient.html", patient=patient)
