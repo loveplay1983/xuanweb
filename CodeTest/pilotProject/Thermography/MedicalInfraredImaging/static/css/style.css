@@ -150,13 +150,13 @@
 
 /* Remove textarea outline */
 textarea#initClinic {
-  // other stuff
-  -moz-appearance:none;
-  outline:0 none transparent;
+    /* other stuff */
+    -moz-appearance: none;
+    outline: 0 none transparent;
 }
 
 /*textarea:focus, input:focus{*/
-textarea:focus{
+textarea:focus {
     outline: 0;
 }
 
@@ -191,6 +191,61 @@ footer {
     margin-top: 25px;
     text-align: center;
     padding: 10px;
+}
+
+
+/* report footer */
+#report-footer {
+    font-size: 15px;
+    color: #888;
+    border-top: 1px solid #eee;
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#report-title {
+    text-align: center;
+    font-size: 3.3em;
+    color: #180638;
+    font-weight: bold;
+}
+
+/* report template */
+#template-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#template-title-child {
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*background-color: red;*/
+}
+
+#template-main {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.template-line {
+    border-bottom: 4px solid #333;
+}
+
+.template-patient-form {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.template-patient-form-underline {
+    text-decoration: underline;
+    display: inline-block;
 }
 
 

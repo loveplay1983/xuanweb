@@ -1,3 +1,70 @@
-<h1>test</h1><br>
-<h2>{{ patient.name }}</h2><br>
-<h3>{{ patient.addr }}</h3>
+<!--<h1>test</h1><br>-->
+<!--<h2>{{ patient.name }}</h2><br>-->
+<!--<h3>{{ patient.addr }}</h3>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=100, initial-scale=1, maximum-scale=1">
+    <title>
+        红外热成像数据收集与分析
+    </title>
+    <link rel="icon" href="{{ url_for('static', filename='xuan.png') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/%s.min.css' % request.cookies.get('theme', 'perfect_blue')) }}"
+          type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+</head>
+
+{% block flash_message %}{% endblock flash_message %}
+
+<body>
+
+<div class=" navbar navbar-expand-lg navbar-light" id="template-title">
+    <div id="template-title-child">
+        <div></div>
+        <div id="report-title">
+            <img src="{{ url_for('static', filename='hospital.png')}}"
+                 alt="Main Icon" width="150" height="120">诸暨市人民医院红外热成像评估报告
+        </div>
+    </div>
+</div>
+
+<br>
+<main id="template-main">
+    <div>
+        <!--        <hr size="500"> ins't great to use hr-->
+        <div class="template-line"></div>
+        <div class="row justify-content-between template-patient-form">
+            <div class="col">门诊号: <p class="template-patient-form-underline">{{ patient.id }}</p></div>
+            <div class="col">姓名: <p class="template-patient-form-underline">{{ patient.name }}</p></div>
+            <div class="col">性别: <p class="template-patient-form-underline">{{ patient.sex }}</p></div>
+        </div>
+        <div class="row justify-content-between template-patient-form">
+            <div class="col">身份证: <p class="template-patient-form-underline">{{ patient.idNum }}</p></div>
+            <div class="col">联系电话: <p class="template-patient-form-underline">{{ patient.phone }}</p></div>
+            <div class="col">地址: <p class="template-patient-form-underline">{{ patient.addr }}</p></div>
+        </div>
+        <div class="template-line"></div>
+    </div>
+    <div>test</div>
+
+
+</main>
+
+<footer id="report-footer">
+    <medium>
+        该评估报告仅供参考,请您按实际情况处理,具体请遵医嘱,并根据需要做进一步相关检查(放射,超声,心电图,生化检验等)
+    </medium>
+</footer>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+</html>
