@@ -162,4 +162,5 @@ def docWrite():
 @app.route("/patients/<int:patient_id>", methods=["GET", "POST"])
 def showPatient(patient_id):
     patient = Patient.query.get_or_404(patient_id)
+    clinic =
     return render_template("patient.html", patient=patient)
