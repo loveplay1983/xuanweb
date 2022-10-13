@@ -189,12 +189,12 @@ footer {
 }
 
 /* patient display */
-#patient-display{
+#patient-display {
     margin-left: 30px;
     margin-right: 30px;
 }
 
-.patient-display-line{
+.patient-display-line {
     border-bottom: 2px solid #333;
 }
 
@@ -243,13 +243,27 @@ footer {
     font-size: 1.3em;
     font-weight: bold;
     padding: 10px 10px 10px 10px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .template-patient-form-underline {
     text-decoration: underline;
     display: inline-block;
+}
+
+#template-image-display {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#template-doc-clinic {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
