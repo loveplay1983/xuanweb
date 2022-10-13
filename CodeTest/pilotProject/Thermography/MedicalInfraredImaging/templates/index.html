@@ -2,13 +2,17 @@
 {% from "bootstrap/pagination.html" import render_pager %}
 
 {% block content %}
-<div id="patient-list-title">
-    <h1>病患诊断列表</h1>
-</div>
-<div id="patient-list">
-    {% include "patientList.html" %}
-    {% if patients %}
+<br>
+
+<div id="patient-display">
+    <div id="patient-list-title"><h1>病患诊断列表</h1></div>
+    <div class="patient-display-line"></div>
+    <div id="patient-list">
+        {% include "patientList.html" %}
+        {% if patients %}
         <div id="page-footer">{{ render_pager(pagination) }}</div>
-    {% endif %}
+        {% endif %}
+    </div>
 </div>
+
 {% endblock content %}

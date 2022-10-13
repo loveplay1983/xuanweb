@@ -178,11 +178,6 @@ textarea:focus {
 }
 
 
-/* patient image upload */
-
-
-/* write init clinic*/
-
 /* footer*/
 footer {
     font-size: 13px;
@@ -193,6 +188,15 @@ footer {
     padding: 10px;
 }
 
+/* patient display */
+#patient-display{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.patient-display-line{
+    border-bottom: 2px solid #333;
+}
 
 /* report footer */
 #report-footer {
@@ -232,7 +236,7 @@ footer {
 }
 
 .template-line {
-    border-bottom: 4px solid #333;
+    border-bottom: 2px solid #333;
 }
 
 .template-patient-form {
