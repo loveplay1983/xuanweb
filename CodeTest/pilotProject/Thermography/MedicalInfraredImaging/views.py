@@ -72,7 +72,7 @@ def collectData():
         initClinic = InitClinic(initClinic=clinicData)
         cliInfo.clinicsOperator.append(initClinic)
 
-        # Hand in the request to the database
+        #Hand in the request to the database
         try:
             db.session.add(cliInfo)
             db.session.add(imageInfo)
@@ -84,6 +84,12 @@ def collectData():
         #     flash(json.dumps(e, cls=MyEncoder, indent=4))
         except Exception:
             return redirect(url_for("duplicatedPatientID"))
+
+        # db.session.add(cliInfo)
+        # db.session.add(imageInfo)
+        # db.session.add(initClinic)
+        # db.session.commit()
+        # return redirect(url_for("collectData"))
     return render_template("collect.html", form=patient)
 
 
@@ -162,5 +168,7 @@ def docWrite():
 @app.route("/patients/<int:patient_id>", methods=["GET", "POST"])
 def showPatient(patient_id):
     patient = Patient.query.get_or_404(patient_id)
-    clinic =
+    # clinic = DocClinic.query.get_or_404(patient_id)
+    # return render_template("patient.html", patient=patient, clinic=clinic)
     return render_template("patient.html", patient=patient)
+
