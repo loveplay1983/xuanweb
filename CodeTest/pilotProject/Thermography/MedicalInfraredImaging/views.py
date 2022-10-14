@@ -167,8 +167,13 @@ def docWrite():
 
 @app.route("/patients/<int:patient_id>", methods=["GET", "POST"])
 def showPatient(patient_id):
-    patient = Patient.query.get_or_404(patient_id)
-    # clinic = DocClinic.query.get_or_404(patient_id)
-    # return render_template("patient.html", patient=patient, clinic=clinic)
+    patient = Patient.query.filter_by(id=patient_id).first()
+
+    if patient is not None:
+        pid = patient.id
+        pNum = patient.cliNum
+        # clin = DocClinic.query.filter_by()
+        result = str(pid) + " - " + str(pNum)
+        flash(result)
     return render_template("patient.html", patient=patient)
 
