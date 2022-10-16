@@ -189,3 +189,12 @@ def showPatient(patient_id):
     except Exception:
         flash("异常,请重试,也许医生忘记写诊断了!")
     return render_template("patient.html", patient=patient)
+
+
+
+
+# test code
+# # weasyprint with bootstrap
+# html = HTML(string=rendered)
+# css = CSS(filename=css_file)
+# html.write_pdf(filename, stylesheets=[css, "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"])

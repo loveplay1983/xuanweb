@@ -22,9 +22,14 @@
 {% endfor %}
 
 <body>
-<a href="{{ url_for('index') }}">&larr; Go Back</a>
-<!--<button type="button" onclick="printJS('template-print', 'html')">打印</button>-->
-<button onclick="window.print()">打印此页</button>
+<div id="backAndPrint">
+    <a href="{{ url_for('index') }}" id="return-index">&larr; Go Back</a>
+    <!--<button type="button" onclick="printJS('template-print', 'html')">打印</button>-->
+    <!--<button onclick="window.print()">打印此页</button>-->
+    <button id="print-list" onclick="printPatient()">打印此页</button>
+</div>
+
+
 <div id="template-print">
     <div class=" navbar navbar-expand-lg navbar-light" id="template-title">
         <div id="template-title-child">

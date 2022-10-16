@@ -100,3 +100,14 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+// print patient list
+function printPatient(){
+    backAndPrint = document.getElementById("backAndPrint");
+    backBtn = document.getElementById("return-index");
+    printBtn = document.getElementById("print-list");
+    backBtn.remove();
+    printBtn.remove();
+    window.print();
+    backAndPrint.appendChild(backBtn);
+    backAndPrint.appendChild(printBtn);
+}
