@@ -170,16 +170,21 @@ def docWrite():
 def showPatient(patient_id):
     patient = Patient.query.filter_by(id=patient_id).first()
 
-    # Image show
-    fileFolder = patient.cliNum
-    img = UploadImage.query.filter_by(patientID=patient_id).first()
-    imgs = img.filename.split(",")
-    # Initial clinic
-    imageFeature = InitClinic.query.filter_by(patientID=patient_id).first()
-    imageFeature = removeTag(imageFeature.initClinic)
-    # Doctor clinic
-    clinic = DocClinic.query.filter_by(patientID=patient_id).first()
-    clinic = removeTag(clinic.docClinic)
+    try:
+        # Image show
+        fileFolder = patient.cliNum
+        img = UploadImage.query.filter_by(patientID=patient_id).first()
+        imgs = img.filename.split(",")
+        # Initial clinic
+        imageFeature = InitClinic.query.filter_by(patientID=patient_id).first()
+        imageFeature = removeTag(imageFeature.initClinic)
+        # Doctor clinic
+        clinic = DocClinic.query.filter_by(patientID=patient_id).first()
+        clinic = removeTag(clinic.docClinic)
 
-    return render_template("patient.html", patient=patient, clinic=clinic,
-                           imageFeature=imageFeature, files=imgs, fileFolder=fileFolder)
+        return render_template("patient.html", patient=patient, clinic=clinic,
+                               imageFeature=imageFeature, files=imgs, fileFolder=fileFolder)
+
+    except Exception:
+        flash("异常,请重试,也许医生忘记写诊断了!")
+    return render_template("patient.html", patient=patient)
