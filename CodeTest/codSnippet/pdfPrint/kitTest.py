@@ -10,4 +10,4 @@ Email  : michaelxuan@hotmail.com
 
 
 from weasyprint import HTML
-pdf = HTML("http://localhost:5000/patients/10").write_pdf()
+pdf = HTML("http://localhost:5000/patients/10").write_pdf("weasy.pdf")
