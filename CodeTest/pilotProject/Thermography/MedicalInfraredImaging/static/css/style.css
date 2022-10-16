@@ -254,14 +254,14 @@ footer {
 
 #template-image-display {
     font-size: 1.3em;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin-left: 50px;
     margin-right: 50px;
 }
 
 #template-doc-clinic {
     font-size: 1.3em;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin-left: 50px;
     margin-right: 50px;
 }

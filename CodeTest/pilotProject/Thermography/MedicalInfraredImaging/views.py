@@ -12,11 +12,18 @@ from MedicalInfraredImaging.forms import PatientForm, DocViewer, DocDecision
 from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, InitClinic, DocClinic
 from MedicalInfraredImaging.utils import allowed_file, removeTag
 import os
+
+
 # from MedicalInfraredImaging.utils import MyEncoder
 # import json
 # from MedicalInfraredImaging.utils import DuplicatedID
 
-currentClinicNum = 0
+
+# utils
+@app.route("/uploads/<path:fileFolder>/<path:fileName>")
+def getFile(fileFolder, fileName):
+    return send_from_directory(os.path.join(app.config["UPLOAD_PATH"], fileFolder),
+                               fileName)
 
 
 @app.route("/")
@@ -72,7 +79,7 @@ def collectData():
         initClinic = InitClinic(initClinic=clinicData)
         cliInfo.clinicsOperator.append(initClinic)
 
-        #Hand in the request to the database
+        # Hand in the request to the database
         try:
             db.session.add(cliInfo)
             db.session.add(imageInfo)
@@ -91,12 +98,6 @@ def collectData():
         # db.session.commit()
         # return redirect(url_for("collectData"))
     return render_template("collect.html", form=patient)
-
-
-@app.route("/uploads/<path:fileFolder>/<path:fileName>")
-def getFile(fileFolder, fileName):
-    return send_from_directory(os.path.join(app.config["UPLOAD_PATH"], fileFolder),
-                               fileName)
 
 
 @app.route("/clinic", methods=["GET", "POST"])
@@ -168,7 +169,17 @@ def docWrite():
 @app.route("/patients/<int:patient_id>")
 def showPatient(patient_id):
     patient = Patient.query.filter_by(id=patient_id).first()
+
+    # Image show
+    fileFolder = patient.cliNum
+    img = UploadImage.query.filter_by(patientID=patient_id).first()
+    imgs = img.filename.split(",")
+    # Initial clinic
+    imageFeature = InitClinic.query.filter_by(patientID=patient_id).first()
+    imageFeature = removeTag(imageFeature.initClinic)
+    # Doctor clinic
     clinic = DocClinic.query.filter_by(patientID=patient_id).first()
     clinic = removeTag(clinic.docClinic)
-    return render_template("patient.html", patient=patient, clinic=clinic)
 
+    return render_template("patient.html", patient=patient, clinic=clinic,
+                           imageFeature=imageFeature, files=imgs, fileFolder=fileFolder)

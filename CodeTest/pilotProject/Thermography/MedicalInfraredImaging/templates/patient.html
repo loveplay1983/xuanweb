@@ -57,11 +57,21 @@
     </div>
     <br>
     <div id="template-image-display">
-        影像表现: {{ clinic }}
+        <b>影像表现:</b><br>
+        <div class="row">
+            {% for file in files %}
+            <div class="column">
+                <img src="{{ url_for('getFile', fileFolder=fileFolder,
+        fileName=file) }}" style="width:100%" class="hover-shadow cursor thumbnail">
+            </div>
+            {% endfor %}
+        </div>
+        <br>
+        {{ imageFeature }}
     </div>
     <br>
     <div id="template-doc-clinic">
-        诊断建议:
+        <b>诊断建议:</b> {{ clinic }}
     </div>
 
 
