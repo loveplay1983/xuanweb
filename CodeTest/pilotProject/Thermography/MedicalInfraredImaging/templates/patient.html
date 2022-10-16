@@ -44,7 +44,7 @@
         <!--        <hr size="500"> ins't great to use hr-->
         <div class="template-line"></div>
         <div class="row justify-content-between template-patient-form">
-            <div class="col">门诊号: <p class="template-patient-form-underline">{{ patient.id }}</p></div>
+            <div class="col">门诊号: <p class="template-patient-form-underline">{{ patient.cliNum }}</p></div>
             <div class="col">姓名: <p class="template-patient-form-underline">{{ patient.name }}</p></div>
             <div class="col">性别: <p class="template-patient-form-underline">{{ patient.sex }}</p></div>
         </div>
@@ -57,11 +57,11 @@
     </div>
     <br>
     <div id="template-image-display">
-        影像表现:
+        影像表现: {{ clinic }}
     </div>
     <br>
     <div id="template-doc-clinic">
-        指导意见:
+        诊断建议:
     </div>
 
 

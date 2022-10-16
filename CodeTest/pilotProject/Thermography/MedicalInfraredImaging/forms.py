@@ -22,7 +22,7 @@ class PatientForm(FlaskForm):
     patientPhone = StringField("电话")
     patientAddr = StringField("地址")
     image = MultipleFileField("影像上传", validators=[DataRequired()])
-    clinic = CKEditorField("初次评估", validators=[DataRequired()])
+    clinic = CKEditorField("影像表现", validators=[DataRequired()])
     submit = SubmitField(label="上传")
 
 
@@ -33,11 +33,11 @@ class DocViewer(FlaskForm):
     pid = StringField("身份证", render_kw={"readonly": True})
     pPhone = StringField("电话", render_kw={"readonly": True})
     pAddr = StringField("地址", render_kw={"readonly": True})
-    initClinic = TextAreaField(label="初次评估意见", render_kw={"readonly": True})
+    initClinic = TextAreaField(label="影像表现", render_kw={"readonly": True})
     submit = SubmitField(render_kw={"hidden": True})
 
 
 class DocDecision(FlaskForm):
     pNum = StringField("请输入门诊号", validators=[DataRequired()])
-    pClinic = CKEditorField("影像评估", validators=[DataRequired()])
+    pClinic = CKEditorField("诊断建议", validators=[DataRequired()])
     submit = SubmitField(label="保存诊断")
