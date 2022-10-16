@@ -22,8 +22,9 @@ import os
 # utils
 @app.route("/uploads/<path:fileFolder>/<path:fileName>")
 def getFile(fileFolder, fileName):
-    return send_from_directory(os.path.join(app.config["UPLOAD_PATH"], fileFolder),
-                               fileName)
+    return send_from_directory(os.path.join(app.config["UPLOAD_PATH"], fileFolder), fileName)
+
+
 
 
 @app.route("/")

@@ -382,7 +382,8 @@ html, body {
 pango_context_set_round_glyph_positions
 ```
 
-
+* [htmlToPDF](https://pythonhosted.org/Flask-WeasyPrint/)
+* [geeksforgeeks](https://stackoverflow.com/questions/28165704/convert-html-to-pdf-using-python-flask)
 
 # Web
 
