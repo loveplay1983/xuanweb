@@ -546,6 +546,12 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 
 # Network
 
+* systemctl/ufw
+
+  https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+
+  https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
+
 * TCP/IP - OSI
 
   https://community.fs.com/blog/tcpip-vs-osi-whats-the-difference-between-the-two-models.html
