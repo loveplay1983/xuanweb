@@ -409,6 +409,8 @@ pango_context_set_round_glyph_positions
 
 * [python and web service API](https://realpython.com/api-integration-in-python/)
 
+* [WSGI vs Web Server](https://stackoverflow.com/questions/21058742/difference-between-wsgi-utilities-and-web-servers#:~:text=wsgi%20is%20an%20interface%20between,session%20management%2C%20caching%2C%20etc.)
+
 # Scraping
 
 * [web-scraping](https://realpython.com/tutorials/web-scraping/)
