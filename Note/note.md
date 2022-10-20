@@ -1,5 +1,7 @@
 # Will add categorization later
 
+
+
 # # Python FAQ
 
 * remove HTML tag from within a string
@@ -734,3 +736,11 @@ After this operation, 201 MB of additional disk space will be used.
   * [Foreign key usage](https://www.digitalocean.com/community/tutorials/how-to-use-foreign-keys-in-sql)
   
   * [Why Foreign](https://learnsql.com/blog/why-use-foreign-key-in-sql/)
+
+
+
+# Etc.
+
+* [ubuntu netplan](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-configure-networking-in-ubuntu-20-04-with-netplan/)
+* [yaml vs json](https://www.indeed.com/career-advice/career-development/yaml-vs-json)
+* [supervisor with conda env](https://gist.github.com/Mohammed-Sunasra/f8f3030885956c596e9ccbf5aac9a82f)
