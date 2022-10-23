@@ -4,14 +4,14 @@
 <div class="nav_menu">
     <a href="{{ url_for('index') }}" class="active navLink">首页</a>
     <a href="{{ url_for('collectData') }}" class="navLink" id="data-collect" style="background-color: red">数据收集</a>
-    <a href="{{ url_for('clinicView') }}" class="navLink" id="data-clinic">诊断分析</a>
+    <a href="{{ url_for('clinicView') }}" class="navLink" id="data-clinic">图像检查</a>
 </div>
 {% endblock navButton %}
 
 {% block content %}
 <form method="post" id="patient_form" enctype="multipart/form-data">
     {{ form.csrf_token }}
-    <fieldset class="patient-fieldset">
+    <fieldset id="patient-fieldset">
         <legend id="patient-info">病员信息</legend>
         <div class="patient_content">
             <div class="row justify-content-between r">
@@ -50,8 +50,10 @@
         {{ form.image.label }}
         {{ form.image }}
     </div>
-    <div id="init-clinic">
-        {{ form.clinic.label }}
+    <div id="init-clinic-write">
+        <h1>
+            {{ form.clinic.label }}
+        </h1>
         {{ form.clinic }}
     </div>
     <br>

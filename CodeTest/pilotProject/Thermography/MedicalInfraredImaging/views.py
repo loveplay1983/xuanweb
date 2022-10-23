@@ -10,15 +10,30 @@ from wtforms import ValidationError
 from MedicalInfraredImaging import settings, db, app
 from MedicalInfraredImaging.forms import PatientForm, DocViewer, DocDecision
 from MedicalInfraredImaging.models import Patient, UploadImage, MedRecord, InitClinic, DocClinic
-from MedicalInfraredImaging.utils import allowed_file
+from MedicalInfraredImaging.utils import allowed_file, removeTag
 import os
 
-currentClinicNum = 0
+
+# from MedicalInfraredImaging.utils import MyEncoder
+# import json
+# from MedicalInfraredImaging.utils import DuplicatedID
+
+
+# utils
+@app.route("/uploads/<path:fileFolder>/<path:fileName>")
+def getFile(fileFolder, fileName):
+    return send_from_directory(os.path.join(app.config["UPLOAD_PATH"], fileFolder), fileName)
+
+
 
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    page = request.args.get("page", 1, type=int)
+    perPage = app.config["POST_PER_PAGE"]
+    pagination = Patient.query.order_by(Patient.timestamp.desc()).paginate(page, per_page=perPage)
+    patients = pagination.items
+    return render_template("index.html", pagination=pagination, patients=patients)
 
 
 @app.route("/collect", methods=["GET", "POST"])
@@ -66,64 +81,120 @@ def collectData():
         cliInfo.clinicsOperator.append(initClinic)
 
         # Hand in the request to the database
-        db.session.add(cliInfo)
-        db.session.add(imageInfo)
-        db.session.add(initClinic)
-        db.session.commit()
-        return redirect(url_for("collectData"))
+        try:
+            db.session.add(cliInfo)
+            db.session.add(imageInfo)
+            db.session.add(initClinic)
+            db.session.commit()
+            return redirect(url_for("collectData"))
+        # except Exception as e:
+        #     e = {"异常名称": e}
+        #     flash(json.dumps(e, cls=MyEncoder, indent=4))
+        except Exception:
+            return redirect(url_for("duplicatedPatientID"))
+
+        # db.session.add(cliInfo)
+        # db.session.add(imageInfo)
+        # db.session.add(initClinic)
+        # db.session.commit()
+        # return redirect(url_for("collectData"))
     return render_template("collect.html", form=patient)
-
-
-@app.route("/uploads/<path:fileFolder>/<path:fileName>")
-def getFile(fileFolder, fileName):
-    return send_from_directory(os.path.join(app.config["UPLOAD_PATH"], fileFolder),
-                               fileName)
 
 
 @app.route("/clinic", methods=["GET", "POST"])
 def clinicView():
-    pView = DocViewer()  # Query patient info from doctor view
-    docDecision = DocDecision()  # Record clinical decision from doctor view
-    patient = Patient.query.filter_by(cliNum=pView.pNum.data).first()
+    cliView = DocViewer()
 
-    if pView.submit1.data and pView.validate_on_submit():
+    if cliView.validate_on_submit():
+        patient = Patient.query.filter_by(cliNum=cliView.pNum.data).first()
         # csrf check
         try:
-            validate_csrf(pView.csrf_token.data)
+            validate_csrf(cliView.csrf_token.data)
         except ValidationError:
             flash("CSRF token error.")
             return redirect(url_for("clinicView"))
 
         if patient is not None:
-            pView.pNum.data = patient.cliNum
-            pView.pName.data = patient.name
-            pView.pSex.data = patient.sex
-            pView.pid.data = patient.idNum
-            pView.pPhone.data = patient.phone
-            pView.pAddr.data = patient.addr
+            cliView.pNum.data = patient.cliNum
+            cliView.pName.data = patient.name
+            cliView.pSex.data = patient.sex
+            cliView.pid.data = patient.idNum
+            cliView.pPhone.data = patient.phone
+            cliView.pAddr.data = patient.addr
 
             flash(f"就诊人员, {patient.name}!")
 
+            # init clinic suggestion
+            cliPid = Patient.query.filter_by(cliNum=cliView.pNum.data).first()
+            initCli = InitClinic.query.filter_by(patientID=cliPid.id).first()
+            cliMsg = initCli.initClinic
+            cliView.initClinic.data = removeTag(cliMsg)
+
             # Test for retrieving the filenames
-            fileFolder = pView.pNum.data
-            pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
+            fileFolder = cliView.pNum.data
+            pid = Patient.query.filter_by(cliNum=cliView.pNum.data).first()
             img = UploadImage.query.filter_by(patientID=pid.id).first()
             imgs = img.filename.split(",")
-            return render_template("clinic.html", form=pView, docForm=docDecision,
+            return render_template("clinic.html", form=cliView,
                                    fileFolder=fileFolder, files=imgs)
         else:
             flash(f"未找到相关人员!!!")
             return redirect(url_for("clinicView"))
+    return render_template("clinic.html", form=cliView)
 
-    if docDecision.submit2.data and docDecision.validate_on_submit():
-        if patient is not None:
-        #     pid = Patient.query.filter_by(cliNum=pView.pNum.data).first()
-        #     flash(f"{pid}")
-        #     return render_template("clinic.html", docForm=docDecision, form=pView)
-            flash("test")
-            return render_template("clinic.html", form=pView, docForm=docDecision)
 
-    return render_template("clinic.html", form=pView, docForm=docDecision)
+@app.route("/clinic/doc-write", methods=["GET", "POST"])
+def docWrite():
+    # flash("write test")
+    form = DocDecision()
+    if form.validate_on_submit():
+        try:
+            patient = Patient.query.filter_by(cliNum=form.pNum.data).first()
+            pid = patient.id
 
-# @app.route("clinic/doc-write", methods=["GET", "POST"])
-# def docWrite():
+            docClinic = form.pClinic.data
+            docText = DocClinic(patientID=pid, docClinic=docClinic)
+
+            db.session.add(docText)
+            db.session.commit()
+
+            flash("添加诊断成功")
+            return redirect(url_for("clinicView"))
+        except Exception:
+            flash("异常，请重试")
+            return redirect(url_for("docWrite"))
+
+    return render_template("docWrite.html", form=form)
+
+
+@app.route("/patients/<int:patient_id>")
+def showPatient(patient_id):
+    patient = Patient.query.filter_by(id=patient_id).first()
+
+    try:
+        # Image show
+        fileFolder = patient.cliNum
+        img = UploadImage.query.filter_by(patientID=patient_id).first()
+        imgs = img.filename.split(",")
+        # Initial clinic
+        imageFeature = InitClinic.query.filter_by(patientID=patient_id).first()
+        imageFeature = removeTag(imageFeature.initClinic)
+        # Doctor clinic
+        clinic = DocClinic.query.filter_by(patientID=patient_id).first()
+        clinic = removeTag(clinic.docClinic)
+
+        return render_template("patient.html", patient=patient, clinic=clinic,
+                               imageFeature=imageFeature, files=imgs, fileFolder=fileFolder)
+
+    except Exception:
+        flash("异常,请重试,也许医生忘记写诊断了!")
+    return render_template("patient.html", patient=patient)
+
+
+
+
+# test code
+# # weasyprint with bootstrap
+# html = HTML(string=rendered)
+# css = CSS(filename=css_file)
+# html.write_pdf(filename, stylesheets=[css, "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"])

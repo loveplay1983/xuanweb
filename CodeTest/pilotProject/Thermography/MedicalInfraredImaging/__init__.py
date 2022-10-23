@@ -11,6 +11,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_dropzone import Dropzone
 from flask_ckeditor import CKEditor
 
+# from MedicalInfraredImaging.utils import genSecretKey
+
 app = Flask("MedicalInfraredImaging")
 app.config.from_pyfile("settings.py")
 app.jinja_env.trim_blocks = True
@@ -22,3 +24,6 @@ dropzone = Dropzone(app)
 ckeditor = CKEditor(app)
 
 from MedicalInfraredImaging import views, errors, commands, utils, models
+from MedicalInfraredImaging.utils import genSecretKey
+
+genSecretKey()

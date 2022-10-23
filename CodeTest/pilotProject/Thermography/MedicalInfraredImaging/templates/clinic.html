@@ -13,17 +13,17 @@
 <div class="nav_menu">
     <a href="{{ url_for('index') }}" class="active navLink">首页</a>
     <a href="{{ url_for('collectData') }}" class="navLink" id="data-collect">数据收集</a>
-    <a href="{{ url_for('clinicView') }}" class="navLink" id="data-clinic" style="background-color: red">诊断分析</a>
+    <a href="{{ url_for('clinicView') }}" class="navLink" id="data-clinic" style="background-color: red">图像检查</a>
 </div>
 {% endblock navButton %}
 
 {% block content %}
 <form method="post" id="patient_form" enctype="multipart/form-data">
     {{ form.csrf_token }}
-    <fieldset class="patient-fieldset">
+    <fieldset id="patient-fieldset">
         <legend id="patient-info">病员信息</legend>
         <div class="patient_content">
-            <div class="row justify-content-between r">
+            <div class="row justify-content-between">
                 <div class="col">
                     {{ form.pNum.label }}
                     {{ form.pNum }}
@@ -53,7 +53,13 @@
             </div>
         </div>
     </fieldset>
-    {{ form.submit1 }}
+    <fieldset id="init-cli-fieldset">
+        <legend id="init-clinic">影像表现</legend>
+        <div id="init-cli">
+           {{ form.initClinic(cols=130, rows=5) }}
+        </div>
+    </fieldset>
+    {{ form.submit }}
 </form>
 
 <br>
@@ -72,7 +78,7 @@
     <div class="modal-content">
         {% for file in files %}
         <div class="mySlides">
-                <div class="numbertext">{{ loop.index }} / {{ loop.length }}</div>
+            <div class="numbertext">{{ loop.index }} / {{ loop.length }}</div>
             <img src="{{ url_for('getFile', fileFolder=fileFolder, fileName=file) }}" style="width:100%">
         </div>
         {% endfor %}
@@ -82,18 +88,7 @@
     <p class="close cursor" onclick="closeModal()">&times;</p>
 </div>
 
-<form method="post" id="doc-write">
-    {{ docForm.csrf_token }}
-    {{ docForm.pClinic.label }}
-    {{ docForm.pClinic}}
-    <br>
-    {{ docForm.submit2 }}
-</form>
+<br>
+<h1><a href="{{ url_for('docWrite') }}">医生诊断</a></h1>
 
 {% endblock content %}
-
-{% block scripts %}
-{{ super() }}
-{{ ckeditor.load() }}
-{{ ckeditor.config(name='body') }}
-{% endblock %}

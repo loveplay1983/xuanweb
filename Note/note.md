@@ -1,4 +1,12 @@
-# Will add categorization later 
+# Will add categorization later
+
+
+
+# # Python FAQ
+
+* remove HTML tag from within a string
+
+  https://stackoverflow.com/questions/9662346/python-code-to-remove-html-tags-from-a-string
 
 * [pip](https://pip.pypa.io/en/stable/)
   
@@ -211,6 +219,7 @@
 
 # flask wtforms
 * [adding id or class name to wtforms](https://stackoverflow.com/questions/53896335/add-id-field-in-stringfield-object-in-wtforms)
+* [search form](https://www.blog.pythonlibrary.org/2017/12/13/flask-101-how-to-add-a-search-form/)
 
 # Forms
 * [submit form with return key](https://www.techiedelight.com/submit-form-with-enter-key-javascript/)
@@ -299,7 +308,7 @@ html, body {
 * [CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 * [display: contents](https://caniuse.com/css-display-contents)
 
-  
+* [remove textarea styling](https://stackoverflow.com/questions/17109702/remove-all-stylings-border-glow-from-textarea)
 
 # Git
 
@@ -375,7 +384,8 @@ html, body {
 pango_context_set_round_glyph_positions
 ```
 
-
+* [htmlToPDF](https://pythonhosted.org/Flask-WeasyPrint/)
+* [geeksforgeeks](https://stackoverflow.com/questions/28165704/convert-html-to-pdf-using-python-flask)
 
 # Web
 
@@ -400,6 +410,8 @@ pango_context_set_round_glyph_positions
 * **[what is idempotent](https://www.youtube.com/watch?v=I08syTslan8)**
 
 * [python and web service API](https://realpython.com/api-integration-in-python/)
+
+* [WSGI vs Web Server](https://stackoverflow.com/questions/21058742/difference-between-wsgi-utilities-and-web-servers#:~:text=wsgi%20is%20an%20interface%20between,session%20management%2C%20caching%2C%20etc.)
 
 # Scraping
 
@@ -538,6 +550,12 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 
 # Network
 
+* systemctl/ufw
+
+  https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+
+  https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
+
 * TCP/IP - OSI
 
   https://community.fs.com/blog/tcpip-vs-osi-whats-the-difference-between-the-two-models.html
@@ -589,6 +607,10 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
    https://www.geeksforgeeks.org/generating-dynamic-urls-in-flask/
 
    https://www.educative.io/courses/flask-develop-web-applications-in-python/N82DNr7ZDMz
+   
+*  flask context
+
+   https://testdriven.io/blog/flask-contexts/
 
 # Database
 
@@ -714,3 +736,11 @@ After this operation, 201 MB of additional disk space will be used.
   * [Foreign key usage](https://www.digitalocean.com/community/tutorials/how-to-use-foreign-keys-in-sql)
   
   * [Why Foreign](https://learnsql.com/blog/why-use-foreign-key-in-sql/)
+
+
+
+# Etc.
+
+* [ubuntu netplan](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-configure-networking-in-ubuntu-20-04-with-netplan/)
+* [yaml vs json](https://www.indeed.com/career-advice/career-development/yaml-vs-json)
+* [supervisor with conda env](https://gist.github.com/Mohammed-Sunasra/f8f3030885956c596e9ccbf5aac9a82f)

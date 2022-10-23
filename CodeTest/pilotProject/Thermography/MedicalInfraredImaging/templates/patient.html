@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=100, initial-scale=1, maximum-scale=1">
+    <title>
+        红外热成像数据收集与分析
+    </title>
+    <link rel="icon" href="{{ url_for('static', filename='xuan.png') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/%s.min.css' % request.cookies.get('theme', 'perfect_blue')) }}"
+          type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+</head>
+
+{% for message in get_flashed_messages(with_categories=true) %}
+<div class="alert alert-warning fade show" role="alert" id="msg">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{ message[1] }}
+</div>
+
+{% endfor %}
+
+<body>
+<div id="backAndPrint">
+    <a href="{{ url_for('index') }}" id="return-index">&larr; 返回</a>
+    <!--<button type="button" onclick="printJS('template-print', 'html')">打印</button>-->
+    <!--<button onclick="window.print()">打印此页</button>-->
+    <button id="print-list" onclick="printPatient()">打印此页</button>
+</div>
+
+
+<div id="template-print">
+    <div class=" navbar navbar-expand-lg navbar-light" id="template-title">
+        <div id="template-title-child">
+            <div></div>
+            <div id="report-title">
+                <img src="{{ url_for('static', filename='hospital.png')}}"
+                     alt="Main Icon" width="150" height="120">诸暨市人民医院红外热成像评估报告
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <main id="template-main">
+        <div id="template-patient">
+            <!--        <hr size="500"> ins't great to use hr-->
+            <div class="template-line"></div>
+            <div class="row justify-content-between template-patient-form">
+                <div class="col">门诊号: <p class="template-patient-form-underline">{{ patient.cliNum }}</p></div>
+                <div class="col">姓名: <p class="template-patient-form-underline">{{ patient.name }}</p></div>
+                <div class="col">性别: <p class="template-patient-form-underline">{{ patient.sex }}</p></div>
+            </div>
+            <div class="row justify-content-between template-patient-form">
+                <div class="col">身份证: <p class="template-patient-form-underline">{{ patient.idNum }}</p></div>
+                <div class="col">联系电话: <p class="template-patient-form-underline">{{ patient.phone }}</p></div>
+                <div class="col">地址: <p class="template-patient-form-underline">{{ patient.addr }}</p></div>
+            </div>
+            <div class="template-line"></div>
+        </div>
+        <br>
+        <div id="template-image-display">
+            <b>影像表现:</b><br>
+            <div class="row">
+                {% for file in files %}
+                <div class="column">
+                    <img src="{{ url_for('getFile', fileFolder=fileFolder,
+        fileName=file) }}" style="width:100%" class="hover-shadow cursor thumbnail">
+                </div>
+                {% endfor %}
+            </div>
+            <br>
+            {{ imageFeature }}
+        </div>
+        <br>
+        <div id="template-doc-clinic">
+            <b>诊断建议:</b> {{ clinic }}
+        </div>
+
+
+    </main>
+
+    <footer id="report-footer">
+        <medium>
+            该评估报告仅供参考,请您按实际情况处理,具体请遵医嘱,并根据需要做进一步相关检查(放射,超声,心电图,生化检验等)
+        </medium>
+    </footer>
+</div>
+
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/print.min.js') }}"></script>
+
+
+</body>
+</html>
