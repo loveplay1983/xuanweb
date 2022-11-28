@@ -1,6 +1,4 @@
-# Will add categorization later
-
-
+# Will add categorization later 
 
 # # Python FAQ
 
@@ -9,13 +7,13 @@
   https://stackoverflow.com/questions/9662346/python-code-to-remove-html-tags-from-a-string
 
 * [pip](https://pip.pypa.io/en/stable/)
-  
+
 * [pip requirement.txt](pip freeze > requirements.txt)
-  
+
 * [Conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
-  
+
 * [share env](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
-  
+
 * # [flask tutorial](https://www.youtube.com/watch?v=KrRzZGcHjK8&list=PLXmMXHVSvS-BlLA5beNJojJLlpE0PJgCW&index=9)
 
 * [greyli](https://github.com/greyli/helloflask)
@@ -219,7 +217,6 @@
 
 # flask wtforms
 * [adding id or class name to wtforms](https://stackoverflow.com/questions/53896335/add-id-field-in-stringfield-object-in-wtforms)
-* [search form](https://www.blog.pythonlibrary.org/2017/12/13/flask-101-how-to-add-a-search-form/)
 
 # Forms
 * [submit form with return key](https://www.techiedelight.com/submit-form-with-enter-key-javascript/)
@@ -245,14 +242,42 @@
   
 
 # Javascript
+
+* utils
+  
+  * projects for beginners
+    
+  
+  https://www.freecodecamp.org/news/javascript-projects-for-beginners/
+  
+  * charts
+    https://www.atatus.com/blog/javascript-chart-libraries/
+  
+  * https://segmentfault.com/a/1190000018646425
+  
+* tutorials
+
+  https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-sidebar
+
 * [change input value](https://stackoverflow.com/questions/54203535/changing-input-value-inside-a-form-tags-when-enter-key-is-pressed)
+
 * [manipulate database](https://stackoverflow.com/questions/857670/how-to-connect-to-sql-server-database-from-javascript-in-the-browser)
+
 * [clear input](https://stackoverflow.com/questions/17237772/html-how-to-clear-input-using-javascript)
+
 * [jinja and js](https://www.learn-codes.net/javascript/how-to-set-a-value-inside-jinja-template-and-pass-it-to-javascript-variable/)
 
-
+* [onclick vs addeventlistener](https://www.geeksforgeeks.org/difference-between-addeventlistener-and-onclick-in-javascript/)
 
 # CSS
+
+* utils
+
+  bootstrap
+
+  font-awesome
+
+  w3schools css
 
 * Demo
 
@@ -308,7 +333,7 @@ html, body {
 * [CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 * [display: contents](https://caniuse.com/css-display-contents)
 
-* [remove textarea styling](https://stackoverflow.com/questions/17109702/remove-all-stylings-border-glow-from-textarea)
+  
 
 # Git
 
@@ -384,8 +409,7 @@ html, body {
 pango_context_set_round_glyph_positions
 ```
 
-* [htmlToPDF](https://pythonhosted.org/Flask-WeasyPrint/)
-* [geeksforgeeks](https://stackoverflow.com/questions/28165704/convert-html-to-pdf-using-python-flask)
+
 
 # Web
 
@@ -410,8 +434,6 @@ pango_context_set_round_glyph_positions
 * **[what is idempotent](https://www.youtube.com/watch?v=I08syTslan8)**
 
 * [python and web service API](https://realpython.com/api-integration-in-python/)
-
-* [WSGI vs Web Server](https://stackoverflow.com/questions/21058742/difference-between-wsgi-utilities-and-web-servers#:~:text=wsgi%20is%20an%20interface%20between,session%20management%2C%20caching%2C%20etc.)
 
 # Scraping
 
@@ -485,12 +507,17 @@ pango_context_set_round_glyph_positions
 # Python packages
 
 * [progress bar](https://github.com/tqdm/tqdm)
+
 * [difference between urllib(1,2,3)](https://cppsecrets.com/users/134719711011510411710810811211564103109971051084699111109/Python-Difference-between-urllib-urllib2-urllib3-packages.php)
 
 * ### Data Science
 
   * https://pandas.pydata.org/docs/reference/api/pandas.Series.str.extract.html
-  * 
+  
+* Dummy Data
+
+  * https://andsilvadrcc.medium.com/how-to-generate-fake-data-using-the-faker-python-package-b6734b944cb2
+  * https://zetcode.com/python/faker/
 
 
 
@@ -550,12 +577,6 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
 
 # Network
 
-* systemctl/ufw
-
-  https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
-
-  https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
-
 * TCP/IP - OSI
 
   https://community.fs.com/blog/tcpip-vs-osi-whats-the-difference-between-the-two-models.html
@@ -607,10 +628,6 @@ https://blog.csdn.net/aaronjny/article/details/87865942#t10
    https://www.geeksforgeeks.org/generating-dynamic-urls-in-flask/
 
    https://www.educative.io/courses/flask-develop-web-applications-in-python/N82DNr7ZDMz
-   
-*  flask context
-
-   https://testdriven.io/blog/flask-contexts/
 
 # Database
 
@@ -734,8 +751,17 @@ After this operation, 201 MB of additional disk space will be used.
 * SQL FAQ
   
   * [Foreign key usage](https://www.digitalocean.com/community/tutorials/how-to-use-foreign-keys-in-sql)
-  
   * [Why Foreign](https://learnsql.com/blog/why-use-foreign-key-in-sql/)
+  
+  
+
+# Flask Demo
+
+* blog 
+
+  https://github.com/simonzhoup/flask-blog
+
+  https://github.com/LyuDun/Flask_blog
 
 
 
@@ -743,4 +769,4 @@ After this operation, 201 MB of additional disk space will be used.
 
 * [ubuntu netplan](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-configure-networking-in-ubuntu-20-04-with-netplan/)
 * [yaml vs json](https://www.indeed.com/career-advice/career-development/yaml-vs-json)
-* [supervisor with conda env](https://gist.github.com/Mohammed-Sunasra/f8f3030885956c596e9ccbf5aac9a82f)
+* [supervisor with conda env](
