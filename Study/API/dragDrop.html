@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+
+</head>
+<body>
+<p>Drag and drop the image into the rectangle area.</p>
+
+<div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="./static/imgs/noStop.png" alt="nostop" id="drag" draggable="true" ondragstart="drag(event)" width="300"
+         height="120">
+</div>
+<div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+
+
+<script src="./static/js/script.js"></script>
+</body>
+</html>
