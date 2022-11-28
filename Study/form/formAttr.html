@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="first">First line</h1>
+<form action="">
+    <label for="fname">first name: </label><br>
+    <input type="text" id="fname" name="fname" value="Michael" readonly><br>
+    <label for="lname">last name: </label><br>
+    <input type="text" id="lname" name="lname" value="Xuan" disabled>
+</form>
+
+<form action="">
+    <label for="name">first name: </label><br>
+    <input type="text" id="name" name="fname" value="Michael" size="50"><br>
+    <label for="name2">last name: </label><br>
+    <input type="text" id="name2" name="lname" value="Xuan" size="4" maxlength="5">
+</form>
+
+<form action="">
+    <label for="multi">Choose files: </label>
+    <input type="file" id="multi" name="files" multiple>
+</form>
+
+<h1>pattern-regular expression</h1>
+<form action="">
+    <label for="regEx">Regular Expression</label><br>
+    <input type="text" id="regEx" name="regEx" placeholder="abc" pattern="[A-Za-z]{3}" title="three letter code"
+           required>
+</form>
+
+<h1>step</h1>
+<form action="">
+    <label for="steps">Points</label>
+    <input type="number" id="steps" name="points" step="5">
+</form>
+
+<h1>autofocus</h1>
+<form action="">
+    <label for="testFocus">Name</label><br>
+    <input type="text" id="testFocus" name="name" autofocus width="50" height="100"><br><br>
+    <input type="image" src="./static/imgs/guitar.png" alt="Submit" width="50" height="50">
+</form>
+
+<h1>list</h1>
+<form action="">
+    <input list="programming">
+    <datalist id="programming">
+        <option value="C"></option>
+        <option value="C++"></option>
+        <option value="Python"></option>
+        <option value="C#"></option>
+        <option value="Java"></option>
+    </datalist>
+</form>
+
+<h1>autocomplete</h1>
+<form action="/action_page.php" autocomplete="on">
+    <label for="a">First name:</label>
+    <input type="text" id="a" name="fname"><br><br>
+    <label for="b">Last name:</label>
+    <input type="text" id="b" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="off"><br><br>
+    <input type="submit" value="Submit">
+    <a href="#first">return</a>
+</form>
+</body>
+</html>

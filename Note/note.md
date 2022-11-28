@@ -769,4 +769,6 @@ After this operation, 201 MB of additional disk space will be used.
 
 * [ubuntu netplan](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-configure-networking-in-ubuntu-20-04-with-netplan/)
 * [yaml vs json](https://www.indeed.com/career-advice/career-development/yaml-vs-json)
-* [supervisor with conda env](
+
+  
+
